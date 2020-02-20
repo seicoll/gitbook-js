@@ -13,13 +13,6 @@ function nomFuncio() {
 }
 ```
 
-* El **nombre d'arguments** que es passa a una funció hauria de ser el mateix que el nombre d'arguments que ha indicat la funció. 
-* JavaScript **no mostra cap error** si es passen més o menys arguments dels necessaris. 
-* L'**ordre dels arguments és fonamental**, les dades que s'esperen en la funció van directament relacionades amb els arguments especificats en la funció. 
-* No és obligatori que coincideixi el **nom dels arguments** que utilitza la funció i el nom 
-dels arguments que se li passen.
-
-
 ## Arguments o paràmetres
 
 > Les variables que necessiten les funcions s'anomenen **arguments o paràmetres**.
@@ -48,6 +41,13 @@ dels arguments que se li passen.
 ```
 
 [Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjs_functions)
+
+* El **nombre d'arguments** que es passa a una funció hauria de ser el mateix que el nombre d'arguments que ha indicat la funció. 
+* JavaScript **no mostra cap error** si es passen més o menys arguments dels necessaris. 
+* L'**ordre dels arguments és fonamental**, les dades que s'esperen en la funció van directament relacionades amb els arguments especificats en la funció. 
+* No és obligatori que coincideixi el **nom dels arguments** que utilitza la funció i el nom 
+dels arguments que se li passen.
+
 
 ## Documentació i recursos
 
