@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [Bibliografia](bibliografia.md)
 * [Funcions](funcions.md)
+* [Events](events.md)
+* [Bibliografia](bibliografia.md)
 
