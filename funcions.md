@@ -17,7 +17,7 @@ function nomFuncio() {
 
 > Les variables que necessiten les funcions s'anomenen **arguments o paràmetres**.
 
-```javascript
+```html
 <!DOCTYPE html>
 <html>
 <body>
