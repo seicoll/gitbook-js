@@ -1,6 +1,6 @@
 # Events
 
-# Introducció
+## Introducció
 
 > Els **events** són "coses" que passen als elements HTML quan el visitant interacciona amb ells.
 
@@ -53,6 +53,6 @@ El **nom de cada esdeveniment** es construeix mitjançant el **prefix on**, segu
 
 
 
-## Documentació i recursosç
+## Documentació i recursos
 
 * **w3schools.com: Events** https://www.w3schools.com/js/js_events.asp
