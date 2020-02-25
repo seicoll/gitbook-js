@@ -32,7 +32,7 @@ document.getElementById("demo").innerHTML = text;
 
 [Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjs_switch)
 
-**Més informació a:** w3schools.com - Switch: https://www.w3schools.com/js/js_switch.asp
+**Més informació a:** [w3schools.com - Switch](https://www.w3schools.com/js/js_switch.asp)
 
 ## For
 
@@ -60,7 +60,7 @@ document.getElementById("demo").innerHTML = text;
 ```
 [Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjs_loop_for_ex)
 
-**Més informació a:** w3schools.com - For Loop: https://www.w3schools.com/js/js_loop_for.asp
+**Més informació a:** [w3schools.com - For Loop](https://www.w3schools.com/js/js_loop_for.asp)
 
 ## While
 
@@ -89,7 +89,7 @@ document.getElementById("demo").innerHTML = text;
 
 [Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjs_while)
 
-**Més informació a:** w3schools.com - While Loop: https://www.w3schools.com/js/js_loop_while.asp
+**Més informació a:** [w3schools.com - While Loop](https://www.w3schools.com/js/js_loop_while.asp)
 
 
 
