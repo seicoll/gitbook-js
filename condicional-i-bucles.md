@@ -7,7 +7,7 @@
 <html>
 <body>
 
-<h2>JavaScript switch</h2>
+<h2>JavaScript Switch</h2>
 
 <p id="demo"></p>
 
@@ -31,3 +31,5 @@ document.getElementById("demo").innerHTML = text;
 ```
 
 [Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjs_switch)
+
+* Més informació a w3schools.com -Switch: https://www.w3schools.com/js/js_switch.asp
