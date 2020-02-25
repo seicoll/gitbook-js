@@ -17,4 +17,5 @@ Fes una web que demani l'edat a l'usuari i mostri un missatge diferent segons la
 * **Entre els 18 i 65** l'usuari ha de saber que és un adult.
 * Els usuaris **majors de 65** estan a la segona joventut.
 
-Modifica la web anterior per tal que demani l'edat de l’usuari i si aquesta edat és superior o igual a 18 anys també demani el nom a l’usuari. Cal mostrar la informació obtinguda de l'usuari.
+Modifica la web anterior per tal que demani l'edat de l'usuari i si aquesta edat és superior o igual a 18 anys també demani el nom a l’usuari. Cal mostrar la informació obtinguda de l'usuari.
+Aquest [exemple](https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_style_visibility) et pot ajudar.
