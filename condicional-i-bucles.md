@@ -64,6 +64,30 @@ document.getElementById("demo").innerHTML = text;
 
 ## While
 
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript While Loop</h2>
+
+<p id="demo"></p>
+
+<script>
+var text = "";
+var i = 0;
+while (i < 10) {
+  text += "<br>The number is " + i;
+  i++;
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+```
+
+[Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjs_while)
 
 **Més informació a:** w3schools.com - While Loop: https://www.w3schools.com/js/js_loop_while.asp
 
