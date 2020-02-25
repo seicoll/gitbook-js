@@ -15,7 +15,6 @@ Escriu un programa que demani a l'usuari introduir un nombre més gran que 10, e
 **4. Números del X al Y de N en N**
 Crea una web que demani tres números a l'usuari i mostri tots els números del rang triat per l’usuari amb els dos primers números. S'ha de fer amb salts a partir del tercer número escollit per l’usuari.
 
-```
 Exemples:
 
 ```
@@ -25,7 +24,6 @@ Entrada
 Sortida
 1, 5, 9
 ```
-
 
 ```
 Entrada
