@@ -4,8 +4,7 @@
     "language": "ca",
     "plugins": [
         "etoc",
-        "-highlight",
-        "sunlight-highlighter",
+        "highlight",
         "collapsible-chapters",
         "back-to-top-button"
     ],
