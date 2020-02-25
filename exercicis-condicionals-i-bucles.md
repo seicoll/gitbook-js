@@ -6,5 +6,5 @@
   * [Exercicis: Funcions i esdeveniments](exercicis-funcions-i-esdeveniments.md)
 * [Condicionals i bucles](condicional-i-bucles.md)
 * [Bibliografia](bibliografia.md)
-  * Exercicis: Condicionals i bucles
+  * [Exercicis: Condicionals i bucles](exercicis-condicionals-i-bucles.md)
 
