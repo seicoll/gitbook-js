@@ -6,12 +6,9 @@
 <!DOCTYPE html>
 <html>
 <body>
-
-<p>Click the button to get a time-based greeting:</p>
-
-<button onclick="myFunction()">Try it</button>
-
-<p id="demo"></p>
+  <p>Click the button to get a time-based greeting:</p>
+  <button onclick="myFunction()">Try it</button>
+  <p id="demo"></p>
 
 <script>
 function myFunction() {
@@ -27,7 +24,6 @@ function myFunction() {
   document.getElementById("demo").innerHTML = greeting;
 }
 </script>
-
 </body>
 </html>
 ```
@@ -41,10 +37,9 @@ function myFunction() {
 <!DOCTYPE html>
 <html>
 <body>
+  <h2>JavaScript Switch</h2>
 
-<h2>JavaScript Switch</h2>
-
-<p id="demo"></p>
+  <p id="demo"></p>
 
 <script>
 var text;
@@ -75,10 +70,9 @@ document.getElementById("demo").innerHTML = text;
 <!DOCTYPE html>
 <html>
 <body>
+  <h2>JavaScript For Loop</h2>
 
-<h2>JavaScript For Loop</h2>
-
-<p id="demo"></p>
+  <p id="demo"></p>
 
 <script>
 var text = "";
@@ -103,10 +97,9 @@ document.getElementById("demo").innerHTML = text;
 <!DOCTYPE html>
 <html>
 <body>
+  <h2>JavaScript While Loop</h2>
 
-<h2>JavaScript While Loop</h2>
-
-<p id="demo"></p>
+  <p id="demo"></p>
 
 <script>
 var text = "";
@@ -125,9 +118,6 @@ document.getElementById("demo").innerHTML = text;
 [Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjs_while)
 
 **Més informació a:** [w3schools.com - While Loop](https://www.w3schools.com/js/js_loop_while.asp)
-
-
-
 
 
 
