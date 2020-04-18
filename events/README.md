@@ -13,8 +13,7 @@ JavaScript pot "reaccionar" a aquests esdeveniments.
 * Prémer una tecla.
 * Un camp d'un formulari canvia de valor.
 
-
-```html
+```markup
 <!DOCTYPE html>
 <html>
 <body>
@@ -37,9 +36,9 @@ function displayDate() {
 
 [Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjs_events1)
 
-**Cada element** o etiqueta HTML té la seva pròpia **llista de possibles esdeveniments** que se li poden assignar. 
+**Cada element** o etiqueta HTML té la seva pròpia **llista de possibles esdeveniments** que se li poden assignar.
 
-El **nom de cada esdeveniment** es construeix mitjançant el **prefix on**, seguit del **nom en anglès de l'acció** associada a l'esdeveniment. 
+El **nom de cada esdeveniment** es construeix mitjançant el **prefix on**, seguit del **nom en anglès de l'acció** associada a l'esdeveniment.
 
 **Exemples:**
 
@@ -50,9 +49,7 @@ El **nom de cada esdeveniment** es construeix mitjançant el **prefix on**, segu
 * **onkeydown**: L’usuari pressiona una tecla
 * **onload**: el navegador acaba de carregar una pàgina
 
-
-
-
 ## Documentació i recursos
 
-* **w3schools.com: Events** https://www.w3schools.com/js/js_events.asp
+* **w3schools.com: Events** [https://www.w3schools.com/js/js\_events.asp](https://www.w3schools.com/js/js_events.asp)
+

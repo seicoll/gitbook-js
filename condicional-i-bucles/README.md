@@ -2,7 +2,7 @@
 
 ## If
 
-```html
+```markup
 <!DOCTYPE html>
 <html>
 <body>
@@ -27,13 +27,14 @@ function myFunction() {
 </body>
 </html>
 ```
+
 [Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjs_elseif)
 
 **Més informació a:** [w3schools.com - If](https://www.w3schools.com/js/js_if_else.asp)
 
 ## Switch
 
-```html
+```markup
 <!DOCTYPE html>
 <html>
 <body>
@@ -66,7 +67,7 @@ document.getElementById("demo").innerHTML = text;
 
 ## For
 
-```html 
+```markup
 <!DOCTYPE html>
 <html>
 <body>
@@ -85,15 +86,15 @@ document.getElementById("demo").innerHTML = text;
 
 </body>
 </html>
-
 ```
+
 [Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjs_loop_for_ex)
 
 **Més informació a:** [w3schools.com - For Loop](https://www.w3schools.com/js/js_loop_for.asp)
 
 ## While
 
-```html
+```markup
 <!DOCTYPE html>
 <html>
 <body>
@@ -118,9 +119,4 @@ document.getElementById("demo").innerHTML = text;
 [Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjs_while)
 
 **Més informació a:** [w3schools.com - While Loop](https://www.w3schools.com/js/js_loop_while.asp)
-
-
-
-
-
 

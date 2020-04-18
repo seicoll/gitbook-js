@@ -17,7 +17,7 @@ function nomFuncio() {
 
 > Les variables que necessiten les funcions s'anomenen **arguments o paràmetres**.
 
-```html
+```markup
 <!DOCTYPE html>
 <html>
 <body>
@@ -25,14 +25,14 @@ function nomFuncio() {
   <h2>JavaScript Functions</h2>
 
   <p>This example calls a function which performs a calculation, and returns the result:</p>
-  
+
   <p id="demo"></p>
 
 <script>
   function myFunction(p1, p2) {
       return p1 * p2;
   }
-  
+
   document.getElementById("demo").innerHTML = myFunction(4, 3);
 </script>
 
@@ -46,9 +46,10 @@ function nomFuncio() {
 * JavaScript **no mostra cap error** si es passen més o menys arguments dels necessaris. 
 * L'**ordre dels arguments és fonamental**, les dades que s'esperen en la funció van directament relacionades amb els arguments especificats en la funció. 
 * No és obligatori que coincideixi el **nom dels arguments** que utilitza la funció i el nom 
-dels arguments que se li passen.
 
+  dels arguments que se li passen.
 
 ## Documentació i recursos
 
-* **w3schools: Functions** https://www.w3schools.com/js/js_functions.asp
+* **w3schools: Functions** [https://www.w3schools.com/js/js\_functions.asp](https://www.w3schools.com/js/js_functions.asp)
+
