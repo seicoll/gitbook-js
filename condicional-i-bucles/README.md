@@ -2,7 +2,7 @@
 
 ## If
 
-```markup
+```javascript
 <!DOCTYPE html>
 <html>
 <body>
@@ -34,7 +34,7 @@ function myFunction() {
 
 ## Switch
 
-```markup
+```javascript
 <!DOCTYPE html>
 <html>
 <body>
@@ -67,7 +67,7 @@ document.getElementById("demo").innerHTML = text;
 
 ## For
 
-```markup
+```javascript
 <!DOCTYPE html>
 <html>
 <body>
@@ -94,7 +94,7 @@ document.getElementById("demo").innerHTML = text;
 
 ## While
 
-```markup
+```javascript
 <!DOCTYPE html>
 <html>
 <body>

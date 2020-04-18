@@ -8,13 +8,13 @@ Cubrimos varias maneras en las que puedes modificar los aspectos de un elemento 
 
 Puedes establecer un atributo en un elemento al establecer la propiedad con el mismo nombre. Por ejemplo, para cambiar el `src` de una `<img>`:
 
-```text
+```javascript
 imgEl.src = "http://www.dogs.com/dog.gif";
 ```
 
 Adicionalmente, también puedes utilizar el método [`setAttribute`](https://developer.mozilla.org/en-US/docs/Web/API/Element.setAttribute), así:
 
-```text
+```javascript
 imgEl.setAttribute("src", "http://www.dogs.com/dog.gif");
 ```
 
