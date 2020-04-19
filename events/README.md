@@ -8,7 +8,7 @@ JavaScript pot "reaccionar" a aquests esdeveniments.
 
 **Exemples d'events:**
 
-* Una pàgina HTML s’acaba de carregar.
+* Una pàgina HTML s'acaba de carregar.
 * Es clica un botó.
 * Prémer una tecla.
 * Un camp d'un formulari canvia de valor.
