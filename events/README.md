@@ -40,14 +40,29 @@ function displayDate() {
 
 El **nom de cada esdeveniment** es construeix mitjançant el **prefix on**, seguit del **nom en anglès de l'acció** associada a l'esdeveniment.
 
-**Exemples:**
+### **Exemples d'esdeveniment**
 
-* **onchange**: s’ha canviat un element HTML
-* **onclick**: l’usuari fa clic a un element HTML
+**Esdeveniments del ratotí:**
+
+* **onclick**: l'usuari fa clic a un element HTML
 * **onmouseover**: l’usuari mou el ratolí a sobre d’un element HTML
 * **onmouseout**: l’usuari treu el ratolí d’un element HTML
+
+**Esdeveniments del teclat:**
+
 * **onkeydown**: L’usuari pressiona una tecla
+* **onkeyup**
+
+**Esdeveniments de formulari:** 
+
+* **onchange**: s’ha canviat un element HTML
+* **onfocus**
+* **onblur**
+
+**Esdeveniment de finestra:**
+
 * **onload**: el navegador acaba de carregar una pàgina
+* **onresize**
 
 ## Documentació i recursos
 
