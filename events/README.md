@@ -2,7 +2,7 @@
 
 ## Introducció
 
-> Els **events** són "coses" que passen als elements HTML quan el visitant interacciona amb ells.
+> Els **events** o **esdeveniments** són "coses" que passen als elements HTML quan el visitant interacciona amb ells.
 
 JavaScript pot "reaccionar" a aquests esdeveniments.
 
