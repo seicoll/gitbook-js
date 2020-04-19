@@ -42,7 +42,7 @@ El **nom de cada esdeveniment** es construeix mitjançant el **prefix on**, segu
 
 ### **Exemples d'esdeveniment**
 
-**Esdeveniments del ratotí:**
+**Esdeveniments del ratolí:**
 
 * **onclick**: l'usuari fa clic a un element HTML
 * **onmouseover**: l’usuari mou el ratolí a sobre d’un element HTML
