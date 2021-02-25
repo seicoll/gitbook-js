@@ -6,6 +6,7 @@
 
 * [Què es pot fer amb Javascript?](introduccio-a-js/untitled-1.md)
 * [Incloure codi JS](introduccio-a-js/incloure-codi-js.md)
+* [Sintaxi del llenguatge](introduccio-a-js/sintaxi-del-llenguatge.md)
 * [Exercicis bloc 1](introduccio-a-js/exercici-bloc-1.md)
 
 ---
