@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [Exercici bloc 1](exercici-bloc-1.md)
 * [Funcions](funcions.md)
 * [Events](events/README.md)
   * [Exercicis: Funcions i esdeveniments](events/exercicis-funcions-i-esdeveniments.md)
