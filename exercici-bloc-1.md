@@ -1,4 +1,4 @@
-# Exercici bloc 1
+# Exercicis bloc 1
 
 ## **Primer script Javascript**
 
@@ -29,8 +29,6 @@
 4. Afegir alguns comentaris que expliquin el funcionament del codi.
 
 ###  2. Crea una web que mostri la frase _Hello world_ utilitzant els tres mètodes de sortida de JavaScript explicats [aquí](https://www.w3schools.com/js/js_output.asp):
-
-
 
 ```javascript
 innerHTML
