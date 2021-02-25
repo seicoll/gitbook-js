@@ -1,10 +1,10 @@
-# Introducció a Javascript
+# Introducció
 
 ## Tecnologies web
 
 Fins ara heu treballat amb pàgines **web estàtiques**
 
-* Estan allotjades a un servidor
+* Estan allotjades a un servidor.
 * Des del client es descarrega la pàgina i es _renderitza_ al navegador.
 * Els llenguatges utilitzats son **HTML** \(contingut\) i **CSS** \(format\).
 

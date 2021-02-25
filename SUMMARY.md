@@ -1,7 +1,15 @@
 # Table of contents
 
-* [Introducció a Javascript](README.md)
-* [Exercicis bloc 1](exercici-bloc-1.md)
+* [Introducció](README.md)
+
+## Introducció a JS
+
+* [Què es pot fer amb Javascript?](introduccio-a-js/untitled-1.md)
+* [Incloure codi JS](introduccio-a-js/incloure-codi-js.md)
+* [Exercicis bloc 1](introduccio-a-js/exercici-bloc-1.md)
+
+---
+
 * [Funcions](funcions.md)
 * [Events](events/README.md)
   * [Exercicis: Funcions i esdeveniments](events/exercicis-funcions-i-esdeveniments.md)
