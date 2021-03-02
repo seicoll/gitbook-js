@@ -9,13 +9,17 @@
 * [Sintaxi del llenguatge](introduccio-a-js/sintaxi-del-llenguatge.md)
 * [Exercicis bloc 1](introduccio-a-js/exercici-bloc-1.md)
 
+## Programació bàsica
+
+* [Variables i constants](programacio-basica/variables-i-constants.md)
+* [Condicionals i bucles](programacio-basica/condicional-i-bucles/README.md)
+  * [Exercicis: Condicionals i bucles](programacio-basica/condicional-i-bucles/exercicis-condicionals-i-bucles.md)
+
 ---
 
 * [Funcions](funcions.md)
 * [Events](events/README.md)
   * [Exercicis: Funcions i esdeveniments](events/exercicis-funcions-i-esdeveniments.md)
-* [Condicionals i bucles](condicional-i-bucles/README.md)
-  * [Exercicis: Condicionals i bucles](condicional-i-bucles/exercicis-condicionals-i-bucles.md)
 * [Accés al DOM](acces-al-dom.md)
 * [Modificació del DOM](modificacio-del-dom.md)
 * [Bibliografia](bibliografia.md)
