@@ -225,5 +225,31 @@ Operadors condicionals:
 | :--- | :--- |
 
 
+### Operadors de cadenes
 
+
+
+L'operador**`+`**concatena dues cadenes, enganxa la segona cadena a continuació de la primera.
+
+```javascript
+let cadena1 = "hola";
+let cadena2 = "mundo";
+let cadenaConcatenada = cadena1 + cadena2; //cadena concatenada val "holamundo"
+```
+
+{% hint style="warning" %}
+ L'operador **+** serveix per a dos usos diferents. Si els seus operands són números els **suma**, però si es tracta de cadenes les **concatena**.
+{% endhint %}
+
+Javascript és prou llest per entendre quin tipus d'operació realitzar mitjançant una **comprovació dels tipus** que estan implicats en l'operació.
+
+```javascript
+let miNumero = 23;
+let miCadena1 = "pep";
+let miCadena2  = "456";
+
+let resultado1 = miNumero + miCadena1; //resultado1 val "23pep"
+let resultado2 = miNumero + miCadena2; //resultado2 val "23456"
+let miCadena2 += miNumero; //miCadena2 ahora val "45623"
+```
 
