@@ -2,7 +2,7 @@
 
 ## If
 
-```javascript
+```markup
 <!DOCTYPE html>
 <html>
 <body>
@@ -11,18 +11,18 @@
   <p id="demo"></p>
 
 <script>
-function myFunction() {
-  var greeting;
-  var time = new Date().getHours();
-  if (time < 10) {
-    greeting = "Good morning";
-  } else if (time < 20) {
-    greeting = "Good day";
-  } else {
-    greeting = "Good evening";
+  function myFunction() {
+    var greeting;
+    var time = new Date().getHours();
+    if (time < 10) {
+      greeting = "Good morning";
+    } else if (time < 20) {
+      greeting = "Good day";
+    } else {
+      greeting = "Good evening";
+    }
+    document.getElementById("demo").innerHTML = greeting;
   }
-  document.getElementById("demo").innerHTML = greeting;
-}
 </script>
 </body>
 </html>
@@ -34,7 +34,7 @@ function myFunction() {
 
 ## Switch
 
-```javascript
+```markup
 <!DOCTYPE html>
 <html>
 <body>
@@ -43,18 +43,18 @@ function myFunction() {
   <p id="demo"></p>
 
 <script>
-var text;
-switch (new Date().getDay()) {
-    case 6:
-        text = "Today is Saturday";
-        break;
-    case 0:
-        text = "Today is Sunday";
-        break;
-    default:
-        text = "Looking forward to the Weekend";
-}
-document.getElementById("demo").innerHTML = text;
+    var text;
+    switch (new Date().getDay()) {
+        case 6:
+            text = "Today is Saturday";
+            break;
+        case 0:
+            text = "Today is Sunday";
+            break;
+        default:
+            text = "Looking forward to the Weekend";
+    }
+    document.getElementById("demo").innerHTML = text;
 </script>
 
 </body>
@@ -67,7 +67,7 @@ document.getElementById("demo").innerHTML = text;
 
 ## For
 
-```javascript
+```markup
 <!DOCTYPE html>
 <html>
 <body>
@@ -76,12 +76,12 @@ document.getElementById("demo").innerHTML = text;
   <p id="demo"></p>
 
 <script>
-var text = "";
-var i;
-for (i = 0; i < 5; i++) {
-    text += "The number is " + i + "<br>";
-}
-document.getElementById("demo").innerHTML = text;
+  var text = "";
+  var i;
+  for (i = 0; i < 5; i++) {
+      text += "The number is " + i + "<br>";
+  }
+  document.getElementById("demo").innerHTML = text;
 </script>
 
 </body>
@@ -94,7 +94,7 @@ document.getElementById("demo").innerHTML = text;
 
 ## While
 
-```javascript
+```markup
 <!DOCTYPE html>
 <html>
 <body>
@@ -103,13 +103,13 @@ document.getElementById("demo").innerHTML = text;
   <p id="demo"></p>
 
 <script>
-var text = "";
-var i = 0;
-while (i < 10) {
-  text += "<br>The number is " + i;
-  i++;
-}
-document.getElementById("demo").innerHTML = text;
+  var text = "";
+  var i = 0;
+  while (i < 10) {
+    text += "<br>The number is " + i;
+    i++;
+  }
+  document.getElementById("demo").innerHTML = text;
 </script>
 
 </body>
