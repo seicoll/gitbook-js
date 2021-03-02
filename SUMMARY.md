@@ -11,9 +11,10 @@
 
 ## Programació bàsica
 
+* [Exercicis: Condicionals i bucles](programacio-basica/exercicis-condicionals-i-bucles.md)
 * [Variables i constants](programacio-basica/variables-i-constants.md)
-* [Condicionals i bucles](programacio-basica/condicional-i-bucles/README.md)
-  * [Exercicis: Condicionals i bucles](programacio-basica/condicional-i-bucles/exercicis-condicionals-i-bucles.md)
+* [Operadors](programacio-basica/operadors.md)
+* [Condicionals i bucles](programacio-basica/condicional-i-bucles.md)
 
 ---
 

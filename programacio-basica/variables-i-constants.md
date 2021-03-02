@@ -82,5 +82,35 @@ const PI = 3.1416;
 PI = 0; // NO permès
 ```
 
+### Tipus de dades
 
+```javascript
+var length = 16;                               // Number
+var length = 16.00;                            // Number with decimals
+
+
+var lastName = "Johnson";                      // String
+var lastName = 'Johnson';                      // String using single quotes
+
+var condition = true;                          // Boolean
+var cars = ["Saab", "Volvo", "BMW"];           // Array
+var x = {firstName:"John", lastName:"Doe"};    // Object
+
+```
+
+
+
+{% hint style="info" %}
+**Els tipus de JavaScript són dinàmics**
+{% endhint %}
+
+Això significa que la mateixa variable es pot utilitzar per contenir diferents tipus de dades:
+
+```javascript
+var x;           // Now x is undefined
+x = 5;           // Now x is a Number
+x = "John";      // Now x is a String
+```
+
+[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs_datatypes_dynamic)
 
