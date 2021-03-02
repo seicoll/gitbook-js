@@ -14,6 +14,7 @@
   function myFunction() {
     var greeting;
     var time = new Date().getHours();
+    
     if (time < 10) {
       greeting = "Good morning";
     } else if (time < 20) {
@@ -44,6 +45,7 @@
 
 <script>
     var text;
+    
     switch (new Date().getDay()) {
         case 6:
             text = "Today is Saturday";
@@ -54,6 +56,7 @@
         default:
             text = "Looking forward to the Weekend";
     }
+    
     document.getElementById("demo").innerHTML = text;
 </script>
 
