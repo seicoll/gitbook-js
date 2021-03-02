@@ -4,7 +4,7 @@
 
 **2. Números del X al Y al revés** Crea una web que demani dos números a l'usuari i mostri tots els números del rang escollit per l'usuari sentit descendent.
 
-**3. Nombre més gran que 10** Escriu un programa que demani a l'usuari introduir un nombre més gran que 10, el quadre de text tornarà a aparèixer si el nombre és menor.
+**3. Nombre més gran que 10.** Escriu un programa que demani a l'usuari introduir un nombre més gran que 10, el quadre de text tornarà a aparèixer si el nombre és menor.
 
 > Pots utilitzar la funció `prompt()` per demanar el número a l'usuari però tingues en compte que `prompt` rep cadenes de text. Si introdueixes el número 5, JavaScript ho interpretarà com "5". Per transformar una cadena de text a una dada de tipus numèric, cal fer-ho de la manera següent: `Number("cadena_de_text")`.
 
