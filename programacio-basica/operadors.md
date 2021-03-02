@@ -20,12 +20,12 @@ var numero2 = 4;
 /* Error, l'assignació sempre es realitza a una variable, pel que en l'esquerra 
 no es pot indicar un nombre */ 
  
-numero1 = 5; 			// Ara, la variable numero1 val 5 
+numero1 = 5; 			    // Ara, la variable numero1 val 5 
 
 numero1 = numero2;    // Ara, la variable numero1 val 4 
 ```
 
-### Aritmètics
+### Operadors aritmètics
 
 {% hint style="info" %}
 S'utilitzen per a la realització d'**operacions matemàtiques** simples com la suma, resta o multiplicació.
@@ -64,11 +64,6 @@ Són les següents:
       <td style="text-align:left"></td>
     </tr>
     <tr>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-    </tr>
-    <tr>
       <td style="text-align:left">%</td>
       <td style="text-align:left">Residu</td>
       <td style="text-align:left">
@@ -79,6 +74,19 @@ Són les següents:
     </tr>
   </tbody>
 </table>
+
+### Operadors d'assignació
+
+Els operadors matemàtics també **es poden combinar amb l'operador d'assignació** per abreviar la seva notació.
+
+```javascript
+var nombre1 = 5; 
+nombre1 += 3;   // nombre1 = nombre1 + 3 = 8 
+nombre1 -= 1;   // nombre1 = nombre1 - 1 = 4 
+nombre1 *= 2;   // nombre1 = nombre1 * 2 = 10 
+nombre1 /= 5;   // nombre1 = nombre1 / 5 = 1 
+nombre1 %= 4;   // nombre1 = nombre1 % 4 = 1  
+```
 
 ### Increment i decrement
 
@@ -193,27 +201,27 @@ Operadors condicionals:
 | :--- | :--- |
 
 
-| `==` | Comprova si dos valors són iguals |
+| == | Comprova si dos valors són iguals |
 | :--- | :--- |
 
 
-| `!=` | Comprova si dos valors són diferents |
+| != | Comprova si dos valors són diferents |
 | :--- | :--- |
 
 
-| `>` | Comprova si el primer valor és major que el segon |
+| &gt; | Comprova si el primer valor és major que el segon |
 | :--- | :--- |
 
 
-| `>=` | Comprova si el primer valor és major o igual que el segon |
+| &gt;= | Comprova si el primer valor és major o igual que el segon |
 | :--- | :--- |
 
 
-| `<` | Comprova si el primer valor és menor que el segon |
+| &lt; | Comprova si el primer valor és menor que el segon |
 | :--- | :--- |
 
 
-| `<=` | Comprova si el primer valor és menor o igual que el segon |
+| &lt;= | Comprova si el primer valor és menor o igual que el segon |
 | :--- | :--- |
 
 
