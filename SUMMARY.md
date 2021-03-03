@@ -16,12 +16,18 @@
 * [Condicionals i bucles](programacio-basica/condicional-i-bucles.md)
 * [Exercicis: Condicionals i bucles](programacio-basica/exercicis-condicionals-i-bucles.md)
 
+## Funcions i esdeveniments
+
+* [Funcions](funcions-i-esdeveniments/funcions.md)
+* [Events](funcions-i-esdeveniments/events.md)
+* [Exercicis: Funcions i esdeveniments](funcions-i-esdeveniments/exercicis-funcions-i-esdeveniments.md)
+
+## DOM
+
+* [Accés al DOM](dom/acces-al-dom.md)
+* [Modificació del DOM](dom/modificacio-del-dom.md)
+
 ---
 
-* [Funcions](funcions.md)
-* [Events](events.md)
-* [Exercicis: Funcions i esdeveniments](exercicis-funcions-i-esdeveniments.md)
-* [Accés al DOM](acces-al-dom.md)
-* [Modificació del DOM](modificacio-del-dom.md)
 * [Bibliografia](bibliografia.md)
 
