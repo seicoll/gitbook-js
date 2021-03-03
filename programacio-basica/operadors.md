@@ -253,3 +253,61 @@ let resultado2 = miNumero + miCadena2; //resultado2 val "23456"
 let miCadena2 += miNumero; //miCadena2 ahora val "45623"
 ```
 
+### Presedència dels operadors
+
+Els operadors s'avaluen d'**esquerra a dreta**, però hi ha unes normes addicionals, per les quals **determinats operadors s'avaluen abans que altres**. 
+
+Moltes d'aquestes regles de precedència estan tretes de les matemàtiques i són comuns a altres llenguatges, les podem veure a continuació.
+
+Prioritat dels operadors:
+
+| Operador | Significat |
+| :--- | :--- |
+| `()`, `[]` | Parèntesi, claudàtors |
+| `!`, `-`, `++`, `--` | negació, negatiu, increments o decrements |
+| `*`, `/`, `%` | Multiplicació, divisió i mòdul \(residu de la divisió\) |
+| `+`, `-` | Suma i resta |
+| `<`, `<=`, `>`, `>=` | Operadors condicionals |
+| `==`, `!=` | Operadors condicionals d'igualtat i desigualtat |
+| `&`, `^`, `|` | Operadors lògics a nivell de bit |
+| `&&`, `||` Operadors lògics booleans |  |
+| `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `<<=`, `>>=`, `>>>=`, `&=`, `^=`, `!=` | Assignació |
+
+**Exemple:**
+
+En el següent exemple podem veure com les expressions podrien arribar a ser confuses, però amb la taula de precedència d'operadors podrem entendre sense errors quin és l'ordre pel qual s'executen.
+
+```text
+12 * 3 + 4 - 8 / 2 % 3
+```
+
+En aquest cas primer s'executen els operadors `*`, `/` i `%`, d'esquerra a dreta, de manera que es farien aquestes operacions. Primer la multiplicació i després la divisió per estar més a l'esquerra de la lliçó.
+
+```text
+36 + 4 - 4 % 3
+```
+
+Ara el mòdul.
+
+```text
+36 + 4 - 1
+```
+
+Finalment les sumes i les restes d'esquerra a dreta.
+
+```text
+40 - 1
+```
+
+El que ens dóna com a resultat el valor següent.
+
+```text
+39
+```
+
+{% hint style="info" %}
+L'**ús dels parèntesis** pot estalviar-nos molts mals de cap i sobretot la necessitat de saber-nos de memòria la taula de precedència dels operadors
+{% endhint %}
+
+Quan veiem poc clar l'ordre amb el qual s'executaran les sentències podem utilitzar-los i així forçar que s'avaluï abans el tros d'expressió que es troba dins dels parèntesis.
+
