@@ -19,8 +19,8 @@
 ---
 
 * [Funcions](funcions.md)
-* [Events](events/README.md)
-  * [Exercicis: Funcions i esdeveniments](events/exercicis-funcions-i-esdeveniments.md)
+* [Events](events.md)
+* [Exercicis: Funcions i esdeveniments](exercicis-funcions-i-esdeveniments.md)
 * [Accés al DOM](acces-al-dom.md)
 * [Modificació del DOM](modificacio-del-dom.md)
 * [Bibliografia](bibliografia.md)
