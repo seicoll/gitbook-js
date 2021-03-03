@@ -4,9 +4,9 @@
 
 > Els **events** o **esdeveniments** són "coses" que passen als elements HTML quan el visitant interacciona amb ells.
 
-JavaScript pot "reaccionar" a aquests esdeveniments.
+JavaScript pot "_**reaccionar**_" a aquests esdeveniments.
 
-**Exemples d'events:**
+**Exemples d'esdeveniments HTML:**
 
 * Una pàgina HTML s'acaba de carregar.
 * Es clica un botó.
