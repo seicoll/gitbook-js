@@ -253,13 +253,13 @@ let resultado2 = miNumero + miCadena2; //resultado2 val "23456"
 let miCadena2 += miNumero; //miCadena2 ahora val "45623"
 ```
 
-### Presedència dels operadors
+### Precedència dels operadors
 
 Els operadors s'avaluen d'**esquerra a dreta**, però hi ha unes normes addicionals, per les quals **determinats operadors s'avaluen abans que altres**. 
 
 Moltes d'aquestes regles de precedència estan tretes de les matemàtiques i són comuns a altres llenguatges, les podem veure a continuació.
 
-Prioritat dels operadors:
+**Prioritat dels operadors:**
 
 | Operador | Significat |
 | :--- | :--- |
