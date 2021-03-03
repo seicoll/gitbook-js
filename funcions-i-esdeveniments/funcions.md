@@ -2,7 +2,7 @@
 
 ## Introducció
 
-> Una **funció** és un conjunt d'instruccions que s'agrupen per realitzar una tasca concreta i que es poden reutilitzar fàcilment.
+> Una **funció** és un conjunt d'instruccions que s'agrupen per realitzar una tasca concreta i que es poden **reutilitzar** fàcilment.
 
 Es defineixen mitjançant la paraula reservada **`function`**, seguida del nom de la funció.
 
@@ -16,6 +16,12 @@ function nomFuncio() {
 ## Arguments o paràmetres
 
 > Les variables que necessiten les funcions s'anomenen **arguments o paràmetres**.
+
+```javascript
+function nomFuncio(parameter1, parameter2, parameter3) {
+    // code to be executed
+}
+```
 
 ```markup
 <!DOCTYPE html>
@@ -42,12 +48,19 @@ function nomFuncio() {
 
 [Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjs_functions)
 
+**Paràmetres:**
+
 * El **nombre d'arguments** que es passa a una funció hauria de ser el mateix que el nombre d'arguments que ha indicat la funció. 
 * JavaScript **no mostra cap error** si es passen més o menys arguments dels necessaris. 
 * L'**ordre dels arguments és fonamental**, les dades que s'esperen en la funció van directament relacionades amb els arguments especificats en la funció. 
 * No és obligatori que coincideixi el **nom dels arguments** que utilitza la funció i el nom 
 
   dels arguments que se li passen.
+
+**Return:**
+
+* La instrucció **`return`** serveix per indicar quin valor retorna la funció.
+* Quan s'arriba a la instrucció **`return`**, la funció deixa d'executar-se.
 
 ## Documentació i recursos
 
