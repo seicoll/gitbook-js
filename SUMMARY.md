@@ -27,6 +27,10 @@
 * [Accés al DOM](dom/acces-al-dom.md)
 * [Modificació del DOM](dom/modificacio-del-dom.md)
 
+## JSON
+
+* [JSON](json/json.md)
+
 ---
 
 * [Bibliografia](bibliografia.md)
