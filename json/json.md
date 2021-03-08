@@ -82,7 +82,7 @@ Podem comprovar la validesa d'un fitxer JSON amb eines ON-LINE com per exemple:
 * [JSONFormatter](https://jsonformatter.curiousconcept.com/)
 * [JSONViewer](http://jsonviewer.stack.hu/)
 
-## Usant JSON en Javascript
+## Usant JSON en JavaScript
 
 
 
