@@ -1,6 +1,88 @@
 # JSON
 
-> JSON \(**J**ava **S**cript **O**bject **N**otacion**\)** és una sintaxi per emmagatzemar i intercanviar dades.
+> JSON \(**J**ava **S**cript **O**bject **N**otacion**\)** és un format per emmagatzemar i intercanviar dades.
 
-**JSON** és text, escrit amb notació d'objectes JavaScript.
+**JSON** és text, escrit amb sintaxi de JavaScript aprofitant l'ús dels objectes JavaScript.
+
+Va néixer com a alternativa al **XML**.
+
+Actualment està superant l'ús del **XML** en aplicacions web, gràcies a la **facilitat**, **portabilitat** i **llegibilitat.**
+
+## **Sintaxi JSON**
+
+* Les dades s'escriuen com a parelles de **`nom`** i **`valor`**.
+* Per **assignar** valor s'utilitza els dos punts \( **`:`** \)
+
+**Exemple:**
+
+```javascript
+{ "name":"John" } 
+```
+
+{% hint style="warning" %}
+Els noms JSON requereixen **cometes dobles.**
+{% endhint %}
+
+* Les dades se separen per comes \( **`,`** \)
+
+**Exemple:**
+
+```javascript
+{ "name" : "John" , "surname" : "Smith" } 
+```
+
+## Comparació de JSON i XML
+
+Els següents exemples JSON i XML defineixen un objecte d'empleats, amb una matriu de 3 empleats:
+
+#### Exemple JSON 
+
+```javascript
+{"employees":[
+  { "firstName":"John", "lastName":"Doe" },
+  { "firstName":"Anna", "lastName":"Smith" },
+  { "firstName":"Peter", "lastName":"Jones" }
+]}
+```
+
+**Exemple XML**
+
+```javascript
+<employees>
+  <employee>
+    <firstName>John</firstName> <lastName>Doe</lastName>
+  </employee>
+  <employee>
+    <firstName>Anna</firstName> <lastName>Smith</lastName>
+  </employee>
+  <employee>
+    <firstName>Peter</firstName> <lastName>Jones</lastName>
+  </employee>
+</employees>
+```
+
+#### Similituds
+
+Tant JSON com XML:
+
+* Són "**autodescriptibles**" \(llegibles per humans\)
+* Són **jeràrquics** \(valors dins dels valors\)
+* Es poden analitzar i utilitzar en molts llenguatges de programació.
+
+#### Avantatges de JSON
+
+* No utilitza **etiquetes de tancament**.
+* És més **curt**. Ocupa menys espai i es transfereix més ràpidament.
+* És més ràpid de llegir i escriure.
+
+## Validació
+
+Podem comprovar la validesa d'un fitxer JSON amb eines ON-LINE com per exemple:
+
+* [JSONFormatter](https://jsonformatter.curiousconcept.com/)
+* [JSONViewer](http://jsonviewer.stack.hu/)
+
+## Usant JSON en Javascript
+
+
 
