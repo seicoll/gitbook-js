@@ -31,6 +31,34 @@ Els noms JSON requereixen **cometes dobles.**
 { "name" : "John" , "surname" : "Smith" } 
 ```
 
+## Arrays
+
+> Un **array** es una colección ordenada de valores.
+
+Els arrays s'envolten de **claudàtors `[]`** i cada valor de dins va serparat per una coma \( , \).
+
+**Exemple:**
+
+```javascript
+{
+    "name":"John",
+    "age":30,
+    "cars": [ "Ford", "BMW", "Fiat" ]
+}
+```
+
+Un valor d'un array també potser un objecte **JSON**.
+
+**Exemple**:
+
+```javascript
+"students": [
+    {"name":"Tom" , "surname":"Jackson"} ,
+    {"name":"Linda" , "surname":"Garner"} ,
+    {"name":"Adam" , "surname":"Cooper"}
+]
+```
+
 ## Comparació de JSON i XML
 
 Els següents exemples JSON i XML defineixen un objecte d'empleats, amb una matriu de 3 empleats:
