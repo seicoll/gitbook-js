@@ -30,6 +30,7 @@
 ## JSON
 
 * [JSON](json/json.md)
+* [Exercicis](json/exercicis.md)
 
 ---
 
