@@ -35,7 +35,7 @@ Els noms JSON requereixen **cometes dobles.**
 
 > Un **array** es una colección ordenada de valores.
 
-Els arrays s'envolten de **claudàtors `[]`** i cada valor de dins va serparat per una coma \( , \).
+Els arrays s'envolten de **claudàtors `[ ]`** i cada valor de dins va separat per una coma \( **`,`** \).
 
 **Exemple:**
 
@@ -52,11 +52,31 @@ Un valor d'un array també potser un objecte **JSON**.
 **Exemple**:
 
 ```javascript
-"students": [
-    {"name":"Tom" , "surname":"Jackson"} ,
-    {"name":"Linda" , "surname":"Garner"} ,
-    {"name":"Adam" , "surname":"Cooper"}
-]
+{"students": 
+    [
+        {"firstName":"Tom" , "lastName":"Jackson"} ,
+        {"firstName":"Linda" , "lastName":"Garner"} ,
+        {"firstName":"Adam" , "lastName":"Cooper"}
+    ]
+}
+```
+
+### Arrays anidats
+
+Els valors d'un **array** també poden ser **altres arrays**:
+
+**Exemple:**
+
+```javascript
+{
+  "name":"John",
+  "age":30,
+  "cars": [
+    { "name":"Ford", "models":[ "Fiesta", "Focus", "Mustang" ] },
+    { "name":"BMW", "models":[ "320", "X3", "X5" ] },
+    { "name":"Fiat", "models":[ "500", "Panda" ] }
+  ]
+ }
 ```
 
 ## Comparació de JSON i XML
@@ -105,12 +125,13 @@ Tant JSON com XML:
 
 ## Validació
 
-Podem comprovar la validesa d'un fitxer JSON amb eines ON-LINE com per exemple:
+Podem comprovar la validesa d'un fitxer JSON amb eines on-line com per exemple:
 
 * [JSONFormatter](https://jsonformatter.curiousconcept.com/)
 * [JSONViewer](http://jsonviewer.stack.hu/)
+* [JSONLint](https://jsonlint.com/)
 
-## Usant JSON en JavaScript
+## Utilitzant JSON en JavaScript
 
 
 
