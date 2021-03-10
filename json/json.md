@@ -8,6 +8,8 @@ Va néixer com a alternativa al **XML**.
 
 Actualment està superant l'ús del **XML** en aplicacions web, gràcies a la **facilitat**, **portabilitat** i **llegibilitat.**
 
+ L'**extensió** dels fitxers JSON és **`.json`**.
+
 ## **Sintaxi JSON**
 
 * Les dades s'escriuen com a parelles de **`nom`** i **`valor`**.
