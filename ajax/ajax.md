@@ -15,7 +15,16 @@ En les **aplicacions web tradicionals:**
 
 ![](../.gitbook/assets/ajax_logo.jpg)
 
-### **Funcionament d’una aplicació AJAX**
+### **Mètodes AJAX natius**
+
+Actualment existeix dues maneres d'**utilitzar AJAX de forma nativa** \(sense ús de Frameworks\) en Javascript.
+
+* **XMLHttpRequest**
+* **API Fetch**
+
+### Objecte **XMLHttpRequest**
+
+**Funcionament d’una aplicació AJAX**
 
 1r. Un esdeveniment desencadena la necessitat de sol·licitar informació al servidor.
 
@@ -32,20 +41,40 @@ En les **aplicacions web tradicionals:**
 ```javascript
 function enviarPeticioAJAX() {
     // 1. Instanciar l’objecte XMLHttpRequest
-    var xmlhttp = new XMLHttpRequest();
+    var xhttp= new XMLHttpRequest();
     
     // 2. Preparar la funció de resposta
-    xmlhttp.onreadystatechange = function() {
-      	//codi a executar quan es rep la resposta
+    xhttp.onreadystatechange = function() {
+      	//codi a executar quan es rep la resposta        
+      
+        if (this.readyState == 4 && this.status == 200) {
+           //Si l'estat de la resposta és 4 = DONE
+           //i el codi de resposta és 200 = OK
+           document.getElementById("demo").innerHTML = this.responseText;
+        }
     };
     
     // 3. Crear la petició a servidor
-    xmlhttp.open("GET", "ajax.php", true);
+    xhttp.open("GET", "http://url_solicitada");
     
     // 4. Enviament de la petició
-    xmlhttp.send();
+    xhttp.send();
 }
 ```
 
-\*\*\*\*
+### API Fetch
+
+
+
+### Enviament de dades JSON <a id="enviament-de-dades"></a>
+
+El mètode `JSON.stringify()` permet convertir un objecte Javascript en una cadena _\(string\)_ JSON, preparada per enviar-la a un servidor web.
+
+[Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjson_send)
+
+### Recepció de dades JSON <a id="recepci&#xF3;-de-dades"></a>
+
+El mètode `JSON.parse()` permet convertir els cadenes _\(strings\)_ JSON rebudes del servidor web en un objecte JavaScript.
+
+[Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjson_receive)
 
