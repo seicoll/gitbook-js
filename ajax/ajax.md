@@ -19,16 +19,33 @@ En les **aplicacions web tradicionals:**
 
 1r. Un esdeveniment desencadena la necessitat de sol·licitar informació al servidor.
 
-2n. Instanciar l’objecte XMLHttpRequest que en ens proporciona funcionalitat necessària per enviar i rebre informació de forma asíncrona.
+2n. **Instanciar l’objecte XMLHttpRequest** que en ens proporciona funcionalitat necessària per enviar i rebre informació de forma asíncrona.
 
-3r. Preparar la funció de resposta que s’encarregarà de processar la informació de resposta del servidor.
+3r. **Preparar la funció de resposta** que s’encarregarà de processar la informació de resposta del servidor.
 
-4t. Crear la petició a servidor.
+4t. **Crear la petició** a servidor.
 
-5è. Enviament de la petició al servidor.
+5è. **Enviament de la petició** al servidor.
 
-6è. Executar la funció de resposta.  
+6è. Executar la **funció de resposta**.
 
+```javascript
+function enviarPeticioAJAX() {
+    // 1. Instanciar l’objecte XMLHttpRequest
+    var xmlhttp = new XMLHttpRequest();
+    
+    // 2. Preparar la funció de resposta
+    xmlhttp.onreadystatechange = function() {
+      	//codi a executar quan es rep la resposta
+    };
+    
+    // 3. Crear la petició a servidor
+    xmlhttp.open("GET", "ajax.php", true);
+    
+    // 4. Enviament de la petició
+    xmlhttp.send();
+}
+```
 
 \*\*\*\*
 
