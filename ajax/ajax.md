@@ -10,7 +10,7 @@ En les **aplicacions web tradicionals:**
 
 **AJAX** permet millorar la interacció de l'usuari modificant part de la pàgina sense haver de recarregar la pàgina completament.
 
-1. L'**intercanvi d'informació** amb el servidor l’executa el Javascript fent una petició AJAX en un segon pla.
+1. L'**intercanvi d'informació** amb el servidor l’executa el Javascript fent una petició AJAX en un segon pla. Ajax és **asíncronja qu**  que les dades addicionals són demanades i carregades en un segon pla, sense interferir en la presentació i el comportament de la pàgina
 2. Un cop es rep la resposta del servidor, es canvien **únicament les parts necessàries** de la pàgina.
 
 ![](../.gitbook/assets/ajax_logo.jpg)
@@ -64,7 +64,25 @@ function enviarPeticioAJAX() {
 
 ### API Fetch
 
-
+```javascript
+function enviarPeticioAJAX() {
+    
+   fetch('http://url_solicitada')
+      .then(
+         //codi a executar quan es rep la resposta
+         response => {      //response contindrà la resposta del servidor
+             let dades = JSON.parse(response).results;
+             console.log('Este es el objeto amb les dades', dades);
+        }
+      )
+      .catch(
+         //codi a executar quan la petició ha fallat
+         err => {         //err contindrà l'error produït
+           console.log(err);
+         }
+      );
+}
+```
 
 ### Enviament de dades JSON <a id="enviament-de-dades"></a>
 
