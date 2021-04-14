@@ -6,9 +6,13 @@
 
 Va néixer com a alternativa al **XML**.
 
+S’utilitza molt per enviar informació des del servidor a una pàgina web.
+
 Actualment està superant l'ús del **XML** en aplicacions web, gràcies a la **facilitat**, **portabilitat** i **llegibilitat.**
 
  L'**extensió** dels fitxers JSON és **`.json`**.
+
+![](../.gitbook/assets/1_vcvipmqmjdbefcqf5f7p9q.png)
 
 ## **Sintaxi JSON**
 

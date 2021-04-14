@@ -32,6 +32,10 @@
 * [JSON](json/json.md)
 * [Exercicis](json/exercicis.md)
 
+## AJAX
+
+* [AJAX](ajax/ajax.md)
+
 ---
 
 * [Bibliografia](bibliografia.md)
