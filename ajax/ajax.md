@@ -48,8 +48,8 @@ function enviarPeticioAJAX() {
       	//codi a executar quan es rep la resposta        
       
         if (this.readyState == 4 && this.status == 200) {
-           //Si l'estat de la resposta és 4 = DONE
-           //i el codi de resposta és 200 = OK
+           //Si l'estat de la resposta és 4 = DONE (Petició completada)
+           //i el codi de resposta és 200 = OK (Resposta correcte)
            document.getElementById("demo").innerHTML = this.responseText;
         }
     };
