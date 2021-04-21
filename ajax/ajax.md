@@ -10,7 +10,7 @@ En les **aplicacions web tradicionals:**
 
 **AJAX** permet millorar la interacció de l'usuari modificant part de la pàgina sense haver de recarregar la pàgina completament.
 
-1. L'**intercanvi d'informació** amb el servidor l’executa el Javascript fent una petició AJAX en un segon pla. Ajax és **asíncron perquèj**a que les dades addicionals són demanades i carregades en un segon pla, sense interferir en la presentació i el comportament de la pàgina
+1. L'**intercanvi d'informació** amb el servidor l’executa el Javascript fent una petició AJAX en un segon pla. Ajax és **asíncron** perquè ****les dades addicionals són demanades i carregades en un segon pla, sense interferir en la presentació i el comportament de la pàgina
 2. Un cop es rep la resposta del servidor, es canvien **únicament les parts necessàries** de la pàgina.
 
 ![](../.gitbook/assets/ajax_logo.jpg)
