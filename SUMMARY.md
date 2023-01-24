@@ -36,11 +36,10 @@
 
 * [AJAX](ajax/ajax.md)
 
----
+***
 
-* [Bibliografia](bibliografia.md)
+* [Bibliografia i Cursos JS](bibliografia.md)
 
 ## Serveis Web
 
 * [Serveis Web](serveis-web/serveis-web.md)
-
