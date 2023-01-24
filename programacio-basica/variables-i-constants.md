@@ -1,7 +1,7 @@
 # Variables i constants
 
 {% hint style="info" %}
-Una **variable** és un element que s'utilitza per emmagatzemar un valor.&#x20;
+Una **variable** és un element que s'utilitza per emmagatzemar un valor. 
 {% endhint %}
 
 Les variables en JavaScript es creen mitjançant la paraula reservada **`var`**.
@@ -14,29 +14,9 @@ var numero_2 = 1;
 var resultat = numero_1 + numero_2;
 ```
 
-### Problema en sobreescriure variables
+### Declaració de variables
 
-Un dels problemes més grans amb la declaració de variables utilitzant la paraula clau **`var`** és que tu pots fàcilment sobreescriure declaracions de variables:
-
-```javascript
-var camper = "James";
-var camper = "David"; 
-console.log(camper); 
-```
-
-Al codi anterior, la variable **`camper`** es declara originalment com `James`, i s'anul·la per ser `David`. La consola després mostra la cadena de text `David`.
-
-En una aplicació petita, potser no us trobeu amb aquest tipus de problema. Però a mesura que el teu codi base es fa més gran, **pot ser que accidentalment sobrescriguis una variable que no tenies la intenció de fer**.&#x20;
-
-Com que aquest comportament no causa un error, la cerca i correcció d'errors es torna més difícil.
-
-La paraula reservada **`let`** va ser introduïda a **ES6**, una actualització important per JavaScript, per resoldre aquest problema potencial amb la paraula clau var.
-
-{% hint style="info" %}
-És recomanable utilitzar en la decalarició de variables **let**
-{% endhint %}
-
-### Diferència entre var i let
+En javascript hi ha dues formes de declarar variables: **`var`** i **`let`**.
 
 **Diferències:**
 
@@ -63,11 +43,11 @@ if (true) {
 console.log(elMeuNumero); // 123
 ```
 
-### No és necessari declarar les variables
+### 
 
-Una de les característiques més sorprenents de Javascript per als programadors habituats a altres llenguatges de programació és que **no és necessari declarar variables**.&#x20;
+Una de les característiques més sorprenents de Javascript per als programadors habituats a altres llenguatges de programació és que **no és necessari declarar variables**. 
 
-Per tant, es considera correcte:
+Per tant es considera correcte:
 
 ```javascript
 numero_1 = 3;
@@ -83,7 +63,7 @@ Es recomana i serà necessari **declarar totes les variables** que s'hagin d'uti
 
 #### Exemple d'ús de variables
 
-![](https://lh4.googleusercontent.com/YNgVRrd-Hsg91VoyPXj-0meHOVx1lGmn6lGhkkSVPsXTTzPfC6QFMm5Cl47LNn5d6WBC1KMAZk8fe-TGNIAW98qlEasUlrFD5sonGkpnfx1F\_qmOdYFEa4kFhguLiOK77dI9GcJoZQ)
+![](https://lh4.googleusercontent.com/YNgVRrd-Hsg91VoyPXj-0meHOVx1lGmn6lGhkkSVPsXTTzPfC6QFMm5Cl47LNn5d6WBC1KMAZk8fe-TGNIAW98qlEasUlrFD5sonGkpnfx1F_qmOdYFEa4kFhguLiOK77dI9GcJoZQ)
 
 ### Declaració de constants
 
@@ -132,4 +112,5 @@ x = 5;           // Now x is a Number
 x = "John";      // Now x is a String
 ```
 
-[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs\_datatypes\_dynamic)
+[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs_datatypes_dynamic)
+
