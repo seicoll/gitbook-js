@@ -46,23 +46,33 @@ function nomFuncio(parameter1, parameter2, parameter3) {
 </html>
 ```
 
-[Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjs_functions)
+[Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjs\_functions)
 
 **Paràmetres:**
 
-* El **nombre d'arguments** que es passa a una funció hauria de ser el mateix que el nombre d'arguments que ha indicat la funció. 
-* JavaScript **no mostra cap error** si es passen més o menys arguments dels necessaris. 
-* L'**ordre dels arguments és fonamental**, les dades que s'esperen en la funció van directament relacionades amb els arguments especificats en la funció. 
-* No és obligatori que coincideixi el **nom dels arguments** que utilitza la funció i el nom 
+* El **nombre d'arguments** que es passa a una funció hauria de ser el mateix que el nombre d'arguments que ha indicat la funció.&#x20;
+* JavaScript **no mostra cap error** si es passen més o menys arguments dels necessaris.&#x20;
+* L'**ordre dels arguments és fonamental**, les dades que s'esperen en la funció van directament relacionades amb els arguments especificats en la funció.&#x20;
+*   No és obligatori que coincideixi el **nom dels arguments** que utilitza la funció i el nom&#x20;
 
-  dels arguments que se li passen.
+    dels arguments que se li passen.
 
 **Return:**
 
 * La instrucció **`return`** serveix per indicar quin valor retorna la funció.
 * Quan s'arriba a la instrucció **`return`**, la funció deixa d'executar-se.
 
+### Àmbit global i local
+
+* **Àmbit** fa referència a la visibilitat de les variables.&#x20;
+* Les variables definides fora d'un bloc de funció tenen un **àmbit Global**.&#x20;
+* Això significa que poden ser utilitzades des de qualsevol lloc al teu codi JavaScript.
+* Les variables que es declaren sense les paraules clau **`let`** o **`const`** es creen automàticament en l'àmbit **Global.**
+
+{% hint style="danger" %}
+Sempre has de declarar les teves variables amb **`let`** o **`const`**.
+{% endhint %}
+
 ## Documentació i recursos
 
-* **w3schools: Functions** [https://www.w3schools.com/js/js\_functions.asp](https://www.w3schools.com/js/js_functions.asp)
-
+* **w3schools: Functions** [https://www.w3schools.com/js/js\_functions.asp](https://www.w3schools.com/js/js\_functions.asp)
