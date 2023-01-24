@@ -6,11 +6,11 @@ Fins ara heu treballat amb pàgines **web estàtiques**
 
 * Estan allotjades a un servidor.
 * Des del client es descarrega la pàgina i es _renderitza_ al navegador.
-* Els llenguatges utilitzats son **HTML** (contingut) i **CSS** (format).
+* Els llenguatges utilitzats son **HTML** \(contingut\) i **CSS** \(format\).
 
-![](https://www.imaginanet.com/thumb.php?n=blog%2F10herramientas.jpg\&w=640\&h=250\&x=0\&y=0)
+![](https://www.imaginanet.com/thumb.php?n=blog%2F10herramientas.jpg&w=640&h=250&x=0&y=0)
 
-Es poden aconseguir pàgines **web dinàmiques** si hi afegim estructures de programació. Però…&#x20;
+Es poden aconseguir pàgines **web dinàmiques** si hi afegim estructures de programació. Però… 
 
 **A on s’executarà el codi, al navegador o al servidor?**
 
@@ -18,7 +18,7 @@ Es poden aconseguir pàgines **web dinàmiques** si hi afegim estructures de pro
 
 ### Front-end
 
-Tecnologies que s'executen al costat del client (navegador).
+Tecnologies que s'executen al costat del client \(navegador\).
 
 ![JavaScript](http://lineadecodigo.com/wp-content/uploads/2014/04/javascript.png)
 
@@ -32,8 +32,7 @@ Tecnologies que s'executen al servidor.
 
 * **Javascript** és el que es coneix com un llenguatge de **script.**
   * És un codi inserit en un document
-* Javascript és **interpretat** directament pel navegador.\
-
+* Javascript és **interpretat** directament pel navegador. 
 * JavaScript i Java: diferents llenguatges, sintaxi semblant.
 
 ## Història
@@ -45,7 +44,6 @@ Tecnologies que s'executen al servidor.
 
 * Microsoft llança **JScript** a Internet Explorer 3.
   * Igual que JavaScript, amb un altre nom per evitar problemes legals.
-* Netscape estandarditza el llenguatge a l'organisme ECMA.&#x20;
-  * El 1997, aquest organisme crea el primer estàndard del llenguatge JavaScript que va anomenar **ECMAScript**
-* El juny de 2015 es va publicar l'estàndard **ECMAScript 6**
-* La **versió 7 d'ECMAScript es coneix com a ECMAScript 2016**, i és l'última versió disponible, publicada el juny del 2016.
+* Netscape estandarditza el llenguatge a l'organisme ECMA: **ECMAScript**
+* Última versió: **ECMAScript 2020**
+
