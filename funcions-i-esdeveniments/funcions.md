@@ -74,7 +74,7 @@ Segons l'àmbit, existeixen dos tipus de variables:
 #### Variables globals
 
 * Les variables definides fora d'un bloc de funció tenen un **àmbit Global**.&#x20;
-* Això significa que poden ser utilitzades des de qualsevol lloc al teu codi JavaScript.
+* Això significa que poden ser **utilitzades des de qualsevol lloc** al teu codi JavaScript.
 * Les variables que es declaren sense les paraules clau **`let`** o **`const`** es creen automàticament en l'àmbit **Global.**
   * Això pot portar problemes amb variables que s'estan modificant a llocs inesperats.
 
@@ -83,6 +83,9 @@ Sempre has de declarar les teves variables amb **`let`** o **`const`**.
 {% endhint %}
 
 #### Variables locals
+
+* Les variables que es declaren dins una funció tenen un **àmbit local**.&#x20;
+* **Només són visibles dins d'aquesta funció.**
 
 ## Documentació i recursos
 
