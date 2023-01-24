@@ -64,14 +64,25 @@ function nomFuncio(parameter1, parameter2, parameter3) {
 
 ### Àmbit global i local
 
-* **Àmbit** fa referència a la visibilitat de les variables.&#x20;
+**L'àmbit** fa referència a la visibilitat de les variables.&#x20;
+
+Segons l'àmbit, existeixen dos tipus de variables:
+
+* Variables **globals**
+* Variables **locals**
+
+#### Variables globals
+
 * Les variables definides fora d'un bloc de funció tenen un **àmbit Global**.&#x20;
 * Això significa que poden ser utilitzades des de qualsevol lloc al teu codi JavaScript.
 * Les variables que es declaren sense les paraules clau **`let`** o **`const`** es creen automàticament en l'àmbit **Global.**
+  * Això pot portar problemes amb variables que s'estan modificant a llocs inesperats.
 
 {% hint style="danger" %}
 Sempre has de declarar les teves variables amb **`let`** o **`const`**.
 {% endhint %}
+
+#### Variables locals
 
 ## Documentació i recursos
 
