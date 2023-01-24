@@ -6,7 +6,9 @@ Com en HTML, JavaScript **ignora qualsevol espai en blanc sobrant**, el codi es 
 
 Per exemple: Tabulant, amb espais, etc.
 
-### **Es distingeixen les majúscules de les minúscules:**&#xD;
+### **Es distingeixen les majúscules de les minúscules**&#xD;
+
+JavaScript és **Case sensitive**.
 
 En JavaScript una variable anomenada **`Comptador`** no és el mateix que **`comptador`**.
 
