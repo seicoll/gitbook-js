@@ -62,7 +62,7 @@ function nomFuncio(parameter1, parameter2, parameter3) {
 * La instrucció **`return`** serveix per indicar quin valor retorna la funció.
 * Quan s'arriba a la instrucció **`return`**, la funció deixa d'executar-se.
 
-### Àmbit global i local
+## Àmbit global i local
 
 **L'àmbit** fa referència a la visibilitat de les variables.&#x20;
 
