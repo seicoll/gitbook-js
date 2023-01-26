@@ -7,7 +7,7 @@ Els **operadors** permeten **manipular el valor de les variables**, realitzar op
 ### Assignació
 
 {% hint style="info" %}
-L'operador d'**assignació \( `=` \)** serveix per emmagatzemar un valor en una variable.
+L'operador d'**assignació ( `=` )** serveix per emmagatzemar un valor en una variable.
 {% endhint %}
 
 Assigna la part de la dreta de l'igual a la part de l'esquerra. A la dreta es col·loquen els valors finals i a l'esquerra generalment es col·loca una variable on volem guardar la dada.
@@ -25,7 +25,7 @@ numero1 = 5; 			    // Ara, la variable numero1 val 5
 numero1 = numero2;    // Ara, la variable numero1 val 4 
 ```
 
-### Operadors aritmètics
+### &#xD;Operadors aritmètics
 
 {% hint style="info" %}
 S'utilitzen per a la realització d'**operacions matemàtiques** simples com la suma, resta o multiplicació.
@@ -33,47 +33,13 @@ S'utilitzen per a la realització d'**operacions matemàtiques** simples com la 
 
 Són les següents:
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Operador</th>
-      <th style="text-align:left">Nom</th>
-      <th style="text-align:left">Descripci&#xF3;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">+</td>
-      <td style="text-align:left">Suma</td>
-      <td style="text-align:left"></td>
-    </tr>
-    <tr>
-      <td style="text-align:left">-</td>
-      <td style="text-align:left">Resta</td>
-      <td style="text-align:left">Tamb&#xE9; pot utilitzar-se per canviar el signe d&apos;un n&#xFA;mero
-        si s&apos;utilitza amb un sol operand (p.ex. -23).</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">*</td>
-      <td style="text-align:left">Multiplicaci&#xF3;</td>
-      <td style="text-align:left"></td>
-    </tr>
-    <tr>
-      <td style="text-align:left">/</td>
-      <td style="text-align:left">Divisi&#xF3;</td>
-      <td style="text-align:left"></td>
-    </tr>
-    <tr>
-      <td style="text-align:left">%</td>
-      <td style="text-align:left">Residu</td>
-      <td style="text-align:left">
-        <p></p>
-        <p>Residu de la divisi&#xF3; de dos n&#xFA;meros (<code>3%2</code> retorna <code>1</code> ,
-          el residu de dividir <code>3</code> entre <code>2</code>).</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Operador | Nom           | Descripció                                                                                                                                              |
+| -------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| +        | Suma          |                                                                                                                                                         |
+| -        | Resta         | També pot utilitzar-se per canviar el signe d'un número si s'utilitza amb un sol operand (p.ex. -23).                                                   |
+| \*       | Multiplicació |                                                                                                                                                         |
+| /        | Divisió       |                                                                                                                                                         |
+| %        | Residu        | <p></p><p>Residu de la divisió de dos números (<code>3%2</code> retorna <code>1</code> , el residu de dividir <code>3</code> entre <code>2</code>).</p> |
 
 ### Operadors d'assignació
 
@@ -91,7 +57,7 @@ nombre1 %= 4;   // nombre1 = nombre1 % 4 = 1
 ### Increment i decrement
 
 {% hint style="info" %}
-S'utilitza per **incrementar** \(**`++`**\) o **decrementar** \(**`--`**\) en una unitat el valor d'una variable.
+S'utilitza per **incrementar** (**`++`**) o **decrementar** (**`--`**) en una unitat el valor d'una variable.
 {% endhint %}
 
 Aquests dos operadors només són vàlids per a les variables numèriques.
@@ -151,10 +117,10 @@ nombre3 = nombre1++ + nombre2; // nombre3 = 7
 ### Operadors lògics
 
 {% hint style="info" %}
-Els **operadors lògics** serveixen per realitzar operacions lògiques, que són aquelles que donen com resultat valor boolèa \(**`true`** o **`false`** \).
+Els **operadors lògics** serveixen per realitzar operacions lògiques, que són aquelles que donen com resultat valor boolèa (**`true`** o **`false`** ).
 {% endhint %}
 
-**Operador AND \(`&&`\)**
+**Operador AND (`&&`)**
 
 El resultat només és `true` si els dos operands són `true`.
 
@@ -168,7 +134,7 @@ valor2 = true;
 resultat = valor1 && valor2; // resultat = true
 ```
 
-**Operador OR \(`||`\)**
+**Operador OR (`||`)**
 
 El resultat és `true` si algun dels dos operands és `true`.****
 
@@ -182,7 +148,7 @@ valor2 = false;
 resultat = valor1 || valor2; // resultat = false
 ```
 
-#### Operador NO o negació \(`!`\)
+#### Operador NO o negació (`!`)
 
 S'utilitza per canviar el valor booleà d'una variable. Si una variable val `true`, la negació de la variable passa a valer `false` i viceversa.
 
@@ -198,32 +164,25 @@ Els operadors condicionals s'utilitzen en les expressions condicionals per prend
 Operadors condicionals:
 
 | Operador | Significat |
-| :--- | :--- |
-
+| -------- | ---------- |
 
 | == | Comprova si dos valors són iguals |
-| :--- | :--- |
-
+| -- | --------------------------------- |
 
 | != | Comprova si dos valors són diferents |
-| :--- | :--- |
+| -- | ------------------------------------ |
 
+| > | Comprova si el primer valor és major que el segon |
+| - | ------------------------------------------------- |
 
-| &gt; | Comprova si el primer valor és major que el segon |
-| :--- | :--- |
+| >= | Comprova si el primer valor és major o igual que el segon |
+| -- | --------------------------------------------------------- |
 
+| < | Comprova si el primer valor és menor que el segon |
+| - | ------------------------------------------------- |
 
-| &gt;= | Comprova si el primer valor és major o igual que el segon |
-| :--- | :--- |
-
-
-| &lt; | Comprova si el primer valor és menor que el segon |
-| :--- | :--- |
-
-
-| &lt;= | Comprova si el primer valor és menor o igual que el segon |
-| :--- | :--- |
-
+| <= | Comprova si el primer valor és menor o igual que el segon |
+| -- | --------------------------------------------------------- |
 
 ### Operadors de cadenes
 
@@ -238,7 +197,7 @@ let cadenaConcatenada = cadena1 + cadena2; //cadena concatenada val "holamundo"
 ```
 
 {% hint style="warning" %}
- L'operador **+** serveix per a dos usos diferents. Si els seus operands són números els **suma**, però si es tracta de cadenes les **concatena**.
+&#x20;L'operador **+** serveix per a dos usos diferents. Si els seus operands són números els **suma**, però si es tracta de cadenes les **concatena**.
 {% endhint %}
 
 Javascript és prou llest per entendre quin tipus d'operació realitzar mitjançant una **comprovació dels tipus** que estan implicats en l'operació.
@@ -255,53 +214,53 @@ let miCadena2 += miNumero; //miCadena2 ahora val "45623"
 
 ### Precedència dels operadors
 
-Els operadors s'avaluen d'**esquerra a dreta**, però hi ha unes normes addicionals, per les quals **determinats operadors s'avaluen abans que altres**. 
+Els operadors s'avaluen d'**esquerra a dreta**, però hi ha unes normes addicionals, per les quals **determinats operadors s'avaluen abans que altres**.&#x20;
 
 Moltes d'aquestes regles de precedència estan tretes de les matemàtiques i són comuns a altres llenguatges, les podem veure a continuació.
 
 **Prioritat dels operadors:**
 
-| Operador | Significat |
-| :--- | :--- |
-| `()`, `[]` | Parèntesi, claudàtors |
-| `!`, `-`, `++`, `--` | negació, negatiu, increments o decrements |
-| `*`, `/`, `%` | Multiplicació, divisió i mòdul \(residu de la divisió\) |
-| `+`, `-` | Suma i resta |
-| `<`, `<=`, `>`, `>=` | Operadors condicionals |
-| `==`, `!=` | Operadors condicionals d'igualtat i desigualtat |
-| `&`, `^`, `|` | Operadors lògics a nivell de bit |
-| `&&`, `||` Operadors lògics booleans |  |
-| `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `<<=`, `>>=`, `>>>=`, `&=`, `^=`, `!=` | Assignació |
+| Operador                                                                  | Significat                                            |
+| ------------------------------------------------------------------------- | ----------------------------------------------------- |
+| `()`, `[]`                                                                | Parèntesi, claudàtors                                 |
+| `!`, `-`, `++`, `--`                                                      | negació, negatiu, increments o decrements             |
+| `*`, `/`, `%`                                                             | Multiplicació, divisió i mòdul (residu de la divisió) |
+| `+`, `-`                                                                  | Suma i resta                                          |
+| `<`, `<=`, `>`, `>=`                                                      | Operadors condicionals                                |
+| `==`, `!=`                                                                | Operadors condicionals d'igualtat i desigualtat       |
+| `&`, `^`, `\|`                                                            | Operadors lògics a nivell de bit                      |
+| `&&`, `\|\|` Operadors lògics booleans                                    |                                                       |
+| `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `<<=`, `>>=`, `>>>=`, `&=`, `^=`, `!=` | Assignació                                            |
 
 **Exemple:**
 
 En el següent exemple podem veure com les expressions podrien arribar a ser confuses, però amb la taula de precedència d'operadors podrem entendre sense errors quin és l'ordre pel qual s'executen.
 
-```text
+```
 12 * 3 + 4 - 8 / 2 % 3
 ```
 
 En aquest cas primer s'executen els operadors `*`, `/` i `%`, d'esquerra a dreta, de manera que es farien aquestes operacions. Primer la multiplicació i després la divisió per estar més a l'esquerra de la lliçó.
 
-```text
+```
 36 + 4 - 4 % 3
 ```
 
 Ara el mòdul.
 
-```text
+```
 36 + 4 - 1
 ```
 
 Finalment les sumes i les restes d'esquerra a dreta.
 
-```text
+```
 40 - 1
 ```
 
 El que ens dóna com a resultat el valor següent.
 
-```text
+```
 39
 ```
 
@@ -310,4 +269,3 @@ L'**ús dels parèntesis** pot estalviar-nos molts mals de cap i sobretot la nec
 {% endhint %}
 
 Quan veiem poc clar l'ordre amb el qual s'executaran les sentències podem utilitzar-los i així forçar que s'avaluï abans el tros d'expressió que es troba dins dels parèntesis.
-

@@ -1,23 +1,24 @@
 # AJAX
 
-> **AJAX** \(**A**synchronous **J**avaScript **A**nd **X**ML\) és un tècnica que permet comunicar-se amb el servidor i actualizar el contingut d'una pàgina web sense haver de recarregar tota la pàgina.
+> **AJAX** (**A**synchronous **J**avaScript **A**nd **X**ML) és un tècnica que permet comunicar-se amb el servidor i actualizar el contingut d'una pàgina web sense haver de recarregar tota la pàgina.
 
 En les **aplicacions web tradicionals:**
 
-1. Les accions de l'usuari \(clicar un enllaç, enviar formulari, etc.\) desencadenen crides al servidor. 
+1. Les accions de l'usuari (clicar un enllaç, enviar formulari, etc.) desencadenen crides al servidor.&#x20;
 2. Un cop processada la petició de l'usuari, **el servidor retorna una nova pàgina** HTML al navegador de l'usuari.
 3. En realitzar peticions contínues al servidor, l'usuari ha d'**esperar que es recarregui la pàgina** amb els canvis sol·licitats i això pot resultar molest.
 
 **AJAX** permet millorar la interacció de l'usuari modificant part de la pàgina sense haver de recarregar la pàgina completament.
 
-1. L'**intercanvi d'informació** amb el servidor l’executa el Javascript fent una petició AJAX en un segon pla. Ajax és **asíncron** perquè ****les dades addicionals són demanades i carregades en un segon pla, sense interferir en la presentació i el comportament de la pàgina
+1. L'**intercanvi d'informació** amb el servidor l’executa el Javascript fent una petició AJAX en un segon pla.\
+   Ajax és **asíncron** perquè **** les dades addicionals són demanades i carregades en un segon pla, sense interferir en la presentació i el comportament de la pàgina
 2. Un cop es rep la resposta del servidor, es canvien **únicament les parts necessàries** de la pàgina.
 
-![](../.gitbook/assets/ajax_logo.jpg)
+![](../.gitbook/assets/ajax\_logo.jpg)
 
 ### **Mètodes AJAX natius**
 
-Actualment existeix dues maneres d'**utilitzar AJAX de forma nativa** \(sense ús de Frameworks\) en Javascript.
+Actualment existeix dues maneres d'**utilitzar AJAX de forma nativa** (sense ús de Frameworks) en Javascript.
 
 * **XMLHttpRequest**
 * **API Fetch**
@@ -84,15 +85,14 @@ function enviarPeticioAJAX() {
 }
 ```
 
-### Enviament de dades JSON <a id="enviament-de-dades"></a>
+### Enviament de dades JSON <a href="#enviament-de-dades" id="enviament-de-dades"></a>
 
-El mètode `JSON.stringify()` permet convertir un objecte Javascript en una cadena _\(string\)_ JSON, preparada per enviar-la a un servidor web.
+El mètode `JSON.stringify()` permet convertir un objecte Javascript en una cadena _(string)_ JSON, preparada per enviar-la a un servidor web.
 
-[Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjson_send)
+[Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjson\_send)
 
-### Recepció de dades JSON <a id="recepci&#xF3;-de-dades"></a>
+### Recepció de dades JSON <a href="#recepcio-de-dades" id="recepcio-de-dades"></a>
 
-El mètode `JSON.parse()` permet convertir els cadenes _\(strings\)_ JSON rebudes del servidor web en un objecte JavaScript.
+El mètode `JSON.parse()` permet convertir els cadenes _(strings)_ JSON rebudes del servidor web en un objecte JavaScript.
 
-[Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjson_receive)
-
+[Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjson\_receive)

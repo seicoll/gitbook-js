@@ -46,9 +46,6 @@
 
 ## CLASSES
 
+* [Classe](classes/classe.md)
 * [Getters i setters](classes/getters-i-setters.md)
-
-***
-
-* [Mòduls: export i import](moduls-export-i-import.md)
-* [Classe](classe.md)
+* [Mòduls: export i import](classes/moduls-export-i-import.md)

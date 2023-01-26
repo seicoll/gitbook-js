@@ -1,6 +1,6 @@
 # Què es pot fer amb Javascript?
 
-\_\_[_Teoria completa www.w3schools.com_ ](https://www.w3schools.com/js/js_intro.asp)
+__[_Teoria completa www.w3schools.com_ ](https://www.w3schools.com/js/js\_intro.asp)
 
 ## Canviar contingut
 
@@ -19,7 +19,7 @@
 </html>
 ```
 
-[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_inner_html)
+[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs\_intro\_inner\_html)
 
 ## Canviar valors d'atributs
 
@@ -44,7 +44,7 @@
 </html>
 ```
 
-[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb%20)
+[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs\_intro\_lightbulb)
 
 ## Canviar estils
 
@@ -64,7 +64,7 @@
 </html>
 ```
 
-[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_style)
+[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs\_intro\_style)
 
 ## Ocultar elements
 
@@ -84,7 +84,7 @@
 </html>
 ```
 
-[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_hide)
+[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs\_intro\_hide)
 
 ## Mostrar elements
 
@@ -105,10 +105,9 @@
 </html>
 ```
 
-[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_show)
+[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs\_intro\_show)
 
 Fixa't en dos aspectes importants:
 
-* **Esdeveniments \(Events\)**: "coses" que passen en els elements HTML. JavaScript pot "reaccionar" a aquests esdeveniments.
+* **Esdeveniments (Events)**: "coses" que passen en els elements HTML. JavaScript pot "reaccionar" a aquests esdeveniments.
 * **Accés al DOM**: JavaScript pot accedir i canviar tots els elements del document HTML.
-

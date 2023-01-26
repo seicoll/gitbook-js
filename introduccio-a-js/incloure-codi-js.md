@@ -1,6 +1,6 @@
 # Incloure codi JS
 
-[Teoria completa a w3schools.com](https://www.w3schools.com/js/js_whereto.asp)
+[Teoria completa a w3schools.com](https://www.w3schools.com/js/js\_whereto.asp)
 
 Podem **incloure codi Javascript** en una pàgina web de 3 formes diferents:
 
@@ -31,7 +31,7 @@ Es recomana la definició del codi en la capçalera del document **`<head>`**.
 </html>
 ```
 
-[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs_whereto_head)
+[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs\_whereto\_head)
 
 **Inconvenients:**
 
@@ -58,7 +58,7 @@ function myFunction() {
 </html>
 ```
 
-[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs_whereto_body)
+[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs\_whereto\_body)
 
 **Inconvenients:**
 
@@ -96,23 +96,21 @@ function myFunction() {
 ```
 {% endcode %}
 
-**\`\`**[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs_whereto_external)
+**``**[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs\_whereto\_external)
 
 * Cada etiqueta **`<script>`** només pot enllaçar un únic arxiu.
 * En una mateixa pàgina es poden incloure tantes etiquetes _`<script>`_ com siguin necessàries.
-* Els arxius de tipus JavaScript són documents de text amb extensió **.js**. 
+* Els arxius de tipus JavaScript són documents de text amb extensió **.js**.&#x20;
 
-\*\*\*\*
+****
 
-#### Avantatges <a id="avantatges"></a>
+#### Avantatges <a href="#avantatges" id="avantatges"></a>
 
 * Separa HTML i del codi Javascript.
 * Fa que l’HTML i el JavaScript siguin més fàcil de llegir i mantenir
 * Qualsevol modificació que es realitza en l'arxiu Javascript es veu reflectida immediatament en totes les pàgines enllaçades.
 
-## 
+##
 
-##  
-
-
+## &#x20;
 

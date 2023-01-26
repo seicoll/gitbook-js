@@ -1,29 +1,39 @@
 # Sintaxi del llenguatge
 
-### **No es tenen en compte els espais en blanc i les noves línies**
+### **No es tenen en compte els espais en blanc i les noves línies**&#xD;
 
 Com en HTML, JavaScript **ignora qualsevol espai en blanc sobrant**, el codi es pot ordenar per a entendre'l millor.
 
 Per exemple: Tabulant, amb espais, etc.
 
-### **Es distingeixen les majúscules de les minúscules:** 
+### **Es distingeixen les majúscules de les minúscules**&#xD;
+
+JavaScript és **Case sensitive**.
 
 En JavaScript una variable anomenada **`Comptador`** no és el mateix que **`comptador`**.
 
-### **No es defineix el tipus de les variables**
 
-En crear una variable, no és necessari indicar el tipus de dada que emmagatzemarà. 
 
-### **No és necessari acabar cada sentència amb el caràcter de punt i coma \(;\)** 
+{% hint style="warning" %}
+**Majúscula != Minúscula**
+
+Comptador != comptador
+{% endhint %}
+
+### **No es defineix el tipus de les variables**&#xD;
+
+En crear una variable, no és necessari indicar el tipus de dada que emmagatzemarà.&#x20;
+
+### **No és necessari acabar cada sentència amb el caràcter de punt i coma (;)**&#xD;
 
 Encara que JavaScript **no obliga** a fer-ho, **és convenient seguir la tradició** d'acabar cada sentència amb el caràcter **`;`**
 
 ### **Comentaris**
 
-* Permeten afegir informació al codi font del programa. 
+* Permeten afegir informació al codi font del programa.&#x20;
 * El contingut dels comentaris no es visualitza per pantalla, però **s'envia al navegador** de l'usuari amb la resta del script i per tant es poden veure.
 
-#### Comentaris d’una sola línia****
+#### Comentaris d’una sola línia&#xD;****&#xD;
 
 ```javascript
 // Comentari una sola línia 
@@ -38,9 +48,7 @@ incloure molta informació en els comentaris */
 alert("Hi JS developers");
 ```
 
-\*\*\*\*
+****
 
-### 
-
-
+### &#xD;
 
