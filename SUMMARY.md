@@ -51,3 +51,4 @@
 ***
 
 * [Mòduls: export i import](moduls-export-i-import.md)
+* [Classe](classe.md)
