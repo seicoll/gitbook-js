@@ -43,3 +43,7 @@
 ## Serveis Web
 
 * [Serveis Web](serveis-web/serveis-web.md)
+
+## CLASSES
+
+* [Getters i setters](classes/getters-i-setters.md)
