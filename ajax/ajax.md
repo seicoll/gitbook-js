@@ -85,6 +85,35 @@ function enviarPeticioAJAX() {
 }
 ```
 
+### Exemple utilitzant la API [OpenWeather](https://openweathermap.org/) <a href="#enviament-de-dades" id="enviament-de-dades"></a>
+
+```javascript
+//Utilitzem API FETCH. fetch() retorna una Promesa
+  fetch("http://api.openweathermap.org/data/2.5/weather?q=" + ciutat + "&units=metric&lang=ca&mode=html&APPID=" + api_key)
+    .then((res) => {
+      //Si la promesa es resolt
+
+      //Si la resposta és correcta ? transformem la resposta a text i passem al següent then : Sinó executem el catch
+      return res.ok ?  res.text() : Promise.reject(res);
+      
+      //Si la resposta és un JSON
+      //return res.ok ?  res.json() : Promise.reject(res);
+    })
+    .then((html) => {
+      //Mostrem la resposta que és un HTML
+      document.getElementById("predicciohtml").innerHTML = html;
+    })
+    
+    .catch(err => {
+      //Si la promesa no es resolt
+      console.log(err);
+    })
+    
+    .finally(
+      //S'executa sempre
+    )
+```
+
 ### Enviament de dades JSON <a href="#enviament-de-dades" id="enviament-de-dades"></a>
 
 El mètode `JSON.stringify()` permet convertir un objecte Javascript en una cadena _(string)_ JSON, preparada per enviar-la a un servidor web.
