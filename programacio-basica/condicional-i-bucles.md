@@ -2,7 +2,7 @@
 
 ## Condicionals
 
-## `if`, `else if`, `else`
+### `if`, `else if`, `else`
 
 - Sintaxi bàsica:
   ```
@@ -48,7 +48,7 @@
 
 **Més informació a:** [w3schools.com - If](https://www.w3schools.com/js/js_if_else.asp)
 
-## `switch`
+### `switch`
 
 ```javascript
 <!DOCTYPE html>
