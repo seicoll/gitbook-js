@@ -87,10 +87,6 @@ Si les variables no estan declarades, JavaScript crea una variable global i assi
 Es recomana i serà necessari **declarar totes les variables** que s'hagin d'utilitzar.
 {% endhint %}
 
-#### Exemple d'ús de variables
-
-![](https://lh4.googleusercontent.com/YNgVRrd-Hsg91VoyPXj-0meHOVx1lGmn6lGhkkSVPsXTTzPfC6QFMm5Cl47LNn5d6WBC1KMAZk8fe-TGNIAW98qlEasUlrFD5sonGkpnfx1F_qmOdYFEa4kFhguLiOK77dI9GcJoZQ)
-
 ## Declaració de constants
 
 **Javascript** permet afegir _"variables immutables"_, també conegudes com a **constants**.
@@ -150,3 +146,7 @@ JavaScript és un llenguatge de **tipatge dinàmic** i **debilitat**. Això sign
      console.log("5" + 5); // "55" (Concatenació perquè "5" és un text)
      console.log("5" - 3); // 2 (Conversió implícita de "5" a número)
      ```
+
+- Exemple d'ús de les varialbles:
+
+  ![](https://lh4.googleusercontent.com/YNgVRrd-Hsg91VoyPXj-0meHOVx1lGmn6lGhkkSVPsXTTzPfC6QFMm5Cl47LNn5d6WBC1KMAZk8fe-TGNIAW98qlEasUlrFD5sonGkpnfx1F_qmOdYFEa4kFhguLiOK77dI9GcJoZQ)

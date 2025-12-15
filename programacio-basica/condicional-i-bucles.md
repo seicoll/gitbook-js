@@ -1,63 +1,80 @@
 # Condicionals i bucles
 
-## If
+## Condicionals
 
-```markup
-<!DOCTYPE html>
-<html>
-<body>
-  <p>Click the button to get a time-based greeting:</p>
-  <button onclick="myFunction()">Try it</button>
+## `if`, `else if`, `else`
+
+- Sintaxi bàsica:
+  ```
+  if (condició) {
+      // Codi si la condició és certa
+  } else if (altraCondició) {
+      // Codi si l'altra condició és certa
+  } else {
+      // Codi si cap condició és certa
+  }
+  ```
+- Exemple:
+
+  ```javascript
+  <!DOCTYPE html>
+  <html>
+  <body>
+
+  <h2>JavaScript if .. else</h2>
+
+  <p>A time-based greeting:</p>
+
   <p id="demo"></p>
 
-<script>
-  function myFunction() {
-    var greeting;
-    var time = new Date().getHours();
-    
-    if (time < 10) {
-      greeting = "Good morning";
-    } else if (time < 20) {
-      greeting = "Good day";
-    } else {
-      greeting = "Good evening";
-    }
-    document.getElementById("demo").innerHTML = greeting;
+  <script>
+  const time = new Date().getHours();
+  let greeting;
+  if (time < 10) {
+    greeting = "Good morning";
+  } else if (time < 20) {
+    greeting = "Good day";
+  } else {
+    greeting = "Good evening";
   }
-</script>
-</body>
-</html>
-```
+  document.getElementById("demo").innerHTML = greeting;
+  </script>
+
+  </body>
+  </html>
+  ```
 
 [Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjs_elseif)
 
 **Més informació a:** [w3schools.com - If](https://www.w3schools.com/js/js_if_else.asp)
 
-## Switch
+## `switch`
 
-```markup
+```javascript
 <!DOCTYPE html>
 <html>
 <body>
-  <h2>JavaScript Switch</h2>
+<h1>JavaScript Control Flow</h1>
+<h2>The switch Statement</h2>
 
-  <p id="demo"></p>
+<p id="demo"></p>
 
 <script>
-    var text;
-    
-    switch (new Date().getDay()) {
-        case 6:
-            text = "Today is Saturday";
-            break;
-        case 0:
-            text = "Today is Sunday";
-            break;
-        default:
-            text = "Looking forward to the Weekend";
-    }
-    
-    document.getElementById("demo").innerHTML = text;
+let day;
+let date = new Date().getDay();
+
+switch (date) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+}
+
+document.getElementById("demo").innerHTML = "Today is " + day;
 </script>
 
 </body>
@@ -68,9 +85,11 @@
 
 **Més informació a:** [w3schools.com - Switch](https://www.w3schools.com/js/js_switch.asp)
 
-## For
+## Bucles
 
-```markup
+### `for`
+
+```javascript
 <!DOCTYPE html>
 <html>
 <body>
@@ -95,9 +114,9 @@
 
 **Més informació a:** [w3schools.com - For Loop](https://www.w3schools.com/js/js_loop_for.asp)
 
-## While
+### `while`
 
-```markup
+```javascript
 <!DOCTYPE html>
 <html>
 <body>
@@ -122,4 +141,3 @@
 [Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjs_while)
 
 **Més informació a:** [w3schools.com - While Loop](https://www.w3schools.com/js/js_loop_while.asp)
-
