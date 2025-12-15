@@ -1,6 +1,6 @@
 # Què es pot fer amb Javascript?
 
-__[_Teoria completa www.w3schools.com_ ](https://www.w3schools.com/js/js\_intro.asp)
+[_Teoria completa www.w3schools.com_ ](https://www.w3schools.com/js/js_intro.asp)
 
 ## Canviar contingut
 
@@ -19,7 +19,7 @@ __[_Teoria completa www.w3schools.com_ ](https://www.w3schools.com/js/js\_intro.
 </html>
 ```
 
-[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs\_intro\_inner\_html)
+[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_inner_html)
 
 ## Canviar valors d'atributs
 
@@ -44,7 +44,7 @@ __[_Teoria completa www.w3schools.com_ ](https://www.w3schools.com/js/js\_intro.
 </html>
 ```
 
-[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs\_intro\_lightbulb)
+[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb)
 
 ## Canviar estils
 
@@ -64,7 +64,7 @@ __[_Teoria completa www.w3schools.com_ ](https://www.w3schools.com/js/js\_intro.
 </html>
 ```
 
-[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs\_intro\_style)
+[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_style)
 
 ## Ocultar elements
 
@@ -84,7 +84,7 @@ __[_Teoria completa www.w3schools.com_ ](https://www.w3schools.com/js/js\_intro.
 </html>
 ```
 
-[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs\_intro\_hide)
+[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_hide)
 
 ## Mostrar elements
 
@@ -105,9 +105,9 @@ __[_Teoria completa www.w3schools.com_ ](https://www.w3schools.com/js/js\_intro.
 </html>
 ```
 
-[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs\_intro\_show)
+[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_show)
 
 Fixa't en dos aspectes importants:
 
-* **Esdeveniments (Events)**: "coses" que passen en els elements HTML. JavaScript pot "reaccionar" a aquests esdeveniments.
-* **Accés al DOM**: JavaScript pot accedir i canviar tots els elements del document HTML.
+- **Esdeveniments (Events)**: "coses" que passen en els elements HTML. JavaScript pot "reaccionar" a aquests esdeveniments.
+- **Accés al DOM**: JavaScript pot accedir i canviar tots els elements del document HTML.
