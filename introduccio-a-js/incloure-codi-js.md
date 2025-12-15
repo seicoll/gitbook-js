@@ -121,22 +121,24 @@ function myFunction() {
 1. Crea una carpeta al teu ordinador per al projecte (exemple: `curs-javascript`).
 2. A VS Code, obre aquesta carpeta (`File > Open Folder`).
 3. Afegeix un nou fitxer `index.html` amb el següent contingut bàsic:
-   ```
+
+   ```html
    <!DOCTYPE html>
    <html lang="ca">
-   <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <head>
+       <meta charset="UTF-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
        <title>Primera prova amb JavaScript</title>
-   </head>
-   <body>
+     </head>
+     <body>
        <h1>Hola, món!</h1>
        <script src="script.js"></script>
-   </body>
+     </body>
    </html>
    ```
+
 4. Crea un altre fitxer anomenat `script.js` i afegeix-hi el següent codi:
-   ```
+   ```javascript
    console.log("El JavaScript funciona!");
    ```
 
