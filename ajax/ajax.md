@@ -4,17 +4,17 @@
 
 En les **aplicacions web tradicionals:**
 
-1. Les accions de l'usuari (clicar un enllaç, enviar formulari, etc.) desencadenen crides al servidor.&#x20;
+1. Les accions de l'usuari (clicar un enllaç, enviar formulari, etc.) desencadenen crides al servidor.
 2. Un cop processada la petició de l'usuari, **el servidor retorna una nova pàgina** HTML al navegador de l'usuari.
 3. En realitzar peticions contínues al servidor, l'usuari ha d'**esperar que es recarregui la pàgina** amb els canvis sol·licitats i això pot resultar molest.
 
 **AJAX** permet millorar la interacció de l'usuari modificant part de la pàgina sense haver de recarregar la pàgina completament.
 
 1. L'**intercanvi d'informació** amb el servidor l’executa el Javascript fent una petició AJAX en un segon pla.\
-   Ajax és **asíncron** perquè **** les dades addicionals són demanades i carregades en un segon pla, sense interferir en la presentació i el comportament de la pàgina
+   Ajax és **asíncron** perquè \*\*\*\* les dades addicionals són demanades i carregades en un segon pla, sense interferir en la presentació i el comportament de la pàgina
 2. Un cop es rep la resposta del servidor, es canvien **únicament les parts necessàries** de la pàgina.
 
-![](../.gitbook/assets/ajax\_logo.jpg)
+![](../.gitbook/assets/Ajax_Logo.jpg)
 
 ### **Mètodes AJAX natius**
 
@@ -118,10 +118,10 @@ function enviarPeticioAJAX() {
 
 El mètode `JSON.stringify()` permet convertir un objecte Javascript en una cadena _(string)_ JSON, preparada per enviar-la a un servidor web.
 
-[Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjson\_send)
+[Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjson_send)
 
 ### Recepció de dades JSON <a href="#recepcio-de-dades" id="recepcio-de-dades"></a>
 
 El mètode `JSON.parse()` permet convertir els cadenes _(strings)_ JSON rebudes del servidor web en un objecte JavaScript.
 
-[Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjson\_receive)
+[Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjson_receive)

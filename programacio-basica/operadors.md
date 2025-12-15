@@ -25,7 +25,7 @@ numero1 = 5; 			    // Ara, la variable numero1 val 5
 numero1 = numero2;    // Ara, la variable numero1 val 4 
 ```
 
-### &#xD;Operadors aritmètics
+### Operadors aritmètics
 
 {% hint style="info" %}
 S'utilitzen per a la realització d'**operacions matemàtiques** simples com la suma, resta o multiplicació.
@@ -33,13 +33,13 @@ S'utilitzen per a la realització d'**operacions matemàtiques** simples com la 
 
 Són les següents:
 
-| Operador | Nom           | Descripció                                                                                                                                              |
-| -------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| +        | Suma          |                                                                                                                                                         |
-| -        | Resta         | També pot utilitzar-se per canviar el signe d'un número si s'utilitza amb un sol operand (p.ex. -23).                                                   |
-| \*       | Multiplicació |                                                                                                                                                         |
-| /        | Divisió       |                                                                                                                                                         |
-| %        | Residu        | <p></p><p>Residu de la divisió de dos números (<code>3%2</code> retorna <code>1</code> , el residu de dividir <code>3</code> entre <code>2</code>).</p> |
+| Operador | Nom           | Descripció                                                                                            |
+| -------- | ------------- | ----------------------------------------------------------------------------------------------------- |
+| +        | Suma          |                                                                                                       |
+| -        | Resta         | També pot utilitzar-se per canviar el signe d'un número si s'utilitza amb un sol operand (p.ex. -23). |
+| \*       | Multiplicació |                                                                                                       |
+| /        | Divisió       |                                                                                                       |
+| %        | Residu        | Residu de la divisió de dos números (`3%2` retorna `1` , el residu de dividir `3` entre `2`).         |
 
 ### Operadors d'assignació
 
@@ -136,7 +136,9 @@ resultat = valor1 && valor2; // resultat = true
 
 **Operador OR (`||`)**
 
-El resultat és `true` si algun dels dos operands és `true`.****
+El resultat és `true` si algun dels dos operands és `true`.
+
+***
 
 ```javascript
 var valor1 = true; 
@@ -163,32 +165,9 @@ Els operadors condicionals s'utilitzen en les expressions condicionals per prend
 
 Operadors condicionals:
 
-| Operador | Significat |
-| -------- | ---------- |
-
-| == | Comprova si dos valors són iguals |
-| -- | --------------------------------- |
-
-| != | Comprova si dos valors són diferents |
-| -- | ------------------------------------ |
-
-| > | Comprova si el primer valor és major que el segon |
-| - | ------------------------------------------------- |
-
-| >= | Comprova si el primer valor és major o igual que el segon |
-| -- | --------------------------------------------------------- |
-
-| < | Comprova si el primer valor és menor que el segon |
-| - | ------------------------------------------------- |
-
-| <= | Comprova si el primer valor és menor o igual que el segon |
-| -- | --------------------------------------------------------- |
-
 ### Operadors de cadenes
 
-
-
-L'operador**`+`**concatena dues cadenes, enganxa la segona cadena a continuació de la primera.
+L'operador\*\*`+`\*\*concatena dues cadenes, enganxa la segona cadena a continuació de la primera.
 
 ```javascript
 let cadena1 = "hola";
@@ -197,7 +176,7 @@ let cadenaConcatenada = cadena1 + cadena2; //cadena concatenada val "holamundo"
 ```
 
 {% hint style="warning" %}
-&#x20;L'operador **+** serveix per a dos usos diferents. Si els seus operands són números els **suma**, però si es tracta de cadenes les **concatena**.
+L'operador **+** serveix per a dos usos diferents. Si els seus operands són números els **suma**, però si es tracta de cadenes les **concatena**.
 {% endhint %}
 
 Javascript és prou llest per entendre quin tipus d'operació realitzar mitjançant una **comprovació dels tipus** que estan implicats en l'operació.
@@ -214,7 +193,7 @@ let miCadena2 += miNumero; //miCadena2 ahora val "45623"
 
 ### Precedència dels operadors
 
-Els operadors s'avaluen d'**esquerra a dreta**, però hi ha unes normes addicionals, per les quals **determinats operadors s'avaluen abans que altres**.&#x20;
+Els operadors s'avaluen d'**esquerra a dreta**, però hi ha unes normes addicionals, per les quals **determinats operadors s'avaluen abans que altres**.
 
 Moltes d'aquestes regles de precedència estan tretes de les matemàtiques i són comuns a altres llenguatges, les podem veure a continuació.
 

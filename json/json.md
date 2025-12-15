@@ -1,6 +1,6 @@
 # JSON
 
-> JSON \(**J**ava **S**cript **O**bject **N**otacion**\)** és un format per emmagatzemar i intercanviar dades.
+> JSON (**J**ava **S**cript **O**bject **N**otacion\*\*)\*\* és un format per emmagatzemar i intercanviar dades.
 
 **JSON** és text, escrit amb sintaxi de JavaScript aprofitant l'ús dels objectes JavaScript.
 
@@ -10,14 +10,14 @@ S’utilitza molt per enviar informació des del servidor a una pàgina web.
 
 Actualment està superant l'ús del **XML** en aplicacions web, gràcies a la **facilitat**, **portabilitat** i **llegibilitat.**
 
- L'**extensió** dels fitxers JSON és **`.json`**.
+L'**extensió** dels fitxers JSON és **`.json`**.
 
-![](../.gitbook/assets/1_vcvipmqmjdbefcqf5f7p9q.png)
+![](../.gitbook/assets/1_VcvIPMQMJdBefcqF5F7P9Q.png)
 
 ## **Sintaxi JSON**
 
 * Les dades s'escriuen com a parelles de **`nom`** i **`valor`**.
-* Per **assignar** valor s'utilitza els dos punts \( **`:`** \)
+* Per **assignar** valor s'utilitza els dos punts ( **`:`** )
 
 **Exemple:**
 
@@ -29,7 +29,7 @@ Actualment està superant l'ús del **XML** en aplicacions web, gràcies a la **
 Els noms JSON requereixen **cometes dobles.**
 {% endhint %}
 
-* Les dades se separen per comes \( **`,`** \)
+* Les dades se separen per comes ( **`,`** )
 
 **Exemple:**
 
@@ -41,7 +41,7 @@ Els noms JSON requereixen **cometes dobles.**
 
 > Un **array** es una colección ordenada de valores.
 
-Els arrays s'envolten de **claudàtors `[ ]`** i cada valor de dins va separat per una coma \( **`,`** \).
+Els arrays s'envolten de **claudàtors `[ ]`** i cada valor de dins va separat per una coma ( **`,`** ).
 
 **Exemple:**
 
@@ -89,7 +89,7 @@ Els valors d'un **array** també poden ser **altres arrays**:
 
 Els següents exemples JSON i XML defineixen un objecte d'empleats, amb una matriu de 3 empleats:
 
-#### Exemple JSON 
+#### Exemple JSON
 
 ```javascript
 {"employees":[
@@ -119,8 +119,8 @@ Els següents exemples JSON i XML defineixen un objecte d'empleats, amb una matr
 
 Tant JSON com XML:
 
-* Són "**autodescriptibles**" \(llegibles per humans\)
-* Són **jeràrquics** \(valors dins dels valors\)
+* Són "**autodescriptibles**" (llegibles per humans)
+* Són **jeràrquics** (valors dins dels valors)
 * Es poden analitzar i utilitzar en molts llenguatges de programació.
 
 #### Avantatges de JSON
@@ -138,6 +138,3 @@ Podem comprovar la validesa d'un fitxer JSON amb eines on-line com per exemple:
 * [JSONLint](https://jsonlint.com/)
 
 ## Utilitzant JSON en JavaScript
-
-
-
