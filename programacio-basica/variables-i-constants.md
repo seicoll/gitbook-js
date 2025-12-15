@@ -1,34 +1,20 @@
 # Variables i constants
 
+## Declaració de variables
+
 {% hint style="info" %}
 Una **variable** és un element que s'utilitza per emmagatzemar un valor.&#x20;
 {% endhint %}
 
-Les variables en JavaScript es creen mitjançant la paraula reservada **`var`**.
+Les variables en JavaScript es creen mitjançant la paraula reservada **`let`**.
 
-La paraula reservada **`var`** únicament s'ha d'indicar en definir per primera vegada la variable, el que es denomina **declarar una variable**.
-
-```javascript
-var numero_1 = 3;
-var numero_2 = 1;
-var resultat = numero_1 + numero_2;
-```
-
-### Problema en sobreescriure variables
-
-Un dels problemes més grans amb la declaració de variables utilitzant la paraula clau **`var`** és que tu pots fàcilment sobreescriure declaracions de variables:
+La paraula reservada **`let`** únicament s'ha d'indicar en definir per primera vegada la variable, el que es denomina **declarar una variable**.
 
 ```javascript
-var camper = "James";
-var camper = "David"; 
-console.log(camper); 
+let numero_1 = 3;
+let numero_2 = 1;
+let resultat = numero_1 + numero_2;
 ```
-
-Al codi anterior, la variable **`camper`** es declara originalment com `James`, i s'anul·la per ser `David`. La consola després mostra la cadena de text `David`.
-
-En una aplicació petita, potser no us trobeu amb aquest tipus de problema. Però a mesura que el teu codi base es fa més gran, **pot ser que accidentalment sobrescriguis una variable que no tenies la intenció de fer**.&#x20;
-
-Com que aquest comportament no causa un error, la cerca i correcció d'errors es torna més difícil.
 
 La paraula reservada **`let`** va ser introduïda a **ES6**, una actualització important per JavaScript, per resoldre aquest problema potencial amb la paraula clau var.
 
@@ -36,19 +22,23 @@ La paraula reservada **`let`** va ser introduïda a **ES6**, una actualització 
 És recomanable utilitzar en la decalarició de variables **let**
 {% endhint %}
 
-### Diferència entre var i let
+## Diferència entre var i let
+
+La paraula reservada **`var`** també s'utilitza per declarar variables en JavaScript, però té algunes diferències importants respecte a **`let`**.
+
+> **És la forma antiga de declarar variables i no es rencomana el seu ús en codi modern.**
 
 **Diferències:**
 
-* **`var`**NO té un àmbit de bloc.
-* **`let`**SÍ té un àmbit de bloc.
+- **`var`** NO té un àmbit de bloc.
+- **`let`** SÍ té un àmbit de bloc.
 
 **`var`**
 
 ```javascript
 var elMeuNumero = 123;
 if (true) {
-    var elMeuNumero = 456;
+  var elMeuNumero = 456;
 }
 console.log(elMeuNumero); // 456
 ```
@@ -58,10 +48,26 @@ console.log(elMeuNumero); // 456
 ```javascript
 let elMeuNumero = 123;
 if (true) {
-    let elMeuNumero = 456;
+  let elMeuNumero = 456;
 }
 console.log(elMeuNumero); // 123
 ```
+
+### Problema en sobreescriure variables
+
+Un dels problemes més grans amb la declaració de variables utilitzant la paraula clau **`var`** és que tu pots fàcilment sobreescriure declaracions de variables:
+
+```javascript
+var camper = "James";
+var camper = "David";
+console.log(camper);
+```
+
+Al codi anterior, la variable **`camper`** es declara originalment com `James`, i s'anul·la per ser `David`. La consola després mostra la cadena de text `David`.
+
+En una aplicació petita, potser no us trobeu amb aquest tipus de problema. Però a mesura que el teu codi base es fa més gran, **pot ser que accidentalment sobrescriguis una variable que no tenies la intenció de fer**.&#x20;
+
+Com que aquest comportament no causa un error, la cerca i correcció d'errors es torna més difícil.
 
 ### No és necessari declarar les variables
 
@@ -83,9 +89,9 @@ Es recomana i serà necessari **declarar totes les variables** que s'hagin d'uti
 
 #### Exemple d'ús de variables
 
-![](https://lh4.googleusercontent.com/YNgVRrd-Hsg91VoyPXj-0meHOVx1lGmn6lGhkkSVPsXTTzPfC6QFMm5Cl47LNn5d6WBC1KMAZk8fe-TGNIAW98qlEasUlrFD5sonGkpnfx1F\_qmOdYFEa4kFhguLiOK77dI9GcJoZQ)
+![](https://lh4.googleusercontent.com/YNgVRrd-Hsg91VoyPXj-0meHOVx1lGmn6lGhkkSVPsXTTzPfC6QFMm5Cl47LNn5d6WBC1KMAZk8fe-TGNIAW98qlEasUlrFD5sonGkpnfx1F_qmOdYFEa4kFhguLiOK77dI9GcJoZQ)
 
-### Declaració de constants
+## Declaració de constants
 
 **Javascript** permet afegir _"variables immutables"_, també conegudes com a **constants**.
 
@@ -102,34 +108,45 @@ const PI = 3.1416;
 PI = 0; // NO permès
 ```
 
-### Tipus de dades
+## Tipus de dades
 
 ```javascript
-var length = 16;                               // Number
-var length = 16.00;                            // Number with decimals
+var length = 16; // Number
+var length = 16.0; // Number with decimals
 
+var lastName = "Johnson"; // String
+var lastName = "Johnson"; // String using single quotes
 
-var lastName = "Johnson";                      // String
-var lastName = 'Johnson';                      // String using single quotes
-
-var condition = true;                          // Boolean
-var cars = ["Saab", "Volvo", "BMW"];           // Array
-var x = {firstName:"John", lastName:"Doe"};    // Object
-
+var condition = true; // Boolean
+var cars = ["Saab", "Volvo", "BMW"]; // Array
+var x = { firstName: "John", lastName: "Doe" }; // Object
 ```
 
+### Tipatge en JavaScript
 
+JavaScript és un llenguatge de **tipatge dinàmic** i **debilitat**. Això significa:
 
-{% hint style="info" %}
-**Els tipus de JavaScript són dinàmics**
-{% endhint %}
+1. **Tipatge dinàmic**:
 
-Això significa que la mateixa variable es pot utilitzar per contenir diferents tipus de dades:
+   - Les variables no tenen un tipus fix assignat en el moment de la seva declaració.
+   - El tipus d'una variable es pot canviar en temps d'execució.
+   - Exemple:
 
-```javascript
-var x;           // Now x is undefined
-x = 5;           // Now x is a Number
-x = "John";      // Now x is a String
-```
+     ```javascript
+     let variable = 42; // Inicialment, és un número
+     console.log(typeof variable); // "number"
 
-[Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs\_datatypes\_dynamic)
+     variable = "Hola!"; // Ara és un text
+     console.log(typeof variable); // "string"
+     ```
+
+     [Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs_datatypes_dynamic)
+
+2. **Tipatge debilitat**:
+   - JavaScript intenta convertir els valors automàticament quan s'utilitzen diferents tipus junts.
+   - Això pot portar a resultats inesperats si no s'és conscient.
+   - Exemple:
+     ```javascript
+     console.log("5" + 5); // "55" (Concatenació perquè "5" és un text)
+     console.log("5" - 3); // 2 (Conversió implícita de "5" a número)
+     ```
