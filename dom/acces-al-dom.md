@@ -14,19 +14,22 @@ En aquesta secció aprendrem a interactuar amb el **DOM (Document Object Model)*
 **Exemple d'un DOM bàsic:**
 
 - HTML original:
-  ```html
-  <html>
-    <head>
-      <title>My title</title>
-    </head>
-    <body>
-      <a href="https://example.com">My link</a>
-      <h1>My header</h1>
-    </body>
-  </html>
-  ```
+
+```html
+<html>
+  <head>
+    <title>My title</title>
+  </head>
+  <body>
+    <a href="https://example.com">My link</a>
+    <h1>My header</h1>
+  </body>
+</html>
+```
+
 - Representació del DOM:
-  ![Exemple DOM](./dom.gif)
+
+![Exemple DOM](./dom.gif)
 
 ---
 
@@ -78,13 +81,13 @@ console.log(paragraf.textContent); // Mostra "Hola, JavaScript!"
 
 ### Modificar atributs:
 
-**Exemple:** Afegir o canviar un atribut `id`.
+**Exemple:** Afegir o canviar un atribut `src` d'una imatge.
 
 ```javascript
-let element = document.querySelector("div");
+let element = document.querySelector("img");
 
-element.setAttribute("id", "nouId");
-console.log(element.id); // Mostra "nouId"
+element.setAttribute("src", "[nouId](http://www.dogs.com/dog.gif)");
+console.log(element.src); // Mostra "http://www.dogs.com/dog.gif"
 ```
 
 ### Modificar estils:
@@ -99,47 +102,20 @@ paragraf.style.fontSize = "20px";
 console.log(paragraf.style.color); // Mostra "blue"
 ```
 
----
+### Crear elements des de zero:
 
-## 4. Esdeveniments
-
-### Afegir un esdeveniment `click`:
-
-**Exemple:** Mostrar un missatge quan l'usuari fa clic a un botó.
-
-```html
-<button id="botó">Fes clic aquí</button>
-```
+**Exemple:** Crear un imatge i afegir-la a la pàgina.
 
 ```javascript
-let botó = document.getElementById("botó");
+let img = document.createElement("img");
+img.src = "http://www.dogs.com/dog.gif";
 
-botó.addEventListener("click", function () {
-  alert("Has fet clic al botó!");
-});
-```
-
-### Esdeveniment `input`:
-
-**Exemple:** Mostrar el text que escriu l'usuari en temps real.
-
-```html
-<input type="text" id="entrada" placeholder="Escriu alguna cosa" />
-<p id="resultat"></p>
-```
-
-```javascript
-let entrada = document.getElementById("entrada");
-let resultat = document.getElementById("resultat");
-
-entrada.addEventListener("input", function () {
-  resultat.textContent = "Has escrit: " + entrada.value;
-});
+document.body.appendChild(img);
 ```
 
 ---
 
-## Exercicis Pràctics
+# Exercicis Pràctics
 
 1. **Canvia el contingut d'un paràgraf**:
    Escriu un codi que canviï el text d'un paràgraf quan l'usuari faci clic a un botó:

@@ -1,4 +1,4 @@
-# Incloure codi JS
+# Incloure codi JavaScript
 
 [Teoria completa a w3schools.com](https://www.w3schools.com/js/js_whereto.asp)
 
@@ -14,20 +14,20 @@ El codi **Javascript** es troba tancat entre les etiquetes **`<script>`** en qua
 
 Es recomana la definició del codi en la capçalera del document **`<head>`**.
 
-```markup
+```html
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>Exemple de codi JavaScript en el propi document</title>
-	<script>
-  		alert("Hola mòn!!");
-	</script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exemple de codi JavaScript en el propi document</title>
+    <script>
+      alert("Hola mòn!!");
+    </script>
+  </head>
 
-<body>
-	<p>Benvinguts al mòn Javascript</p>
-</body>
+  <body>
+    <p>Benvinguts al mòn Javascript</p>
+  </body>
 </html>
 ```
 
@@ -39,22 +39,20 @@ Es recomana la definició del codi en la capçalera del document **`<head>`**.
 
 ## **En els elements HMTL**
 
-```markup
+```html
 <!DOCTYPE html>
 <html>
-<body>
+  <body>
+    <h1>A Web Page</h1>
+    <p id="demo">A Paragraph</p>
+    <button type="button" onclick="myFunction()">Try it</button>
 
-<h1>A Web Page</h1>
-<p id="demo">A Paragraph</p>
-<button type="button" onclick="myFunction()">Try it</button>
-
-<script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = "Paragraph changed.";
-}
-</script>
-
-</body>
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Paragraph changed.";
+      }
+    </script>
+  </body>
 </html>
 ```
 

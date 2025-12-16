@@ -6,9 +6,9 @@
 
 - [Introducció a Javascript](introduccio-a-js/introduccio-js.md)
 - [Què es pot fer amb Javascript?](introduccio-a-js/que-es-pot-fer.md)
-- [Incloure codi JS](introduccio-a-js/incloure-codi-js.md)
+- [Incloure codi JavaScript](introduccio-a-js/incloure-codi-js.md)
 - [Sintaxi del llenguatge](introduccio-a-js/sintaxi-del-llenguatge.md)
-- [Exercicis bloc 1](introduccio-a-js/exercici-bloc-1.md)
+- [Exercicis: Introducció a Javascript](introduccio-a-js/exercici-bloc-1.md)
 
 ## Programació bàsica
 
@@ -20,13 +20,12 @@
 ## Funcions i esdeveniments
 
 - [Funcions](funcions-i-esdeveniments/funcions.md)
-- [Events](funcions-i-esdeveniments/events.md)
+- [Esdeveniments](funcions-i-esdeveniments/events.md)
 - [Exercicis: Funcions i esdeveniments](funcions-i-esdeveniments/exercicis-funcions-i-esdeveniments.md)
 
 ## DOM
 
-- [Accés al DOM](dom/acces-al-dom.md)
-- [Modificació del DOM](dom/modificacio-del-dom.md)
+- [DOM](dom/acces-al-dom.md)
 
 ## AJAX
 
