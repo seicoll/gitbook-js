@@ -2,7 +2,7 @@
 
 ## Introducció
 
-> Els **events** o **esdeveniments** són "coses" que passen als elements HTML quan el visitant interacciona amb ells.
+> Els **events** o **esdeveniments** són "coses" que passen als elements HTML quan el visitant interacciona amb la pàgina web.
 
 JavaScript pot "_**reaccionar**_" a aquests esdeveniments.
 
@@ -13,34 +13,43 @@ JavaScript pot "_**reaccionar**_" a aquests esdeveniments.
 - Prémer una tecla.
 - Un camp d'un formulari canvia de valor.
 
-```markup
+**Exemple d'esdeveniment `onclick`**: Mostra la data i hora actual quan l'usuari fa clic a un botó.
+
+```html
 <!DOCTYPE html>
 <html>
-<body>
+  <body>
+    <p>Click the button to display the date.</p>
 
-<p>Click the button to display the date.</p>
+    <button id="boto">The time is?</button>
 
-<button onclick="displayDate()">The time is?</button>
+    <script>
+      // Obtenim el botó pel seu ID
+      let boto = document.getElementById("boto");
 
-<script>
-function displayDate() {
-    document.getElementById("demo").innerHTML = Date();
-}
-</script>
+      // Assignem l'esdeveniment click al botó
+      boto.addEventListener("click", displayDate);
 
-<p id="demo"></p>
+      // Funció que mostra la data actual
+      function displayDate() {
+        document.getElementById("demo").innerHTML = Date();
+      }
+    </script>
 
-</body>
+    <p id="demo"></p>
+  </body>
 </html>
 ```
 
 [Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjs_events1)
 
-**Cada element** o etiqueta HTML té la seva pròpia **llista de possibles esdeveniments** que se li poden assignar.
+## Com funcionen els esdeveniments
 
-El **nom de cada esdeveniment** es construeix mitjançant el **prefix on**, seguit del **nom en anglès de l'acció** associada a l'esdeveniment.
+- Cada element o etiqueta HTML té la seva pròpia **llista de possibles esdeveniments** que se li poden assignar.
 
-### **Exemples d'esdeveniment**
+- El **nom de cada esdeveniment** es construeix mitjançant el **prefix on**, seguit del **nom en anglès de l'acció** associada a l'esdeveniment.
+
+### Exemples d'esdeveniment
 
 **Esdeveniments del ratolí:**
 
@@ -67,41 +76,3 @@ El **nom de cada esdeveniment** es construeix mitjançant el **prefix on**, segu
 ## Documentació i recursos
 
 - **w3schools.com: Events** [https://www.w3schools.com/js/js_events.asp](https://www.w3schools.com/js/js_events.asp)
-
-## 4. Esdeveniments
-
-### Afegir un esdeveniment `click`:
-
-**Exemple:** Mostrar un missatge quan l'usuari fa clic a un botó.
-
-```html
-<button id="botó">Fes clic aquí</button>
-```
-
-```javascript
-let botó = document.getElementById("botó");
-
-botó.addEventListener("click", function () {
-  alert("Has fet clic al botó!");
-});
-```
-
-### Esdeveniment `input`:
-
-**Exemple:** Mostrar el text que escriu l'usuari en temps real.
-
-```html
-<input type="text" id="entrada" placeholder="Escriu alguna cosa" />
-<p id="resultat"></p>
-```
-
-```javascript
-let entrada = document.getElementById("entrada");
-let resultat = document.getElementById("resultat");
-
-entrada.addEventListener("input", function () {
-  resultat.textContent = "Has escrit: " + entrada.value;
-});
-```
-
----

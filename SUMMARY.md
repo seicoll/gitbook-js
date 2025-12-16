@@ -2,9 +2,9 @@
 
 - [Introducció](README.md)
 
-## Introducció a JS
+## Introducció a JavaScript
 
-- [Introducció a Javascript](introduccio-a-js/introduccio-js.md)
+- [Introducció](introduccio-a-js/introduccio-js.md)
 - [Què es pot fer amb Javascript?](introduccio-a-js/que-es-pot-fer.md)
 - [Incloure codi JavaScript](introduccio-a-js/incloure-codi-js.md)
 - [Sintaxi del llenguatge](introduccio-a-js/sintaxi-del-llenguatge.md)
