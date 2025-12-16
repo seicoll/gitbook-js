@@ -1,74 +1,200 @@
-# Accés al DOM
+# DOM
 
-#### ¿Qué métodos podemos usar?
+En aquesta secció aprendrem a interactuar amb el **DOM (Document Object Model)** per manipular elements HTML amb JavaScript. També introduirem els **esdeveniments**, que permeten respondre a accions dels usuaris, com ara clics o escriptura en formularis.
 
-Te mostramos cómo puedes utilizar los siguientes métodos para encontrar uno o más elementos en tu página web:
+---
 
-* [`document.getElementById(id)`](https://developer.mozilla.org/en-US/docs/Web/API/document.getElementById)
-* [`document.getElementsByClassName(nombreDeClase)`](https://developer.mozilla.org/en-US/docs/Web/API/document.getElementsByClassName)
-* [`document.getElementsByTagName(nombreDeEtiqueta)`](https://developer.mozilla.org/en-US/docs/Web/API/document.getElementsByTagName)
-* [`document.querySelector(selectorCss)`](https://developer.mozilla.org/en-US/docs/Web/API/document.querySelector)
-* [`document.querySelectorAll(selectorCss)`](https://developer.mozilla.org/en-US/docs/Web/API/document.querySelectorAll)
+## 1. Què és el DOM?
 
-#### ¿Qué es lo que regresan?
+> **El DOM** (Document Object Model) és una representació estructurada d'una pàgina HTML.
 
-Hay dos métodos que regresan un único objeto [`Element`](https://developer.mozilla.org/en-US/docs/Web/API/Element), `getElementById` y `querySelector`:
+- JavaScript pot accedir, modificar i crear elements del DOM.
+- El DOM està organitzat en una estructura d'arbre, on cada element HTML és un **node**.
 
-```text
-var salsMotto = document.getElementById("salsMotto");
-salsMotto.innerHTML = "Las matemáticas son geniales";
+**Exemple d'un DOM bàsic:**
+
+- HTML original:
+  ```html
+  <html>
+    <head>
+      <title>My title</title>
+    </head>
+    <body>
+      <a href="https://example.com">My link</a>
+      <h1>My header</h1>
+    </body>
+  </html>
+  ```
+- Representació del DOM:
+  ![Exemple DOM](./dom.gif)
+
+---
+
+## 2. Seleccionar Elements del DOM
+
+#### Mètodes per seleccionar elements:
+
+**`document.getElementById`**:
+
+> Selecciona un únic element pel seu `id`.
+
+```javascript
+let element = document.getElementById("contenidor");
+console.log(element); // Mostra el <div> a la consola
 ```
 
-Los métodos `getElementsByClassName` y `getElementsByTagName` regresan un objeto [`HTMLCollection`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection) que actúa como un arreglo. Esa colección está "viva", lo que significa que la colección se actualiza si al documento se le agregan elementos adicionales con nombre de etiqueta o nombre de clase.
+**`document.querySelector`**:
 
-```text
-var teamMembers = document.getElementsByClassName("team-member");
-for (var i = 0; i < teamMembers.length; i++) {
-   console.log(teamMembers[i].innerHTML);
-}
+> Selecciona el primer element que coincideix amb un selector CSS.
+
+```javascript
+let paràgraf = document.querySelector("p");
+console.log(paràgraf); // Mostra el primer <p> a la consola
 ```
 
-El método `querySelectorAll()` regresa un [NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList), que también actúa como un arreglo. Esa lista es "estática", lo que significa que la lista no se actualizará aunque se le agreguen nuevos elementos coincidentes a la página. Lo más probable es que no te encuentres con la diferencia entre los dos tipos de datos de regreso cuando estés usando estos métodos, pero es bueno tenerlo en cuenta.
+**`document.querySelectorAll`**:
 
-```text
-var teamMembers = document.querySelectorAll(".team-member");
-for (var i = 0; i < teamMembers.length; i++) {
-   console.log(teamMembers[i].innerHTML);
-}
+> Selecciona tots els elements que coincideixen amb un selector CSS.
+
+```javascript
+let paràgrafs = document.querySelectorAll("p");
+console.log(paràgrafs); // Mostra una NodeList amb tots els <p>
 ```
 
-#### Acceder con subconsultas
+---
 
-Una vez que hayas encontrado un elemento, puedes hacer subconsultas sobre él al usar los métodos que acabamos de mostrar. Por ejemplo:
+## 3. Modificar Elements del DOM
 
-```text
-// encuentra el elemento con esa ID
-var salsMotto = document.getElementById("salsMotto");
-// encuentra los spans dentro de ese elemento:
-var mottoWords = salsMotto.getElementsByTagName("span");
-// escribe en consola cuántos hay
-console.log(mottoWords.length);
+### Modificar contingut:
+
+**Exemple:** Canviar el text d'un paràgraf.
+
+```javascript
+let paragraf = document.querySelector("p");
+
+paragraf.textContent = "Hola, JavaScript!";
+console.log(paragraf.textContent); // Mostra "Hola, JavaScript!"
 ```
 
-#### Atravesar el DOM
+### Modificar atributs:
 
-Otra manera de acceder a los elementos es "atravesar" el árbol del DOM. Cada elemento tiene propiedades que apuntan a los elementos relacionados con él:
+**Exemple:** Afegir o canviar un atribut `id`.
 
-* `firstElementChild`
-* `lastElementChild`
-* `nextElementChild/nextElementSibling`
-* `previousElementChild/previousElementSibling`
-* `childNodes`
-* `childElementCount`
+```javascript
+let element = document.querySelector("div");
 
-Por ejemplo:
-
-```text
-var salsMotto = document.getElementById("salsMotto");
-for (var i = 0; i < salsMotto.childNodes.length; i++) {
-   console.log(salsMotto.childNodes[i]);
-}
+element.setAttribute("id", "nouId");
+console.log(element.id); // Mostra "nouId"
 ```
 
-Estas propiedades **no** están disponibles en los nodos `Text`, solo en los nodos `Element`. Para asegurarte de que puedas atravesar un elemento, puedes revisar sus propiedades `nodeType`/`nodeValue`. Probablemente no necesites o quieras atravesar el DOM, pero es otra opción disponible para ti.
+### Modificar estils:
 
+**Exemple:** Canviar el color de text d'un element.
+
+```javascript
+let paragraf = document.querySelector("p");
+
+paragraf.style.color = "blue";
+paragraf.style.fontSize = "20px";
+console.log(paragraf.style.color); // Mostra "blue"
+```
+
+---
+
+## 4. Esdeveniments
+
+### Afegir un esdeveniment `click`:
+
+**Exemple:** Mostrar un missatge quan l'usuari fa clic a un botó.
+
+```html
+<button id="botó">Fes clic aquí</button>
+```
+
+```javascript
+let botó = document.getElementById("botó");
+
+botó.addEventListener("click", function () {
+  alert("Has fet clic al botó!");
+});
+```
+
+### Esdeveniment `input`:
+
+**Exemple:** Mostrar el text que escriu l'usuari en temps real.
+
+```html
+<input type="text" id="entrada" placeholder="Escriu alguna cosa" />
+<p id="resultat"></p>
+```
+
+```javascript
+let entrada = document.getElementById("entrada");
+let resultat = document.getElementById("resultat");
+
+entrada.addEventListener("input", function () {
+  resultat.textContent = "Has escrit: " + entrada.value;
+});
+```
+
+---
+
+## Exercicis Pràctics
+
+1. **Canvia el contingut d'un paràgraf**:
+   Escriu un codi que canviï el text d'un paràgraf quan l'usuari faci clic a un botó:
+
+   ```html
+   <p id="text">Aquest text canviarà.</p>
+   <button id="canvia">Canvia el text</button>
+   ```
+
+   ```javascript
+   let botó = document.getElementById("canvia");
+   let text = document.getElementById("text");
+
+   botó.addEventListener("click", function () {
+     text.textContent = "El text ha canviat!";
+   });
+   ```
+
+2. **Canvia el color de fons**:
+   Escriu un codi que canvii el color de fons de la pàgina a groc quan es fa clic a un botó:
+
+   ```html
+   <button id="color">Canvia el color de fons</button>
+   ```
+
+   ```javascript
+   let botó = document.getElementById("color");
+
+   botó.addEventListener("click", function () {
+     document.body.style.backgroundColor = "yellow";
+   });
+   ```
+
+3. **Escriu i mostra en temps real**:
+   Escriu un programa que mostri el text que l'usuari escriu en una entrada:
+
+   ```html
+   <input type="text" id="escritura" placeholder="Escriu alguna cosa" />
+   <p id="resposta"></p>
+   ```
+
+   ```javascript
+   let entrada = document.getElementById("escritura");
+   let resposta = document.getElementById("resposta");
+
+   entrada.addEventListener("input", function () {
+     resposta.textContent = entrada.value;
+   });
+   ```
+
+---
+
+## Tasca d'autoaprenentatge
+
+1. Crea una pàgina amb tres botons:
+   - Un que canviï el color de text d'un paràgraf.
+   - Un que amagui o mostri un paràgraf.
+   - Un que mostri una alerta amb el text del paràgraf.

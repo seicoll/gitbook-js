@@ -28,11 +28,6 @@
 - [Accés al DOM](dom/acces-al-dom.md)
 - [Modificació del DOM](dom/modificacio-del-dom.md)
 
-## JSON
-
-- [JSON](json/json.md)
-- [Exercicis](json/exercicis.md)
-
 ## AJAX
 
 - [AJAX](ajax/ajax.md)
