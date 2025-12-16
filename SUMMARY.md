@@ -25,23 +25,19 @@
 
 ## DOM
 
-- [DOM](dom/dom.md)
-- [\*Exercicis: DOM](dom/exercicis-dom.md)
+- [DOM](04-dom/dom.md)
+- [\*Exercicis: DOM](04-dom/exercicis-dom.md)
 
 ## Arrays i objectes
 
-- [Arrays](arrays-i-objectes/arrays.md)
-- [Exercicis: Arrays i objectes](arrays-i-objectes/exercicis.md)
+- [Arrays](05-arrays-i-objectes/arrays.md)
+- [Exercicis: Arrays i objectes](05-arrays-i-objectes/exercicis.md)
 
 ## AJAX
 
 - [AJAX](ajax/ajax.md)
 
-## Serveis Web
-
-- [Serveis Web](serveis-web/serveis-web.md)
-
-## Programació orientada a objectes (POO)
+## Programació orientada a objectes
 
 - [Classe](classes/classe.md)
 - [Getters i setters](classes/getters-i-setters.md)
