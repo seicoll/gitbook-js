@@ -1,4 +1,4 @@
-# Events
+# Esdeveniments (Events)
 
 ## Introducció
 
@@ -13,66 +13,79 @@ JavaScript pot "_**reaccionar**_" a aquests esdeveniments.
 - Prémer una tecla.
 - Un camp d'un formulari canvia de valor.
 
-**Exemple d'esdeveniment `onclick`**: Mostra la data i hora actual quan l'usuari fa clic a un botó.
+### Esdeveniment `click`
 
-```html
-<!DOCTYPE html>
-<html>
-  <body>
-    <p>Click the button to display the date.</p>
+- **Exemple**: Mostrar la data i hora actual quan l'usuari fa clic a un botó.
 
-    <button id="boto">The time is?</button>
+  ```html
+  <p>Click the button to display the date.</p>
 
-    <script>
-      // Obtenim el botó pel seu ID
-      let boto = document.getElementById("boto");
+  <button id="boto">The time is?</button>
 
-      // Assignem l'esdeveniment click al botó
-      boto.addEventListener("click", displayDate);
+  <p id="demo"></p>
+  ```
 
-      // Funció que mostra la data actual
-      function displayDate() {
-        document.getElementById("demo").innerHTML = Date();
-      }
-    </script>
+  ```js
+  // Obtenim el botó pel seu ID
+  let boto = document.getElementById("boto");
 
-    <p id="demo"></p>
-  </body>
-</html>
-```
+  // Assignem l'esdeveniment click al botó
+  boto.addEventListener("click", displayDate);
 
-[Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjs_events1)
+  // Funció que mostra la data actual
+  function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+  }
+  ```
+
+  [Exemple](https://www.w3schools.com/js/tryit.asp?filename=tryjs_events1)
+
+### Esdeveniment `input`
+
+- **Exemple**: Mostrar el text que escriu l'usuari en temps real.
+
+  ```html
+  <input type="text" id="entrada" placeholder="Escriu alguna cosa" />
+  <p id="resultat"></p>
+  ```
+
+  ```js
+  // Obtenim els elements pel seu ID
+  let entrada = document.getElementById("entrada");
+  let resultat = document.getElementById("resultat");
+
+  // Assignem l'esdeveniment input al camp de text
+  entrada.addEventListener("input", function () {
+    resultat.textContent = "Has escrit: " + entrada.value;
+  });
+
+  // Hem utilitzat una funció anònima com a manejador de l'esdeveniment
+  ```
 
 ## Com funcionen els esdeveniments
 
 - Cada element o etiqueta HTML té la seva pròpia **llista de possibles esdeveniments** que se li poden assignar.
 
-- El **nom de cada esdeveniment** es construeix mitjançant el **prefix on**, seguit del **nom en anglès de l'acció** associada a l'esdeveniment.
-
 ### Exemples d'esdeveniment
 
 **Esdeveniments del ratolí:**
 
-- **onclick**: l'usuari fa clic a un element HTML
-- **onmouseover**: l’usuari mou el ratolí a sobre d’un element HTML
-- **onmouseout**: l’usuari treu el ratolí d’un element HTML
+- **click**: l'usuari fa clic a un element HTML
+- **mouseover**: l’usuari mou el ratolí a sobre d’un element HTML
+- **mouseout**: l’usuari treu el ratolí d’un element HTML
 
 **Esdeveniments del teclat:**
 
-- **onkeydown**: L’usuari pressiona una tecla
-- **onkeyup**
+- **keydown**: L’usuari pressiona una tecla
+- **keyup**
 
 **Esdeveniments de formulari:**
 
-- **onchange**: s’ha canviat un element HTML
-- **onfocus**
-- **onblur**
+- **change**: s’ha canviat un element HTML
+- **focus**
+- **blur**
 
 **Esdeveniment de finestra:**
 
-- **onload**: el navegador acaba de carregar una pàgina
-- **onresize**
-
-## Documentació i recursos
-
-- **w3schools.com: Events** [https://www.w3schools.com/js/js_events.asp](https://www.w3schools.com/js/js_events.asp)
+- **load**: el navegador acaba de carregar una pàgina
+- **resize**

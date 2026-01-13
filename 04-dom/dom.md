@@ -37,32 +37,32 @@ En aquesta secció aprendrem a interactuar amb el **DOM (Document Object Model)*
 
 #### Mètodes per seleccionar elements:
 
-**`document.getElementById`**:
+1. ** `document.getElementById`**:
 
-> Selecciona un únic element pel seu `id`.
+   Selecciona **un únic** element pel seu `id`.
 
-```javascript
-let element = document.getElementById("contenidor");
-console.log(element); // Mostra el <div> a la consola
-```
+   ```javascript
+   let element = document.getElementById("contenidor");
+   console.log(element); // Mostra el <div> a la consola
+   ```
 
-**`document.querySelector`**:
+2. **`document.querySelector`**:
 
-> Selecciona el primer element que coincideix amb un selector CSS.
+   Selecciona **el primer element** que coincideix amb un **selector** CSS.
 
-```javascript
-let paràgraf = document.querySelector("p");
-console.log(paràgraf); // Mostra el primer <p> a la consola
-```
+   ```javascript
+   let paràgraf = document.querySelector("p");
+   console.log(paràgraf); // Mostra el primer <p> a la consola
+   ```
 
-**`document.querySelectorAll`**:
+3. **`document.querySelectorAll`**:
 
-> Selecciona tots els elements que coincideixen amb un selector CSS.
+   Selecciona tots els elements que coincideixen amb un selector CSS.
 
-```javascript
-let paràgrafs = document.querySelectorAll("p");
-console.log(paràgrafs); // Mostra una NodeList amb tots els <p>
-```
+   ```javascript
+   let paragrafs = document.querySelectorAll("p");
+   console.log(paragrafs); // Mostra una NodeList amb tots els <p>
+   ```
 
 ---
 
@@ -86,7 +86,7 @@ console.log(paragraf.textContent); // Mostra "Hola, JavaScript!"
 ```javascript
 let element = document.querySelector("img");
 
-element.setAttribute("src", "[nouId](http://www.dogs.com/dog.gif)");
+element.setAttribute("src", "http://www.dogs.com/dog.gif");
 console.log(element.src); // Mostra "http://www.dogs.com/dog.gif"
 ```
 
@@ -126,10 +126,10 @@ document.body.appendChild(img);
    ```
 
    ```javascript
-   let botó = document.getElementById("canvia");
+   let boto = document.getElementById("canvia");
    let text = document.getElementById("text");
 
-   botó.addEventListener("click", function () {
+   boto.addEventListener("click", function () {
      text.textContent = "El text ha canviat!";
    });
    ```
@@ -166,4 +166,9 @@ document.body.appendChild(img);
    });
    ```
 
----
+## Tasca d'autoaprenentatge
+
+1. Crea una pàgina amb tres botons:
+   - Un que canviï el color de text d'un paràgraf.
+   - Un que amagui o mostri un paràgraf.
+   - Un que mostri una alerta amb el text del paràgraf.
