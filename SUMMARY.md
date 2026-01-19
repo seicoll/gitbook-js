@@ -31,6 +31,7 @@
 ## Arrays i objectes
 
 - [Arrays](05-arrays-i-objectes/arrays.md)
+- [Objectes](05-arrays-i-objectes/objectes.md)
 - [Exercicis: Arrays i objectes](05-arrays-i-objectes/exercicis.md)
 
 ## AJAX
