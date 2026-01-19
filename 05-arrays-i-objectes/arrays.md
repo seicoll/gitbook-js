@@ -2,12 +2,18 @@
 
 ## Què és un array?
 
-> Un array és una llista ordenada de valors (elements).
+> Un **array** és una llista ordenada de valors (elements).
+
+Els elements poden ser de **qualsevol tipus**: nombres, cadenes de text, objectes, altres arrays, etc.
 
 **Exemple d’un array:**
 
 ```javascript
-let fruits = ["poma", "plàtan", "taronja"];
+// Array buit
+const emptyArray = [];
+
+// Array amb elements
+const fruits = ["poma", "plàtan", "taronja"];
 console.log(fruits);
 // Mostra ["poma", "plàtan", "taronja"]
 ```
@@ -27,17 +33,17 @@ console.log(fruits[2]); // "taronja"
 **Afegir elements**:
 
 ```javascript
-fruits.push("maduixa"); // Afegir al final
-fruits.unshift("raïm"); // Afegir al principi
-console.log(fruits);
+fruits.push("maduixa"); // Afegeix l'element al final
+fruits.unshift("raïm"); // Afegeix l'element al principi
+console.log(fruits); // ["raïm", "poma", "plàtan", "taronja", "maduixa"]
 ```
 
 **Eliminar elements**:
 
 ```javascript
-fruits.pop(); // Treure del final
-fruits.shift(); // Treure del principi
-console.log(fruits);
+fruits.pop(); // Treure l'element del final
+fruits.shift(); // Treure l'element del principi
+console.log(fruits); // ["poma", "plàtan", "taronja"]
 ```
 
 **Iterar sobre un array**:
@@ -46,7 +52,7 @@ console.log(fruits);
 
   ```javascript
   for (let i = 0; i < fruits.length; i++) {
-    console.log(fruits[i]);
+    console.log(fruits[i]); // Mostra cada fruita
   }
   ```
 
@@ -59,6 +65,26 @@ console.log(fruits);
   ```
 
 ## Altres mètodes útils:
+
+**Ordenar elements:**
+
+`sort()` ordenar elements en ordre ascendent:
+
+```javascript
+const numbers = [4, 2, 5, 1, 3];
+numbers.sort();
+
+console.log(numbers); // [1, 2, 3, 4, 5]
+```
+
+`reverse()` invertir l'ordre dels elements:
+
+```javascript
+const fruits = ["maduixa", "kiwi", "mango", "taronja"];
+fruits.reverse();
+
+console.log(fruits); // ['taronja', 'mango', 'kiwi', 'maduixa']
+```
 
 **Filtrar elements:**
 
@@ -73,6 +99,7 @@ console.log(grans); // [30, 40]
 **Transformar elements:**
 
 ```javascript
+let nombres = [10, 20, 30, 40];
 let dobles = nombres.map(function (nombre) {
   return nombre * 2;
 });
