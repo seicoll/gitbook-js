@@ -54,17 +54,31 @@ console.log(fruits); // ["poma", "plàtan", "taronja"]
   for (let i = 0; i < fruits.length; i++) {
     console.log(fruits[i]); // Mostra cada fruita
   }
+
+  // Sortida:
+  // maduixa
+  // kiwi
+  // mango
+  // taronja
   ```
 
 - **Amb `forEach`:**
+
+  Executa una funció proporcionada una vegada per cada element de l'array.
 
   ```javascript
   fruits.forEach(function (fruit) {
     console.log(fruit);
   });
+
+  // Sortida:
+  // maduixa
+  // kiwi
+  // mango
+  // taronja
   ```
 
-## Altres mètodes útils:
+## Altres mètodes útils
 
 **Ordenar elements:**
 
@@ -88,6 +102,8 @@ console.log(fruits); // ['taronja', 'mango', 'kiwi', 'maduixa']
 
 **Filtrar elements:**
 
+Crea un nou array amb els elements que compleixen una determinada condició.
+
 ```javascript
 let nombres = [10, 20, 30, 40];
 let grans = nombres.filter(function (nombre) {
@@ -97,6 +113,8 @@ console.log(grans); // [30, 40]
 ```
 
 **Transformar elements:**
+
+Crea un nou array amb els resultats de l'execució d'una funció en cada element de l'array original.
 
 ```javascript
 let nombres = [10, 20, 30, 40];
