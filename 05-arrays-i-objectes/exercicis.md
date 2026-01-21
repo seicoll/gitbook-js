@@ -1,10 +1,10 @@
 # Exercicis: Arrays i objectes
 
-# Exercici 1: Gestor de noms amb arrays
+## Exercici 1: Gestor de noms amb arrays
 
 Crea una pàgina web que permeti gestionar una llista de noms.
 
-Els noms s’han de guardar en un **array ** i la informació s’ha de mostrar dinàmicament a la pàgina.
+Els noms s’han de guardar en un **array** i la informació s’ha de mostrar dinàmicament a la pàgina.
 
 **La pàgina tindrà:**
 
@@ -35,7 +35,7 @@ Els noms s’han de guardar en un **array ** i la informació s’ha de mostrar 
 
 ---
 
-## HTML inicial
+### HTML inicial
 
 ```html
 <input type="text" id="nameInput" placeholder="Introdueix un nom" />
@@ -92,7 +92,7 @@ let alumnes = [
 - Buida l’array.
 - Esborra la taula.
 
-## HTML inicial
+### HTML inicial
 
 ```html
 <label for="nameInput">Nom de l'alumne:</label>
