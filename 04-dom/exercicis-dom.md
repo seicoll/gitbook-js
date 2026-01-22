@@ -105,8 +105,6 @@ function addItem() {
 }
 ```
 
-#### Desglossament de la funció:
-
 ---
 
 ### Pas 2.3: Afegir els Event Listeners
