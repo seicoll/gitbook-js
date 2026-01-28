@@ -14,7 +14,7 @@ Els noms s’han de guardar en un **array** i la informació s’ha de mostrar d
 - Un botó **Ordenar**
 - Un botó **Mostrar total d'elements**
 - Una llista on es mostrin els noms
-- Un paràgraf informatiu
+- Un paràgraf informatiu (on es mostrin el total d’elements o els noms en majúscules).
 
 **El programa ha de:**
 
@@ -28,10 +28,10 @@ Els noms s’han de guardar en un **array** i la informació s’ha de mostrar d
 
 **Extensions opcionals**
 
-- Evitar afegir noms buits
-- Evitar noms repetits
-- Eliminar un nom concret fent clic sobre ell
-- Mostrar els noms en majúscules utilitzant `map()`
+1. Evitar afegir noms buits
+2. Evitar noms repetits
+3. Eliminar un nom concret fent clic sobre ell
+4. Mostrar els noms en majúscules utilitzant `map()`
 
 ---
 
