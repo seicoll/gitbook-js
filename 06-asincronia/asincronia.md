@@ -4,35 +4,35 @@
 
 ### Programació síncrona
 
-* Les instruccions s'executen una després de l'altra.
+- Les instruccions s'executen una després de l'altra.
 
-```javascript
-console.log("Primera línia");
-console.log("Segona línia");
-```
+  ```javascript
+  console.log("Primera línia");
+  console.log("Segona línia");
+  ```
 
 ### Programació asíncrona
 
-* Permet que algunes operacions (com consultes a un servidor) es facin en **segon pla** mentre altres instruccions continuen executant-se.
-* **Exemple amb `setTimeout`:**
+- Permet que algunes operacions (com consultes a un servidor) es facin en **segon pla** mentre altres instruccions continuen executant-se.
+- **Exemple amb `setTimeout`:**
 
-```javascript
-console.log("Abans del timeout");
+  ```javascript
+  console.log("Abans del timeout");
 
-setTimeout(function () {
-  console.log("Després de 2 segons");
-}, 2000);
+  setTimeout(function () {
+    console.log("Després de 2 segons");
+  }, 2000);
 
-console.log("Després del timeout (encara que abans del resultat asíncron)");
-```
+  console.log("Després del timeout (encara que abans del resultat asíncron)");
+  ```
 
-Sortida:
+  **Sortida:**
 
-```
-Abans del timeout
-Després del timeout (encara que abans del resultat asíncron)
-Després de 2 segons
-```
+  ```
+  Abans del timeout
+  Després del timeout (encara que abans del resultat asíncron)
+  Després de 2 segons
+  ```
 
 ## 2. Promises
 
@@ -41,12 +41,12 @@ Una **Promise** és un objecte que representa el resultat d'una operació asínc
 
 Pot estar:&#x20;
 
-* pendent (**pending**)&#x20;
-* resolta (**fulfilled**)&#x20;
-* o rebutjada (**rejected**)
-{% endhint %}
+- pendent (**pending**)&#x20;
+- resolta (**fulfilled**)&#x20;
+- o rebutjada (**rejected**)
+  {% endhint %}
 
-#### Crear una Promise
+### Crear una Promise
 
 **Exemple:**
 
@@ -94,20 +94,20 @@ esperarTemps(2000).then(function (resultat) {
 
 ### Exemple bàsic:
 
-*   Convertir una Promise amb `async`/`await`:
+- Convertir una Promise amb `async`/`await`:
 
-    ```javascript
-    async function exempleAsync() {
-      try {
-        let resultat = await esperarTemps(2000); // Espera que la Promise es resolgui
-        console.log(resultat); // "Temps completat!"
-      } catch (error) {
-        console.error(error);
-      }
+  ```javascript
+  async function exempleAsync() {
+    try {
+      let resultat = await esperarTemps(2000); // Espera que la Promise es resolgui
+      console.log(resultat); // "Temps completat!"
+    } catch (error) {
+      console.error(error);
     }
+  }
 
-    exempleAsync();
-    ```
+  exempleAsync();
+  ```
 
 ## 4. Treballant amb APIs i `fetch`
 
@@ -115,35 +115,37 @@ esperarTemps(2000).then(function (resultat) {
 
 > `fetch` és una funció integrada que permet fer peticions HTTP.
 
-**Exemple per obtenir dades d'una API pública:**
+- **Exemple per obtenir dades d'una API pública:**
 
-```javascript
-fetch("https://jsonplaceholder.typicode.com/posts/1")
-  .then(function (resposta) {
-    return resposta.json(); // Convertir la resposta a JSON
-  })
-  .then(function (dades) {
-    console.log(dades); // Mostra les dades obtingudes
-  })
-  .catch(function (error) {
-    console.error("Error en la petició:", error);
-  });
-```
+  ```javascript
+  fetch("https://jsonplaceholder.typicode.com/posts/1")
+    .then(function (resposta) {
+      return resposta.json(); // Convertir la resposta a JSON
+    })
+    .then(function (dades) {
+      console.log(dades); // Mostra les dades obtingudes
+    })
+    .catch(function (error) {
+      console.error("Error en la petició:", error);
+    });
+  ```
 
 ### Exemple amb `async`/`await`:
 
-**Exemple més net:**
+- **Exemple més net:**
 
-```javascript
-async function obtenirDades() {
-  try {
-    let resposta = await fetch("https://jsonplaceholder.typicode.com/posts/1");
-    let dades = await resposta.json();
-    console.log(dades);
-  } catch (error) {
-    console.error("Error en la petició:", error);
+  ```javascript
+  async function obtenirDades() {
+    try {
+      let resposta = await fetch(
+        "https://jsonplaceholder.typicode.com/posts/1",
+      );
+      let dades = await resposta.json();
+      console.log(dades);
+    } catch (error) {
+      console.error("Error en la petició:", error);
+    }
   }
-}
 
-obtenirDades();
-```
+  obtenirDades();
+  ```

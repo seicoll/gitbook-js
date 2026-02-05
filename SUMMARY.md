@@ -39,11 +39,15 @@
 - [Asíncronia](06-asincronia/asincronia.md)
 - [Axios](06-asincronia/axios.md)
 
+## Modularitat i Organització
+
+- [Modularitat i Organització](07-modularitat/modularitat.md)
+- [Mòduls: export i import](07-modularitat/moduls-export-i-import.md)
+
 ## Programació orientada a objectes
 
 - [Classe](classes/classe.md)
 - [Getters i setters](classes/getters-i-setters.md)
-- [Mòduls: export i import](classes/moduls-export-i-import.md)
 
 ---
 
