@@ -34,9 +34,9 @@
 - [Objectes](05-arrays-i-objectes/objectes.md)
 - [Exercicis: Arrays i objectes](05-arrays-i-objectes/exercicis.md)
 
-## AJAX
+## Asíncronia
 
-- [AJAX](ajax/ajax.md)
+- [Asíncronia](06-asincronia/asincronia.md.md)
 
 ## Programació orientada a objectes
 

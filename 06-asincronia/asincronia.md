@@ -83,7 +83,7 @@ esperarTemps(2000).then(function (resultat) {
 
 ## 3. `async` i `await`
 
-- La sintaxi `async`/`await` fa que el codi asíncron sembli síncron, facilitant-ne la lectura i comprensió.
+> La sintaxi `async`/`await` fa que el codi asíncron sembli síncron, facilitant-ne la lectura i comprensió.
 
 ### Exemple bàsic:
 
@@ -102,110 +102,46 @@ esperarTemps(2000).then(function (resultat) {
   exempleAsync();
   ```
 
----
+## 4. Treballant amb APIs i `fetch`
 
-### 4. Treballant amb APIs i `fetch`
+### Introducció a `fetch`
 
-#### Introducció a `fetch`
+> `fetch` és una funció integrada que permet fer peticions HTTP.
 
-- `fetch` és una funció integrada que permet fer peticions HTTP.
-- Exemple bàsic:
-  ```javascript
-  fetch("https://jsonplaceholder.typicode.com/posts/1")
-    .then(function (resposta) {
-      return resposta.json(); // Convertir la resposta a JSON
-    })
-    .then(function (dades) {
-      console.log(dades); // Mostra les dades obtingudes
-    })
-    .catch(function (error) {
-      console.error("Error en la petició:", error);
-    });
-  ```
+**Exemple per obtenir dades d'una API pública:**
 
-#### Exemple amb `async`/`await`:
+```javascript
+fetch("https://jsonplaceholder.typicode.com/posts/1")
+  .then(function (resposta) {
+    return resposta.json(); // Convertir la resposta a JSON
+  })
+  .then(function (dades) {
+    console.log(dades); // Mostra les dades obtingudes
+  })
+  .catch(function (error) {
+    console.error("Error en la petició:", error);
+  });
+```
 
-- Exemple més net:
+### Exemple amb `async`/`await`:
 
-  ```javascript
-  async function obtenirDades() {
-    try {
-      let resposta = await fetch(
-        "https://jsonplaceholder.typicode.com/posts/1",
-      );
-      let dades = await resposta.json();
-      console.log(dades);
-    } catch (error) {
-      console.error("Error en la petició:", error);
-    }
+**Exemple més net:**
+
+```javascript
+async function obtenirDades() {
+  try {
+    let resposta = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+    let dades = await resposta.json();
+    console.log(dades);
+  } catch (error) {
+    console.error("Error en la petició:", error);
   }
+}
 
-  obtenirDades();
-  ```
+obtenirDades();
+```
 
----
-
-## Exercicis Pràctics
-
-1. **Simular un retard**:
-   Escriu una funció que simuli una operació asíncrona amb un retard de 3 segons i mostri un missatge.
-
-   ```javascript
-   function esperar(ms) {
-     return new Promise(function (resolve) {
-       setTimeout(function () {
-         resolve("Operació completada!");
-       }, ms);
-     });
-   }
-
-   esperar(3000).then(function (resultat) {
-     console.log(resultat); // Mostra "Operació completada!" després de 3 segons
-   });
-   ```
-
-2. **Consultar una API pública**:
-   Escriu una funció que obtingui informació d'una API pública (per exemple, usuaris) i mostri el resultat a la consola.
-
-   ```javascript
-   async function obtenirUsuaris() {
-     try {
-       let resposta = await fetch("https://jsonplaceholder.typicode.com/users");
-       let usuaris = await resposta.json();
-       console.log(usuaris); // Mostra la llista d'usuaris
-     } catch (error) {
-       console.error("Error en la petició:", error);
-     }
-   }
-
-   obtenirUsuaris();
-   ```
-
-3. **Gestió d’errors**:
-   Escriu un codi que provi d'accedir a una URL incorrecta i gestioni l'error adequadament.
-
-   ```javascript
-   async function obtenirDadesErrònies() {
-     try {
-       let resposta = await fetch(
-         "https://jsonplaceholder.typicode.com/noexistent",
-       );
-       if (!resposta.ok) {
-         throw new Error("No s'ha trobat la pàgina");
-       }
-       let dades = await resposta.json();
-       console.log(dades);
-     } catch (error) {
-       console.error("Error:", error.message);
-     }
-   }
-
-   obtenirDadesErrònies();
-   ```
-
----
-
-## Resum
+<!-- ## Resum
 
 En aquesta sessió hem après:
 
@@ -219,4 +155,4 @@ En aquesta sessió hem après:
 
 1. Escriu una funció que consulti els comentaris d'un post d'una API (exemple: `https://jsonplaceholder.typicode.com/comments?postId=1`) i els mostri a la consola.
 2. Crea una Promise que es resolgui després de 5 segons i mostri "Missió completada!".
-3. Crea un codi que gestioni correctament errors en una petició a una URL incorrecta.
+3. Crea un codi que gestioni correctament errors en una petició a una URL incorrecta. -->
