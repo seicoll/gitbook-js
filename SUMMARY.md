@@ -36,7 +36,8 @@
 
 ## Asíncronia
 
-- [Asíncronia](06-asincronia/asincronia.md.md)
+- [Asíncronia](06-asincronia/asincronia.md)
+- [Axios](06-asincronia/axios.md)
 
 ## Programació orientada a objectes
 
