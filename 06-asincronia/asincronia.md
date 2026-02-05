@@ -4,7 +4,7 @@
 
 ### Programació síncrona
 
-- Les instruccions s'executen una després de l'altra.
+* Les instruccions s'executen una després de l'altra.
 
 ```javascript
 console.log("Primera línia");
@@ -13,9 +13,8 @@ console.log("Segona línia");
 
 ### Programació asíncrona
 
-- Permet que algunes operacions (com consultes a un servidor) es facin en **segon pla** mentre altres instruccions continuen executant-se.
-
-**Exemple amb `setTimeout`:**
+* Permet que algunes operacions (com consultes a un servidor) es facin en **segon pla** mentre altres instruccions continuen executant-se.
+* **Exemple amb `setTimeout`:**
 
 ```javascript
 console.log("Abans del timeout");
@@ -37,11 +36,19 @@ Després de 2 segons
 
 ## 2. Promises
 
-> Una **Promise** és un objecte que representa el resultat d'una operació asíncrona: pot estar pendent (**pending**), resolta (**fulfilled**) o rebutjada (**rejected**).
+{% hint style="info" %}
+Una **Promise** és un objecte que representa el resultat d'una operació asíncrona.
+
+Pot estar:&#x20;
+
+* pendent (**pending**)&#x20;
+* resolta (**fulfilled**)&#x20;
+* o rebutjada (**rejected**)
+{% endhint %}
 
 #### Crear una Promise
 
-Exemple bàsic:
+**Exemple:**
 
 ```javascript
 let promesa = new Promise(function (resolve, reject) {
@@ -87,20 +94,20 @@ esperarTemps(2000).then(function (resultat) {
 
 ### Exemple bàsic:
 
-- Convertir una Promise amb `async`/`await`:
+*   Convertir una Promise amb `async`/`await`:
 
-  ```javascript
-  async function exempleAsync() {
-    try {
-      let resultat = await esperarTemps(2000); // Espera que la Promise es resolgui
-      console.log(resultat); // "Temps completat!"
-    } catch (error) {
-      console.error(error);
+    ```javascript
+    async function exempleAsync() {
+      try {
+        let resultat = await esperarTemps(2000); // Espera que la Promise es resolgui
+        console.log(resultat); // "Temps completat!"
+      } catch (error) {
+        console.error(error);
+      }
     }
-  }
 
-  exempleAsync();
-  ```
+    exempleAsync();
+    ```
 
 ## 4. Treballant amb APIs i `fetch`
 
@@ -140,19 +147,3 @@ async function obtenirDades() {
 
 obtenirDades();
 ```
-
-<!-- ## Resum
-
-En aquesta sessió hem après:
-
-- Què és la programació asíncrona i com es gestiona amb Promises.
-- Com utilitzar `async` i `await` per simplificar el codi asíncron.
-- Com fer peticions HTTP amb `fetch` per obtenir dades d'APIs.
-
----
-
-## Tasca per autoaprenentatge
-
-1. Escriu una funció que consulti els comentaris d'un post d'una API (exemple: `https://jsonplaceholder.typicode.com/comments?postId=1`) i els mostri a la consola.
-2. Crea una Promise que es resolgui després de 5 segons i mostri "Missió completada!".
-3. Crea un codi que gestioni correctament errors en una petició a una URL incorrecta. -->

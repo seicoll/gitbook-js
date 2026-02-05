@@ -1,19 +1,21 @@
 # DOM
 
+## DOM
+
 En aquesta secció aprendrem a interactuar amb el **DOM (Document Object Model)** per manipular elements HTML amb JavaScript. També introduirem els **esdeveniments**, que permeten respondre a accions dels usuaris, com ara clics o escriptura en formularis.
 
----
+***
 
-## 1. Què és el DOM?
+### 1. Què és el DOM?
 
 > **El DOM** (Document Object Model) és una representació estructurada d'una pàgina HTML.
 
-- JavaScript pot accedir, modificar i crear elements del DOM.
-- El DOM està organitzat en una estructura d'arbre, on cada element HTML és un **node**.
+* JavaScript pot accedir, modificar i crear elements del DOM.
+* El DOM està organitzat en una estructura d'arbre, on cada element HTML és un **node**.
 
 **Exemple d'un DOM bàsic:**
 
-- HTML original:
+* HTML original:
 
 ```html
 <html>
@@ -27,48 +29,46 @@ En aquesta secció aprendrem a interactuar amb el **DOM (Document Object Model)*
 </html>
 ```
 
-- Representació del DOM:
+* Representació del DOM:
 
-![Exemple DOM](./dom.gif)
+![Exemple DOM](../.gitbook/assets/dom.gif)
 
----
+***
 
-## 2. Seleccionar Elements del DOM
+### 2. Seleccionar Elements del DOM
 
-#### Mètodes per seleccionar elements:
+**Mètodes per seleccionar elements:**
 
-1. **`document.getElementById`**:
+1.  **`document.getElementById`**:
 
-   Selecciona **un únic** element pel seu `id`.
+    Selecciona **un únic** element pel seu `id`.
 
-   ```javascript
-   let element = document.getElementById("contenidor");
-   console.log(element); // Mostra el <div> a la consola
-   ```
+    ```javascript
+    let element = document.getElementById("contenidor");
+    console.log(element); // Mostra el <div> a la consola
+    ```
+2.  **`document.querySelector`**:
 
-2. **`document.querySelector`**:
+    Selecciona **el primer element** que coincideix amb un **selector** CSS.
 
-   Selecciona **el primer element** que coincideix amb un **selector** CSS.
+    ```javascript
+    let paràgraf = document.querySelector("p");
+    console.log(paràgraf); // Mostra el primer <p> a la consola
+    ```
+3.  **`document.querySelectorAll`**:
 
-   ```javascript
-   let paràgraf = document.querySelector("p");
-   console.log(paràgraf); // Mostra el primer <p> a la consola
-   ```
+    Selecciona tots els elements que coincideixen amb un selector CSS.
 
-3. **`document.querySelectorAll`**:
+    ```javascript
+    let paragrafs = document.querySelectorAll("p");
+    console.log(paragrafs); // Mostra una NodeList amb tots els <p>
+    ```
 
-   Selecciona tots els elements que coincideixen amb un selector CSS.
+***
 
-   ```javascript
-   let paragrafs = document.querySelectorAll("p");
-   console.log(paragrafs); // Mostra una NodeList amb tots els <p>
-   ```
+### 3. Modificar Elements del DOM
 
----
-
-## 3. Modificar Elements del DOM
-
-### Modificar contingut:
+#### Modificar contingut:
 
 **Exemple:** Canviar el text d'un paràgraf.
 
@@ -79,7 +79,7 @@ paragraf.textContent = "Hola, JavaScript!";
 console.log(paragraf.textContent); // Mostra "Hola, JavaScript!"
 ```
 
-### Modificar atributs:
+#### Modificar atributs:
 
 **Exemple:** Afegir o canviar un atribut `src` d'una imatge.
 
@@ -90,7 +90,7 @@ element.setAttribute("src", "http://www.dogs.com/dog.gif");
 console.log(element.src); // Mostra "http://www.dogs.com/dog.gif"
 ```
 
-### Modificar estils:
+#### Modificar estils:
 
 **Exemple:** Canviar el color de text d'un element.
 
@@ -102,7 +102,7 @@ paragraf.style.fontSize = "20px";
 console.log(paragraf.style.color); // Mostra "blue"
 ```
 
-### Crear elements des de zero:
+#### Crear elements des de zero:
 
 **Exemple:** Crear un imatge i afegir-la a la pàgina.
 
@@ -113,55 +113,50 @@ img.src = "http://www.dogs.com/dog.gif";
 document.body.appendChild(img);
 ```
 
----
+***
 
-# Exercicis Pràctics
+## Exercicis Pràctics
 
-1. **Canvia el contingut d'un paràgraf**:
-   Escriu un codi que canviï el text d'un paràgraf quan l'usuari faci clic a un botó:
+1.  **Canvia el contingut d'un paràgraf**: Escriu un codi que canviï el text d'un paràgraf quan l'usuari faci clic a un botó:
 
-   ```html
-   <p id="text">Aquest text canviarà.</p>
-   <button id="canvia">Canvia el text</button>
-   ```
+    ```html
+    <p id="text">Aquest text canviarà.</p>
+    <button id="canvia">Canvia el text</button>
+    ```
 
-   ```javascript
-   let boto = document.getElementById("canvia");
-   let text = document.getElementById("text");
+    ```javascript
+    let boto = document.getElementById("canvia");
+    let text = document.getElementById("text");
 
-   boto.addEventListener("click", function () {
-     text.textContent = "El text ha canviat!";
-   });
-   ```
+    boto.addEventListener("click", function () {
+      text.textContent = "El text ha canviat!";
+    });
+    ```
+2.  **Canvia el color de fons**: Escriu un codi que canvii el color de fons de la pàgina a groc quan es fa clic a un botó:
 
-2. **Canvia el color de fons**:
-   Escriu un codi que canvii el color de fons de la pàgina a groc quan es fa clic a un botó:
+    ```html
+    <button id="color">Canvia el color de fons</button>
+    ```
 
-   ```html
-   <button id="color">Canvia el color de fons</button>
-   ```
+    ```javascript
+    let botó = document.getElementById("color");
 
-   ```javascript
-   let botó = document.getElementById("color");
+    botó.addEventListener("click", function () {
+      document.body.style.backgroundColor = "yellow";
+    });
+    ```
+3.  **Escriu i mostra en temps real**: Escriu un programa que mostri el text que l'usuari escriu en una entrada:
 
-   botó.addEventListener("click", function () {
-     document.body.style.backgroundColor = "yellow";
-   });
-   ```
+    ```html
+    <input type="text" id="escritura" placeholder="Escriu alguna cosa" />
+    <p id="resposta"></p>
+    ```
 
-3. **Escriu i mostra en temps real**:
-   Escriu un programa que mostri el text que l'usuari escriu en una entrada:
+    ```javascript
+    let entrada = document.getElementById("escritura");
+    let resposta = document.getElementById("resposta");
 
-   ```html
-   <input type="text" id="escritura" placeholder="Escriu alguna cosa" />
-   <p id="resposta"></p>
-   ```
-
-   ```javascript
-   let entrada = document.getElementById("escritura");
-   let resposta = document.getElementById("resposta");
-
-   entrada.addEventListener("input", function () {
-     resposta.textContent = entrada.value;
-   });
-   ```
+    entrada.addEventListener("input", function () {
+      resposta.textContent = entrada.value;
+    });
+    ```
