@@ -66,18 +66,19 @@ function inicialitzarJoc(){
 function comprovarLletra(lletra)
 {
 
-//Comprovar si la lletra està dins de la paraula a endevinar
-if (...) {
-    //Si la lletra està dins de la paraula
+  //Comprovar si la lletra està dins de la paraula a endevinar
+  if (...) {
+      //Si la lletra està dins de la paraula
 
-    //Actualitzar l'arrayResposta amb la lletra
-    pintarPaurla(arrayResposta);
-} else {
-    //Si la lletra no està dins de la paraula
+      //Actualitzar l'arrayResposta amb la lletra
+      pintarPaurla(arrayResposta);
+  } else {
+      //Si la lletra no està dins de la paraula
 
-    //Incrementar el nombre d'errades
+      //Incrementar el nombre d'errades
 
-    //Canviar la imatge del penjat mostrada
+      //Canviar la imatge del penjat mostrada
+  }
 }
 ```
 
