@@ -82,5 +82,5 @@ function comprovarLletra(lletra)
 }
 ```
 
-- **Exemple de com detectar les lletres apretades del teclat:**
-  https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_event_key_keycode2
+**Exemple de com detectar les lletres apretades del teclat:**
+[https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_event_key_keycode2](https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_event_key_keycode2)
