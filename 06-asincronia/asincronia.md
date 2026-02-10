@@ -92,7 +92,7 @@ esperarTemps(2000).then(function (resultat) {
 
 > La sintaxi `async`/`await` fa que el codi asíncron sembli síncron, facilitant-ne la lectura i comprensió.
 
-### Exemple bàsic:
+### Exemple
 
 - Convertir una Promise amb `async`/`await`:
 

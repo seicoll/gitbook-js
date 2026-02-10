@@ -33,6 +33,7 @@
 - [Arrays](05-arrays-i-objectes/arrays.md)
 - [Objectes](05-arrays-i-objectes/objectes.md)
 - [Exercicis: Arrays i objectes](05-arrays-i-objectes/exercicis.md)
+- [Projecte: Joc del penjat](05-arrays-i-objectes/joc-penjat.md)
 
 ## Asíncronia
 
