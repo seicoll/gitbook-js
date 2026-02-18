@@ -39,6 +39,7 @@
 
 - [Asíncronia](06-asincronia/asincronia.md)
 - [Axios](06-asincronia/axios.md)
+- [Exercicis](06-asincronia/exercicis.md)
 
 ## Modularitat i Organització
 
