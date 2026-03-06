@@ -1,7 +1,6 @@
 site_name: Apunts de Javascript
 site_url: https://seicoll.github.io/gitbook-js/
 repo_url: https://github.com/seicoll/gitbook-js
-docs_dir: .
 
 theme:
   name: material
