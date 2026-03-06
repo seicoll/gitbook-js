@@ -25,6 +25,10 @@ theme:
 plugins:
   - search
 
+copyright: |
+  © 2026 Joan Coma  
+  Material docent – Institut Bosc de la Coma
+
 markdown_extensions:
   - toc:
       permalink: true
