@@ -44,5 +44,3 @@ alert("Hi JS developers");
 
 alert("Hi JS developers");
 ```
-
----
