@@ -64,8 +64,6 @@ Es recomana la definició del codi en la capçalera del document **`<head>`**.
 
 ## **En un fitxer extern**
 
-<!-- {% code title="index.html" %} -->
-
 ```html
 <!DOCTYPE html>
 <html>
@@ -86,18 +84,12 @@ Es recomana la definició del codi en la capçalera del document **`<head>`**.
 </html>
 ```
 
-<!-- {% endcode %}
-
-{% code title="myScript.js" %} -->
-
 ```javascript
 \\ myScript.js
 function myFunction() {
   document.getElementById("demo").innerHTML = "Paragraph changed.";
 }
 ```
-
-<!-- {% endcode %} -->
 
 [Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs_whereto_external)
 
