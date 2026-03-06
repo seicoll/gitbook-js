@@ -4,6 +4,8 @@ repo_url: https://github.com/seicoll/gitbook-js
 
 theme:
   name: material
+  favicon: assets/js_icon.png
+
   features:
     - navigation.sections
     - navigation.expand
