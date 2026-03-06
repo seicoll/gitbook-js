@@ -12,11 +12,9 @@ JavaScript és **Case sensitive**.
 
 En JavaScript una variable anomenada **`Comptador`** no és el mateix que **`comptador`**.
 
-{% hint style="warning" %}
 **Majúscula != Minúscula**
 
 Comptador != comptador
-{% endhint %}
 
 ## No es defineix el tipus de les variables
 

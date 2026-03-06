@@ -36,7 +36,6 @@
 
 ## 2. Promises
 
-{% hint style="info" %}
 Una **Promise** és un objecte que representa el resultat d'una operació asíncrona.
 
 Pot estar:&#x20;
@@ -44,7 +43,6 @@ Pot estar:&#x20;
 - pendent (**pending**)&#x20;
 - resolta (**fulfilled**)&#x20;
 - o rebutjada (**rejected**)
-  {% endhint %}
 
 ### Crear una Promise
 
