@@ -5,6 +5,20 @@ docs_dir: .
 
 theme:
   name: material
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: white
+      accent: blue
+  font:
+    text: Inter
+    code: JetBrains Mono
 
 plugins:
   - search
@@ -12,6 +26,9 @@ plugins:
 markdown_extensions:
   - toc:
       permalink: true
+
+extra_css:
+  - stylesheets/extra.css
 
 nav:
   - Inici: README.md

@@ -1,0 +1,56 @@
+/* Amplada i aire més “GitBook” */
+.md-grid {
+  max-width: 1440px;
+}
+
+/* Sidebar més clara i suau */
+.md-sidebar {
+  background: #fafafa;
+}
+
+.md-nav__title {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.md-nav__link {
+  border-radius: 8px;
+  padding: 0.35rem 0.6rem;
+}
+
+.md-nav__link:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+/* Contingut principal més net */
+.md-content__inner {
+  margin-top: 0.4rem;
+}
+
+.md-typeset h1 {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.md-typeset h2,
+.md-typeset h3 {
+  font-weight: 700;
+}
+
+/* Codi més arrodonit */
+.md-typeset pre > code {
+  border-radius: 12px;
+}
+
+/* Taules i caixes més suaus */
+.md-typeset table:not([class]) {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Sidebar una mica més estreta */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary {
+    width: 13rem;
+  }
+}
