@@ -25,6 +25,8 @@ Aquesta sessió introdueix els conceptes de **modularitat** i **organització de
 - **Exportar**:
   - Amb `export` es poden compartir funcions, constants o classes entre fitxers.
 
+  {% code title="utils.js" %}
+
   ```javascript
   // fitxer utils.js
   export function suma(a, b) {
@@ -36,6 +38,8 @@ Aquesta sessió introdueix els conceptes de **modularitat** i **organització de
 
 - **Importar**:
   - Amb `import` s'accedeix als elements exportats des d'un altre fitxer.
+
+  {% code title="principal.js" %}
 
   ```javascript
   // fitxer principal.js

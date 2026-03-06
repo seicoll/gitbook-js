@@ -37,7 +37,6 @@ Quan la consulta funcioni, mostra:
 - **Imatge** (sprite frontal) _(pista: `sprites.front_default`)_
 - **Alçada i pes**
 - **Tipus** (1 o 2)
-- **Estadístiques bàsiques**: HP, Attack, Defense, Speed
 
 ### 4. Validació i errors
 
