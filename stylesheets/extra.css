@@ -1,6 +1,16 @@
 /* Amplada i aire més “GitBook” */
 .md-grid {
-  max-width: 1440px;
+  max-width: 1800px;
+}
+
+.md-content {
+  max-width: 100%;
+}
+
+/* Contingut principal més net */
+.md-content__inner {
+  margin-top: 0.4rem;
+  max-width: 100%;
 }
 
 /* Sidebar més clara i suau */
@@ -20,11 +30,6 @@
 
 .md-nav__link:hover {
   background: rgba(0, 0, 0, 0.04);
-}
-
-/* Contingut principal més net */
-.md-content__inner {
-  margin-top: 0.4rem;
 }
 
 .md-typeset h1 {
