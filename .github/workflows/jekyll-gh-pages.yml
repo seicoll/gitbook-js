@@ -35,8 +35,11 @@ jobs:
         with:
           source: ./
           destination: ./_site
+      - name: Install dependencies
+        run: pip install mkdocs mkdocs-material
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
+      
 
   # Deployment job
   deploy:
