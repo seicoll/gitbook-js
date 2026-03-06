@@ -2,8 +2,6 @@
 
 ## **Primer script Javascript**
 
-<!-- {% code title="index.html" %} -->
-
 ```markup
 <!DOCTYPE html>
 <html>
@@ -20,8 +18,6 @@
   </body>
 </html>
 ```
-
-<!-- {% endcode %} -->
 
 ### 1. Modificar el primer script perquè:
 
