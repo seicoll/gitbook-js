@@ -142,3 +142,81 @@
     width: 13rem;
   }
 }
+
+/*********** Colors de blocs de codi més tipus GitBook */
+:root {
+  --md-code-bg-color: #f7f9fb;
+  --md-code-fg-color: #1f2937;
+}
+
+/* Bloc de codi */
+.highlight pre {
+  background: #f7f9fb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+/* Codi inline */
+code {
+  background: #f3f4f6;
+  color: #c7254e;
+  border-radius: 6px;
+  padding: 0.15em 0.35em;
+}
+
+/* Comentaris */
+.highlight .c,
+.highlight .c1,
+.highlight .cm {
+  color: #6b7280 !important;
+  font-style: italic;
+}
+
+/* Keywords */
+.highlight .k,
+.highlight .kd,
+.highlight .kn {
+  color: #7c3aed !important;
+  font-weight: 600;
+}
+
+/* Strings */
+.highlight .s,
+.highlight .s1,
+.highlight .s2 {
+  color: #059669 !important;
+}
+
+/* Nombres */
+.highlight .m,
+.highlight .mi,
+.highlight .mf {
+  color: #2563eb !important;
+}
+
+/* Funcions */
+.highlight .nf {
+  color: #d97706 !important;
+}
+
+/* Noms / variables */
+.highlight .nx,
+.highlight .n {
+  color: #111827 !important;
+}
+
+/* Etiquetes HTML */
+.highlight .nt {
+  color: #2563eb !important;
+}
+
+/* Atributs HTML */
+.highlight .na {
+  color: #d97706 !important;
+}
+
+/* Valors d'atributs HTML */
+.highlight .s {
+  color: #059669 !important;
+}

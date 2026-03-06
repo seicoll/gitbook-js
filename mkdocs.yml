@@ -26,12 +26,14 @@ plugins:
   - search
 
 copyright: |
-  © 2026 Joan Coma  
-  Material docent – Institut Bosc de la Coma
+  © 2026 Sergi Coll  
+   – Institut Bosc de la Coma
 
 markdown_extensions:
   - toc:
       permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
   - pymdownx.superfences
 
 extra_css:
