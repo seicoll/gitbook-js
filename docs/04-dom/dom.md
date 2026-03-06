@@ -29,7 +29,7 @@ En aquesta secció aprendrem a interactuar amb el **DOM (Document Object Model)*
 
 - Representació del DOM:
 
-![Exemple DOM](assets/dom.gif)
+![Exemple DOM](../assets/dom.gif)
 
 ---
 

@@ -1,6 +1,6 @@
 /* Amplada i aire més “GitBook” */
 .md-grid {
-  max-width: 1800px;
+  max-width: 1800px !important;
 }
 
 .md-content {
