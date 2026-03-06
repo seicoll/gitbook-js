@@ -16,11 +16,13 @@
 /* Sidebar més clara i suau */
 .md-sidebar {
   background: #fafafa;
+  padding: 0;
 }
 
 .md-nav__title {
   font-weight: bold;
   font-size: 0.95rem;
+  text-transform: uppercase;
 }
 
 .md-nav__link {
