@@ -41,6 +41,7 @@
 .md-nav__link {
   border-radius: 4px;
   font-size: 0.95em;
+  padding: 3px;
 }
 
 .md-nav__link:hover {
