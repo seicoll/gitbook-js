@@ -35,8 +35,9 @@
 }
 
 .md-nav__link {
-  border-radius: 8px;
-  font-size: 0.9em;
+  border-radius: 4px;
+  font-size: 0.95em;
+  margin-left: 3px;
 }
 
 .md-nav__link:hover {
@@ -134,6 +135,6 @@
 /* Sidebar una mica més estreta */
 @media screen and (min-width: 76.25em) {
   .md-sidebar--primary {
-    width: 13rem;
+    width: 14rem;
   }
 }
