@@ -19,12 +19,14 @@
   padding: 0;
 }
 
+/* Menú esquerra - Títol principal */
 .md-nav__title {
   font-weight: bold;
   font-size: 0.95rem;
+  color: black !important;
 }
 
-/* Menú esquerra */
+/* Menú esquerra - Títols secció */
 .md-nav__item--section > .md-nav__link {
   font-weight: bold;
   font-size: 0.95em;
@@ -34,6 +36,7 @@
 
 .md-nav__link {
   border-radius: 8px;
+  font-size: 0.9em;
 }
 
 .md-nav__link:hover {
