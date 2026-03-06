@@ -24,9 +24,9 @@ class Book {
     this._author = updatedAuthor;
   }
 }
-const novel = new Book('anonymous');
+const novel = new Book("anonymous");
 console.log(novel.writer);
-novel.writer = 'newAuthor';
+novel.writer = "newAuthor";
 console.log(novel.writer);
 
 //La consola mostrarà les cadenes anonymous i newAuthor.
@@ -34,6 +34,8 @@ console.log(novel.writer);
 
 Tingues en compte la sintaxi usada per invocar el getter i el setter. Ni tan sols es veuen com a funcions. Els getter i els setter són importants perquè amaguen els detalls interns de la implementació.
 
-{% hint style="info" %}
+<!-- {% hint style="info" %} -->
+
 **Nota**: És convenció precedir el nom d'una variable privada amb un guió baix (\_). Tot i això, la pràctica en si mateixa **no fa una variable privada**.
-{% endhint %}
+
+<!-- {% endhint %} -->

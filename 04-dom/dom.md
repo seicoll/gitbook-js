@@ -4,18 +4,16 @@
 
 En aquesta secció aprendrem a interactuar amb el **DOM (Document Object Model)** per manipular elements HTML amb JavaScript. També introduirem els **esdeveniments**, que permeten respondre a accions dels usuaris, com ara clics o escriptura en formularis.
 
-***
-
 ### 1. Què és el DOM?
 
 > **El DOM** (Document Object Model) és una representació estructurada d'una pàgina HTML.
 
-* JavaScript pot accedir, modificar i crear elements del DOM.
-* El DOM està organitzat en una estructura d'arbre, on cada element HTML és un **node**.
+- JavaScript pot accedir, modificar i crear elements del DOM.
+- El DOM està organitzat en una estructura d'arbre, on cada element HTML és un **node**.
 
 **Exemple d'un DOM bàsic:**
 
-* HTML original:
+- HTML original:
 
 ```html
 <html>
@@ -29,11 +27,11 @@ En aquesta secció aprendrem a interactuar amb el **DOM (Document Object Model)*
 </html>
 ```
 
-* Representació del DOM:
+- Representació del DOM:
 
 ![Exemple DOM](../.gitbook/assets/dom.gif)
 
-***
+---
 
 ### 2. Seleccionar Elements del DOM
 
@@ -47,6 +45,7 @@ En aquesta secció aprendrem a interactuar amb el **DOM (Document Object Model)*
     let element = document.getElementById("contenidor");
     console.log(element); // Mostra el <div> a la consola
     ```
+
 2.  **`document.querySelector`**:
 
     Selecciona **el primer element** que coincideix amb un **selector** CSS.
@@ -55,6 +54,7 @@ En aquesta secció aprendrem a interactuar amb el **DOM (Document Object Model)*
     let paràgraf = document.querySelector("p");
     console.log(paràgraf); // Mostra el primer <p> a la consola
     ```
+
 3.  **`document.querySelectorAll`**:
 
     Selecciona tots els elements que coincideixen amb un selector CSS.
@@ -64,7 +64,7 @@ En aquesta secció aprendrem a interactuar amb el **DOM (Document Object Model)*
     console.log(paragrafs); // Mostra una NodeList amb tots els <p>
     ```
 
-***
+---
 
 ### 3. Modificar Elements del DOM
 
@@ -113,7 +113,7 @@ img.src = "http://www.dogs.com/dog.gif";
 document.body.appendChild(img);
 ```
 
-***
+---
 
 ## Exercicis Pràctics
 
@@ -132,6 +132,7 @@ document.body.appendChild(img);
       text.textContent = "El text ha canviat!";
     });
     ```
+
 2.  **Canvia el color de fons**: Escriu un codi que canvii el color de fons de la pàgina a groc quan es fa clic a un botó:
 
     ```html
@@ -145,6 +146,7 @@ document.body.appendChild(img);
       document.body.style.backgroundColor = "yellow";
     });
     ```
+
 3.  **Escriu i mostra en temps real**: Escriu un programa que mostri el text que l'usuari escriu en una entrada:
 
     ```html

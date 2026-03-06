@@ -2,9 +2,11 @@
 
 ## Declaració de variables
 
-{% hint style="info" %}
+<!-- {% hint style="info" %} -->
+
 Una **variable** és un element que s'utilitza per emmagatzemar un valor.&#x20;
-{% endhint %}
+
+<!-- {% endhint %} -->
 
 Les variables en JavaScript es creen mitjançant la paraula reservada **`let`**.
 
@@ -18,9 +20,11 @@ let resultat = numero_1 + numero_2;
 
 La paraula reservada **`let`** va ser introduïda a **ES6**, una actualització important per JavaScript, per resoldre aquest problema potencial amb la paraula clau var.
 
-{% hint style="info" %}
+<!-- {% hint style="info" %} -->
+
 És recomanable utilitzar en la decalarició de variables **let**
-{% endhint %}
+
+<!-- {% endhint %} -->
 
 ## Diferència entre var i let
 
@@ -83,9 +87,11 @@ resultat = numero_1 + numero_2;
 
 Si les variables no estan declarades, JavaScript crea una variable global i assigna el valor corresponent.
 
-{% hint style="danger" %}
+<!-- {% hint style="danger" %} -->
+
 Es recomana i serà necessari **declarar totes les variables** que s'hagin d'utilitzar.
-{% endhint %}
+
+<!-- {% endhint %} -->
 
 ## Declaració de constants
 
@@ -93,9 +99,11 @@ Es recomana i serà necessari **declarar totes les variables** que s'hagin d'uti
 
 L'ús de `const` és una bona pràctica per a variables que no canviaran mai el seu valor, facilita el manteniment de l'aplicació i la llegibilitat.
 
-{% hint style="warning" %}
+<!-- {% hint style="warning" %} -->
+
 Les **constants** han de ser declarades i **amb un valor assignat sempre**.
-{% endhint %}
+
+<!-- {% endhint %} -->
 
 **Exemple:**
 
@@ -123,7 +131,6 @@ var x = { firstName: "John", lastName: "Doe" }; // Object
 JavaScript és un llenguatge de **tipatge dinàmic** i **debilitat**. Això significa:
 
 1. **Tipatge dinàmic**:
-
    - Les variables no tenen un tipus fix assignat en el moment de la seva declaració.
    - El tipus d'una variable es pot canviar en temps d'execució.
    - Exemple:

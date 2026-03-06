@@ -31,7 +31,7 @@ Aquesta sessió introdueix els conceptes de **modularitat** i **organització de
 - **Exportar**:
   - Amb `export` es poden compartir funcions, constants o classes entre fitxers.
 
-  {% code title="utils.js" %}
+  <!-- {% code title="utils.js" %} -->
 
   ```javascript
   // fitxer utils.js
@@ -42,12 +42,12 @@ Aquesta sessió introdueix els conceptes de **modularitat** i **organització de
   export const PI = 3.14;
   ```
 
-  {% endcode %}
+  <!-- {% endcode %} -->
 
 - **Importar**:
   - Amb `import` s'accedeix als elements exportats des d'un altre fitxer.
 
-  {% code title="principal.js" %}
+  <!-- {% code title="principal.js" %} -->
 
   ```javascript
   // fitxer principal.js
@@ -57,7 +57,7 @@ Aquesta sessió introdueix els conceptes de **modularitat** i **organització de
   console.log(PI); // 3.14
   ```
 
-  {% endcode %}
+  <!-- {% endcode %} -->
 
 - El _`./`_, indica a **`import`** que busqui el fitxer **`car.js`** a la mateixa carpeta que el fitxer actual.&#x20;
 
@@ -67,7 +67,7 @@ Aquesta sessió introdueix els conceptes de **modularitat** i **organització de
 
 - Només un element es pot exportar com a **default** per fitxer.
 
-  {% code title="salutacions.js" %}
+  <!-- {% code title="salutacions.js" %} -->
 
   ```javascript
   // fitxer salutacions.js
@@ -76,9 +76,9 @@ Aquesta sessió introdueix els conceptes de **modularitat** i **organització de
   }
   ```
 
-  {% endcode %}
+  <!-- {% endcode %} -->
 
-{% code title="principal.js" %}
+<!-- {% code title="principal.js" %} -->
 
 ```javascript
 // fitxer principal.js
@@ -87,7 +87,7 @@ import hola from "./salutacions.js";
 hola(); // "Hola, món!"
 ```
 
-{% endcode %}
+<!-- {% endcode %} -->
 
 ### Exemple pràctic amb diversos mòduls
 

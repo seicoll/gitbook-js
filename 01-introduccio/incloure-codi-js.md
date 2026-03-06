@@ -64,7 +64,7 @@ Es recomana la definició del codi en la capçalera del document **`<head>`**.
 
 ## **En un fitxer extern**
 
-{% code title="index.html" %}
+<!-- {% code title="index.html" %} -->
 
 ```html
 <!DOCTYPE html>
@@ -86,17 +86,18 @@ Es recomana la definició del codi en la capçalera del document **`<head>`**.
 </html>
 ```
 
-{% endcode %}
+<!-- {% endcode %}
 
-{% code title="myScript.js" %}
+{% code title="myScript.js" %} -->
 
 ```javascript
+\\ myScript.js
 function myFunction() {
   document.getElementById("demo").innerHTML = "Paragraph changed.";
 }
 ```
 
-{% endcode %}
+<!-- {% endcode %} -->
 
 [Demo](https://www.w3schools.com/js/tryit.asp?filename=tryjs_whereto_external)
 
@@ -144,5 +145,3 @@ function myFunction() {
 
 1. Obre el fitxer `index.html` en el navegador (fes doble clic sobre ell).
 2. Obre DevTools i vés a la **Consola** per veure el missatge de "El JavaScript funciona!".
-
----

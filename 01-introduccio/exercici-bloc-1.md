@@ -2,7 +2,8 @@
 
 ## **Primer script Javascript**
 
-{% code title="index.html" %}
+<!-- {% code title="index.html" %} -->
+
 ```markup
 <!DOCTYPE html>
 <html>
@@ -13,13 +14,14 @@
      alert("Hola futurs informàtics!!!!");
     </script>
   </head>
-  
+
   <body>
     <p>Aquesta pàgina conté el primer script en Javascript i ara començarem a complicar les coses…</p>
   </body>
 </html>
 ```
-{% endcode %}
+
+<!-- {% endcode %} -->
 
 ### 1. Modificar el primer script perquè:
 
@@ -28,10 +30,10 @@
 3. Després del primer missatge, s'ha de mostrar un altre missatge que digui "Sóc el primer script"
 4. Afegir alguns comentaris que expliquin el funcionament del codi.
 
-###  2. Crea una web que mostri la frase _Hello world_ utilitzant els tres mètodes de sortida de JavaScript explicats [aquí](https://www.w3schools.com/js/js_output.asp):
+### 2. Crea una web que mostri la frase _Hello world_ utilitzant els tres mètodes de sortida de JavaScript explicats [aquí](https://www.w3schools.com/js/js_output.asp):
 
 ```javascript
-innerHTML
+innerHTML;
 ```
 
 ```text
@@ -44,5 +46,4 @@ console.log()
 
 ### 3. Fes les següents modificacions a l’exercici anterior:
 
-* Fes que les dues paraules \(_Hello_ i _world_\) estiguin emmagatzemades cadascuna en una variable.
-
+- Fes que les dues paraules \(_Hello_ i _world_\) estiguin emmagatzemades cadascuna en una variable.
