@@ -18,6 +18,14 @@ Aquesta sessió introdueix els conceptes de **modularitat** i **organització de
 
 ## 2. Introducció a mòduls en JavaScript
 
+- JavaScript suporta mòduls nativament a través de les paraules clau **`import`** i **`export`**.
+
+- Per aprofitar aquesta funcionalitat, necessites enllaçar el script al teu document HTML amb un **`type`** de **`module`**.
+
+```javascript
+<script type="module" src="app.js"></script>
+```
+
 ### Exportar i importar mòduls
 
 - **Exportar**:
