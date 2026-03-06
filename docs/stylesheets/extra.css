@@ -19,6 +19,10 @@
   padding: 0;
 }
 
+.md-sidebar--primary {
+  width: 14rem;
+}
+
 /* Menú esquerra - Títol principal */
 .md-nav__title {
   font-weight: bold;
@@ -37,7 +41,6 @@
 .md-nav__link {
   border-radius: 4px;
   font-size: 0.95em;
-  margin-left: 3px;
 }
 
 .md-nav__link:hover {
@@ -135,6 +138,6 @@
 /* Sidebar una mica més estreta */
 @media screen and (min-width: 76.25em) {
   .md-sidebar--primary {
-    width: 14rem;
+    width: 13rem;
   }
 }
