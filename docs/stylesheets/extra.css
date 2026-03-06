@@ -22,7 +22,6 @@
 .md-nav__title {
   font-weight: bold;
   font-size: 0.95rem;
-  text-transform: uppercase;
 }
 
 /* Menú esquerra */
@@ -30,7 +29,7 @@
   font-weight: bold;
   font-size: 0.95em;
   text-transform: uppercase;
-  color: black;
+  color: black !important;
 }
 
 .md-nav__link {
