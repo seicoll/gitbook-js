@@ -25,7 +25,6 @@
 
 .md-nav__link {
   border-radius: 8px;
-  padding: 0.35rem 0.6rem;
 }
 
 .md-nav__link:hover {
@@ -38,7 +37,7 @@
 
 .md-typeset h2,
 .md-typeset h3 {
-  font-weight: 700;
+  font-weight: 900;
 }
 
 /* Codi més arrodonit */
@@ -50,6 +49,73 @@
 .md-typeset table:not([class]) {
   border-radius: 10px;
   overflow: hidden;
+}
+
+/************** TOC *******************/
+
+/* TOC dreta més discreta i neta */
+.md-sidebar--secondary {
+  width: 14rem;
+}
+
+.md-nav--secondary .md-nav__title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #6b7280;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 0.6rem;
+}
+
+/* Enllaços de la TOC */
+.md-nav--secondary .md-nav__link {
+  font-size: 0.9rem;
+  line-height: 1.35;
+  color: #4b5563;
+  border-left: 2px solid transparent;
+  padding: 0.2rem 0 0.2rem 0.75rem;
+  margin: 0.1rem 0;
+  border-radius: 0;
+}
+
+/* Hover suau */
+.md-nav--secondary .md-nav__link:hover {
+  color: #111827;
+  background: transparent;
+}
+
+/* Element actiu: barra lateral tipus GitBook */
+.md-nav--secondary .md-nav__link--active {
+  color: #2563eb;
+  font-weight: 600;
+  border-left-color: #2563eb;
+}
+
+/* Subnivells una mica més compactes */
+.md-nav--secondary .md-nav {
+  padding-left: 0.35rem;
+}
+
+/* Treure massa aire vertical */
+.md-sidebar__scrollwrap {
+  padding-top: 0.2rem;
+}
+
+/* TOC més enganxada a dalt */
+.md-sidebar--secondary .md-sidebar__inner {
+  padding-top: 0.6rem;
+}
+
+/* Capçaleres llargues més llegibles */
+.md-nav--secondary .md-nav__link {
+  white-space: normal;
+}
+
+/* Separació més clara entre blocs */
+.md-nav--secondary .md-nav__list > .md-nav__item {
+  margin-bottom: 0.15rem;
 }
 
 /* Sidebar una mica més estreta */
