@@ -3,7 +3,14 @@ site_url: https://seicoll.github.io/gitbook-js/
 repo_url: https://github.com/seicoll/gitbook-js
 
 theme:
-  name: mkdocs
+  name: material
+
+plugins:
+  - search
+
+markdown_extensions:
+  - toc:
+      permalink: true
 
 nav:
   - Introducció a JavaScript:
