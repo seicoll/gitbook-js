@@ -1,4 +1,4 @@
-/* Amplada i aire més “GitBook” */
+/* Amplada */
 .md-grid {
   max-width: 1800px !important;
 }
@@ -19,7 +19,7 @@
 }
 
 .md-nav__title {
-  font-weight: 900;
+  font-weight: bold;
   font-size: 0.95rem;
 }
 
