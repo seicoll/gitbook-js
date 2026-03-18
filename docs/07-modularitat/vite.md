@@ -4,8 +4,8 @@
 
 - **Vite** és una eina moderna per configurar i organitzar projectes de JavaScript.
 - Avantatges:
-  - Configuració senzilla.
-  - Hot-reloading instantani.
+  - Configuració senzilla
+  - Hot-reloading instantani
   - Suport per a mòduls ESM (ECMAScript Modules).
 
 ### Configuració inicial
