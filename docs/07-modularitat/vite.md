@@ -50,8 +50,8 @@ Quan treballis amb **Vite**, és important tenir una estructura clara per organi
 2. **`src/`**:
     - Conté tot el codi font del projecte.
     - Subcarpetes:
-       - **`utils/`**: Funcions generals reutilitzables (ex.: càlculs, formats).
-       - **`components/`**: Estructures o components específics del projecte.
+         - **`utils/`**: Funcions generals reutilitzables (ex.: càlculs, formats).
+         - **`components/`**: Estructures o components específics del projecte.
 
 3. **`package.json`**:
     - Conté informació sobre les dependències i scripts del projecte.
@@ -86,15 +86,15 @@ Aquest tipus d'organització ajuda a mantenir el codi estructurat i fàcil de ma
 
 3. Executa el projecte:
 
-   - Utilitza `npm run dev` i obre el navegador a l'adreça que proporciona Vite.
+     - Utilitza `npm run dev` i obre el navegador a l'adreça que proporciona Vite.
 
 
 ## 4. Bones pràctiques d’organització
 
 1. **Separa el codi per funcionalitats**:
 
-   - Guarda cada funció o grup de funcions relacionades en fitxers separats.
-   - Exemple:
+     - Guarda cada funció o grup de funcions relacionades en fitxers separats.
+     - Exemple:
   
     ```
     src/
@@ -104,15 +104,12 @@ Aquest tipus d'organització ajuda a mantenir el codi estructurat i fàcil de ma
     ```
 
 1. **Utilitza noms descriptius**:
-
-   - Els noms de fitxers i funcions haurien de descriure la seva funcionalitat.
+     - Els noms de fitxers i funcions haurien de descriure la seva funcionalitat.
 
 2. **Evita globals**:
-
-   - Treballa amb imports i exports per evitar variables globals que poden causar conflictes.
+     - Treballa amb imports i exports per evitar variables globals que poden causar conflictes.
 
 3. **Documenta el codi**:
-
-   - Afegeix comentaris per explicar la funcionalitat de cada funció o mòdul.
+     - Afegeix comentaris per explicar la funcionalitat de cada funció o mòdul.
 
 
