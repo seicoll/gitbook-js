@@ -116,4 +116,4 @@ Aquest tipus d'organització ajuda a mantenir el codi estructurat i fàcil de ma
 
    - Afegeix comentaris per explicar la funcionalitat de cada funció o mòdul.
 
----
+

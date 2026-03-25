@@ -1,20 +1,13 @@
 # Modularitat i Organització
 
-## Objectiu
-
-Aquesta sessió introdueix els conceptes de **modularitat** i **organització del codi** en JavaScript. Aprendrem a estructurar el codi utilitzant mòduls (importacions i exportacions) i a organitzar millor els nostres projectes amb un entorn modern com **Vite**.
-
----
-
 ## 1. Què és la modularitat?
 
 - La **modularitat** consisteix a dividir el codi en fitxers o blocs més petits i reutilitzables.
+  
 - Beneficis:
   - Facilita el manteniment i la lectura del codi.
   - Permet reutilitzar components en diferents parts del projecte.
   - Millora la col·laboració en equips de treball.
-
----
 
 ## 2. Introducció a mòduls en JavaScript
 
@@ -22,9 +15,9 @@ Aquesta sessió introdueix els conceptes de **modularitat** i **organització de
 
 - Per aprofitar aquesta funcionalitat, necessites enllaçar el script al teu document HTML amb un **`type`** de **`module`**.
 
-```javascript
-<script type="module" src="app.js"></script>
-```
+  ```javascript
+  <script type="module" src="app.js"></script>
+  ```
 
 ### Exportar i importar mòduls
 
@@ -66,12 +59,12 @@ Aquesta sessió introdueix els conceptes de **modularitat** i **organització de
   }
   ```
 
-```javascript
-// fitxer principal.js
-import hola from "./salutacions.js";
+  ```javascript
+  // fitxer principal.js
+  import hola from "./salutacions.js";
 
-hola(); // "Hola, món!"
-```
+  hola(); // "Hola, món!"
+  ```
 
 ### Exemple pràctic amb diversos mòduls
 
@@ -102,24 +95,24 @@ hola(); // "Hola, món!"
 
 1. **Crea un mòdul matemàtic**:
 
-- Crea un fitxer `math.js` que exporti funcions per sumar, restar, multiplicar i dividir. Importa aquestes funcions en un altre fitxer i utilitza-les.
+   - Crea un fitxer `math.js` que exporti funcions per sumar, restar, multiplicar i dividir. Importa aquestes funcions en un altre fitxer i utilitza-les.
 
 2. **Organitza un projecte amb Vite**:
 
-- Crea un projecte amb Vite i organitza’l amb:
-  - Un mòdul `utils.js` per a funcions utilitàries.
-  - Un fitxer `main.js` per executar el codi.
+   - Crea un projecte amb Vite i organitza’l amb:
+     - Un mòdul `utils.js` per a funcions utilitàries.
+     - Un fitxer `main.js` per executar el codi.
 
 3. **Mòdul amb exportació per defecte**:
 
-- Crea un mòdul que exporti per defecte una funció que retorni una salutació personalitzada (`Hola, [Nom]!`).
+   - Crea un mòdul que exporti per defecte una funció que retorni una salutació personalitzada (`Hola, [Nom]!`).
 
 ## Tasca per fer a casa
 
 1. Crea un projecte amb Vite que tingui dos mòduls:
 
-- Un per gestionar operacions amb cadenes de text (convertir a majúscules, comptar caràcters).
-- Un altre per gestionar operacions matemàtiques senzilles.
-- Combina les funcionalitats en un fitxer principal.
+   - Un per gestionar operacions amb cadenes de text (convertir a majúscules, comptar caràcters).
+   - Un altre per gestionar operacions matemàtiques senzilles.
+   - Combina les funcionalitats en un fitxer principal.
 
 2. Experimenta amb exportacions per defecte i estàndard en diferents mòduls.

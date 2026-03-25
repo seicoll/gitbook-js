@@ -43,8 +43,8 @@
 
 ## Modularitat i Organització
 
-- [Modularitat i Organització](07-modularitat/modularitat.md)
 - [Organització d'un projecte amb Vite](07-modularitat/vite.md)
+- [Modularitat](07-modularitat/modularitat.md)
 
 ## Programació orientada a objectes
 
