@@ -45,6 +45,7 @@ Quan treballis amb **Vite**, és important tenir una estructura clara per organi
 ## Detalls de l'organització:
 
 1. **`index.html`**:
+   
    - El fitxer HTML principal que carrega el codi JavaScript generat per Vite.
 
 2. **`src/`**:
@@ -88,7 +89,6 @@ Aquest tipus d'organització ajuda a mantenir el codi estructurat i fàcil de ma
 
    - Utilitza `npm run dev` i obre el navegador a l'adreça que proporciona Vite.
 
----
 
 ## 4. Bones pràctiques d’organització
 
