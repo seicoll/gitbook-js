@@ -12,12 +12,13 @@
 
 1. Instal·la **Node.js** (si no està instal·lat): [https://nodejs.org/](https://nodejs.org/).
 2. Crea un projecte amb Vite:
-   ```bash
-   npm create vite@latest projecte-modular --template vanilla
-   cd projecte-modular
-   npm install
-   npm run dev
-   ```
+
+  ```bash
+  npm create vite@latest projecte-modular --template vanilla
+  cd projecte-modular
+  npm install
+  npm run dev
+  ```
 
 ### Organitza la carpeta del projecte
 
