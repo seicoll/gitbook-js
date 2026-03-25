@@ -6,8 +6,8 @@
 JavaScript.
 
 - **Avantatges**:
-  - Configuració senzilla
-  - Hot-reloading instantani
+  - Configuració senzilla.
+  - Hot-reloading instantani.
   - Suport per a mòduls ESM (ECMAScript Modules).
 
 ## Configuració inicial
@@ -27,20 +27,20 @@ JavaScript.
 
 Quan treballis amb **Vite**, és important tenir una estructura clara per organitzar el codi. Una proposta bàsica seria la següent:
 
-```
-projecte-modular/
-├── index.html            # Arxiu HTML principal
-├── src/                  # Carpeta de codi font
-│   ├── main.js           # Punt d'entrada del projecte
-│   ├── utils/            # Carpeta per a mòduls reutilitzables
-│   │   ├── calculs.js    # Funcions de càlcul
-│   │   ├── format.js     # Funcions de format
-│   └── components/       # Carpeta per a components específics
-│       ├── boto.js       # Exemple d'un component de botó
-├── package.json          # Informació del projecte i dependències
-├── vite.config.js        # Configuració de Vite
-├── node_modules/         # Dependències instal·lades per npm
-```
+  ```
+  projecte-modular/
+  ├── index.html            # Arxiu HTML principal
+  ├── src/                  # Carpeta de codi font
+  │   ├── main.js           # Punt d'entrada del projecte
+  │   ├── utils/            # Carpeta per a mòduls reutilitzables
+  │   │   ├── calculs.js    # Funcions de càlcul
+  │   │   ├── format.js     # Funcions de format
+  │   └── components/       # Carpeta per a components específics
+  │       ├── boto.js       # Exemple d'un component de botó
+  ├── package.json          # Informació del projecte i dependències
+  ├── vite.config.js        # Configuració de Vite
+  ├── node_modules/         # Dependències instal·lades per npm
+  ```
 
 ## Detalls de l'organització:
 
