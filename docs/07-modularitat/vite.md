@@ -45,20 +45,19 @@ Quan treballis amb **Vite**, és important tenir una estructura clara per organi
 ## Detalls de l'organització:
 
 1. **`index.html`**:
-   
-   - El fitxer HTML principal que carrega el codi JavaScript generat per Vite.
+    - El fitxer HTML principal que carrega el codi JavaScript generat per Vite.
 
 2. **`src/`**:
-   - Conté tot el codi font del projecte.
-   - Subcarpetes:
-     - **`utils/`**: Funcions generals reutilitzables (ex.: càlculs, formats).
-     - **`components/`**: Estructures o components específics del projecte.
+    - Conté tot el codi font del projecte.
+    - Subcarpetes:
+       - **`utils/`**: Funcions generals reutilitzables (ex.: càlculs, formats).
+       - **`components/`**: Estructures o components específics del projecte.
 
 3. **`package.json`**:
-   - Conté informació sobre les dependències i scripts del projecte.
+    - Conté informació sobre les dependències i scripts del projecte.
 
 4. **`vite.config.js`**:
-   - Fitxer opcional per personalitzar la configuració de Vite si cal.
+    - Fitxer opcional per personalitzar la configuració de Vite si cal.
 
 Aquest tipus d'organització ajuda a mantenir el codi estructurat i fàcil de mantenir en projectes més grans.
 
