@@ -1,14 +1,16 @@
 # Organització d'un projecte amb Vite
 
-### Què és Vite?
+## Què és Vite?
 
-- **Vite** és una eina moderna per configurar i organitzar projectes de JavaScript.
-- Avantatges:
+> **Vite** és una eina moderna per configurar i organitzar projectes de 
+JavaScript.
+
+- **Avantatges**:
   - Configuració senzilla
   - Hot-reloading instantani
   - Suport per a mòduls ESM (ECMAScript Modules).
 
-### Configuració inicial
+## Configuració inicial
 
 1. Instal·la **Node.js** (si no està instal·lat): [https://nodejs.org/](https://nodejs.org/).
 2. Crea un projecte amb Vite:
@@ -20,7 +22,7 @@
   npm run dev
   ```
 
-### Organitza la carpeta del projecte
+## Organitza la carpeta del projecte
 
 Quan treballis amb **Vite**, és important tenir una estructura clara per organitzar el codi. Una proposta bàsica seria la següent:
 
