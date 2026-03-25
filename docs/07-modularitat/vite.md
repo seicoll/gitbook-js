@@ -6,9 +6,9 @@
 JavaScript.
 
 - **Avantatges**:
-  - Configuració senzilla.
-  - Hot-reloading instantani.
-  - Suport per a mòduls ESM (ECMAScript Modules).
+    - Configuració senzilla.
+    - Hot-reloading instantani.
+    - Suport per a mòduls ESM (ECMAScript Modules).
 
 ## Configuració inicial
 
