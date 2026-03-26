@@ -53,10 +53,10 @@ projecte-modular/
         - **`components/`**: Estructures o components específics del projecte.
 
 3. **`package.json`**:
-   - Conté informació sobre les dependències i scripts del projecte.
+    - Conté informació sobre les dependències i scripts del projecte.
 
 4. **`vite.config.js`**:
-   - Fitxer opcional per personalitzar la configuració de Vite si cal.
+    - Fitxer opcional per personalitzar la configuració de Vite si cal.
 
 Aquest tipus d'organització ajuda a mantenir el codi estructurat i fàcil de mantenir en projectes més grans.
 
@@ -76,34 +76,34 @@ Aquest tipus d'organització ajuda a mantenir el codi estructurat i fàcil de ma
 
 2. Crea un fitxer `src/main.js`:
 
-   ```javascript
-   import { multiplica, divideix } from "./utils/calculs.js";
+    ```javascript
+    import { multiplica, divideix } from "./utils/calculs.js";
 
-   console.log(multiplica(6, 7)); // 42
-   console.log(divideix(10, 2)); // 5
-   ```
+    console.log(multiplica(6, 7)); // 42
+    console.log(divideix(10, 2)); // 5
+    ```
 
 3. Executa el projecte:
-   - Utilitza `npm run dev` i obre el navegador a l'adreça que proporciona Vite.
+    - Utilitza `npm run dev` i obre el navegador a l'adreça que proporciona Vite.
 
 ## 4. Bones pràctiques d’organització
 
 1. **Separa el codi per funcionalitats**:
-   - Guarda cada funció o grup de funcions relacionades en fitxers separats.
-   - Exemple:
+    - Guarda cada funció o grup de funcions relacionades en fitxers separats.
+    - Exemple:
 
-   ```
-   src/
-   ├── api.js (Gestió de dades d’API)
-   ├── calculs.js (Operacions matemàtiques)
-   ├── main.js (Punt d’entrada del projecte)
-   ```
+    ```
+    src/
+    ├── api.js (Gestió de dades d’API)
+    ├── calculs.js (Operacions matemàtiques)
+    ├── main.js (Punt d’entrada del projecte)
+    ```
 
 2. **Utilitza noms descriptius**:
-   - Els noms de fitxers i funcions haurien de descriure la seva funcionalitat.
+    - Els noms de fitxers i funcions haurien de descriure la seva funcionalitat.
 
 3. **Evita globals**:
-   - Treballa amb imports i exports per evitar variables globals que poden causar conflictes.
+    - Treballa amb imports i exports per evitar variables globals que poden causar conflictes.
 
 4. **Documenta el codi**:
-   - Afegeix comentaris per explicar la funcionalitat de cada funció o mòdul.
+    - Afegeix comentaris per explicar la funcionalitat de cada funció o mòdul.
