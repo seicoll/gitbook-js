@@ -20,7 +20,7 @@
 }
 
 .md-sidebar--primary {
-  width: 14rem;
+  width: 15rem;
 }
 
 /* Menú esquerra - Títol principal */
@@ -139,7 +139,7 @@
 /* Sidebar una mica més estreta */
 @media screen and (min-width: 76.25em) {
   .md-sidebar--primary {
-    width: 13rem;
+    width: 14rem;
   }
 }
 
