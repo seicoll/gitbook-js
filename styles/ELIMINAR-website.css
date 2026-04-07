@@ -39,7 +39,7 @@ img {
 /* Ampliem l'amplada */
 .book-summary {
   left: -400px;
-  width: 500px;
+  width: 400px;
 }
 
 @media (min-width: 600px) {
