@@ -25,14 +25,14 @@ Aquesta sessió introdueix les eines modernes de desenvolupament web per millora
    Això crea un fitxer `package.json` que conté informació sobre el projecte i les dependències.
 
 2. Instal·lar biblioteques:
-   - Exemple: Instal·lar **lodash**, una biblioteca popular d'utilitats:
+    - Exemple: Instal·lar **lodash**, una biblioteca popular d'utilitats:
      ```
      npm install lodash
      ```
-   - Això afegeix `lodash` al projecte i crea una carpeta `node_modules` amb les dependències.
+    - Això afegeix `lodash` al projecte i crea una carpeta `node_modules` amb les dependències.
 
 3. Importar i utilitzar una biblioteca:
-   - Exemple amb **lodash**:
+    - Exemple amb **lodash**:
      ```javascript
      import _ from "lodash";
 
@@ -40,16 +40,14 @@ Aquesta sessió introdueix les eines modernes de desenvolupament web per millora
      console.log(_.reverse(array)); // [4, 3, 2, 1]
      ```
 
----
-
 ### 2. Bundlers: Vite
 
 #### Què és un bundler?
 - Un **bundler** agrupa múltiples fitxers de codi en un sol fitxer optimitzat per al navegador.
 - Vite és una eina moderna que:
-  - Suporta **ESM** (mòduls ECMAScript).
-  - Proporciona **hot-reloading** per a un desenvolupament més ràpid.
-  - Inclou configuracions senzilles per començar.
+    - Suporta **ESM** (mòduls ECMAScript).
+    - Proporciona **hot-reloading** per a un desenvolupament més ràpid.
+    - Inclou configuracions senzilles per començar.
 
 #### Configuració inicial amb Vite
 1. Inicialitza un projecte:
@@ -61,8 +59,6 @@ Aquesta sessió introdueix les eines modernes de desenvolupament web per millora
    ```
 2. Executa l'entorn:
    - Obre el navegador a l'adreça proporcionada per Vite (ex.: `http://localhost:5173/`).
-
----
 
 ### 3. Linters i Formatadors
 
@@ -90,12 +86,14 @@ Aquesta sessió introdueix les eines modernes de desenvolupament web per millora
       }
   }
   ```
+
 - Executa ESLint:
   ```
   npx eslint ./src
   ```
 
 #### Prettier: Formatador de codi
+
 - **Prettier** ajuda a mantenir un format consistent.
 - Instal·lació:
   ```
@@ -114,7 +112,6 @@ Aquesta sessió introdueix les eines modernes de desenvolupament web per millora
   ```
   npx prettier --write .
   ```
-
 ---
 
 ### 4. Gestió d’estils amb PostCSS
@@ -137,27 +134,16 @@ Aquesta sessió introdueix les eines modernes de desenvolupament web per millora
   npx postcss src/styles.css -o dist/styles.css
   ```
 
----
-
 ## Exercicis Pràctics
 
 1. **Projecte amb Vite**:
-   - Crea un projecte amb Vite que inclogui una biblioteca com **lodash** per utilitzar una funció útil (ex.: `_.shuffle`).
+    - Crea un projecte amb Vite que inclogui una biblioteca com **lodash** per utilitzar una funció útil (ex.: `_.shuffle`).
 
 2. **Configura ESLint i Prettier**:
-   - Configura ESLint i Prettier en un projecte existent i corregeix errors i estil del codi.
+    - Configura ESLint i Prettier en un projecte existent i corregeix errors i estil del codi.
 
 3. **Processa CSS amb PostCSS**:
-   - Escriu un fitxer CSS amb propietats modernes (com `display: grid`) i utilitza PostCSS per afegir prefixos automàticament.
-
----
-
-## Resum
-En aquesta sessió hem après:
-- Com utilitzar npm per instal·lar biblioteques i gestionar dependències.
-- Com configurar i utilitzar un bundler modern com Vite.
-- Com millorar la qualitat del codi amb ESLint i Prettier.
-- Com processar CSS modern amb PostCSS.
+    - Escriu un fitxer CSS amb propietats modernes (com `display: grid`) i utilitza PostCSS per afegir prefixos automàticament.
 
 ---
 
