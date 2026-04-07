@@ -77,6 +77,7 @@ nav:
   - Modularitat i Organització:
       - Organització d'un projecte amb Vite: 07-modularitat/vite.md
       - Modularitat: 07-modularitat/modularitat.md
+      - Eines moderners: 07-modularitat/eines-modernes.md
 
   - Programació orientada a objectes:
       - Classe: classes/classe.md
