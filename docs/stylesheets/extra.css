@@ -1,79 +1,131 @@
-/* Amplada */
+/* ==============================
+   LAYOUT GENERAL
+============================== */
+
 .md-grid {
-  max-width: 1800px !important;
+  max-width: 1700px;
 }
 
 .md-content {
   max-width: 100%;
 }
 
-/* Contingut principal més net */
 .md-content__inner {
   margin-top: 0.4rem;
   max-width: 100%;
 }
 
-/* Sidebar més clara i suau */
+/* ==============================
+   SIDEBARS
+============================== */
+
 .md-sidebar {
   background: #fafafa;
   padding: 0;
 }
 
-/* Menú esquerra - Títol principal */
-.md-nav__title {
-  font-weight: bold;
-  font-size: 0.95rem;
-  color: black !important;
+/* Sidebar esquerra */
+.md-sidebar--primary {
+  width: 18rem;
+  border-right: 1px solid #eceff3;
 }
 
-/* Menú esquerra - Títols secció */
-.md-nav__item--section > .md-nav__link {
-  font-weight: bold;
-  font-size: 0.95em;
-  text-transform: uppercase;
-  color: black !important;
+.md-sidebar--primary .md-sidebar__scrollwrap,
+.md-sidebar--primary .md-sidebar__inner,
+.md-sidebar--primary .md-nav {
+  width: 100%;
 }
 
-.md-nav__link {
-  border-radius: 4px;
-  font-size: 0.95em;
-  padding: 3px;
-}
-
-.md-nav__link:hover {
-  background: rgba(0, 0, 0, 0.04);
-}
-
-.md-typeset h1 {
-  font-weight: bold;
-  color: black;
-}
-
-.md-typeset h2,
-.md-typeset h3 {
-  font-weight: 900;
-}
-
-/* Codi més arrodonit */
-.md-typeset pre > code {
-  border-radius: 12px;
-}
-
-/* Taules i caixes més suaus */
-.md-typeset table:not([class]) {
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-/************** TOC *******************/
-
-/* TOC dreta més discreta i neta */
+/* Sidebar dreta (TOC) */
 .md-sidebar--secondary {
   width: 14rem;
 }
 
+/* Ajust fi en pantalles grans */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary {
+    width: 18rem;
+  }
+
+  .md-sidebar--secondary {
+    width: 14rem;
+  }
+}
+
+/* ==============================
+   MENÚ ESQUERRE
+============================== */
+
+/* Títol principal del bloc */
+.md-sidebar--primary .md-nav__title {
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: #111827;
+  padding: 0.9rem 0.8rem 0.6rem 0.8rem;
+  background: transparent;
+}
+
+/* Elements secció */
+.md-sidebar--primary .md-nav__item--section > .md-nav__link {
+  font-weight: 700;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #374151;
+  margin-top: 0.7rem;
+  margin-bottom: 0.2rem;
+}
+
+/* Enllaços generals del menú */
+.md-sidebar--primary .md-nav__link {
+  display: block;
+  font-size: 0.9rem;
+  line-height: 1.35;
+  color: #374151;
+  padding: 0.34rem 0.75rem;
+  margin: 0.05rem 0.35rem;
+  border-radius: 6px;
+  white-space: normal;
+  word-break: break-word;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+
+/* Hover */
+.md-sidebar--primary .md-nav__link:hover {
+  background: rgba(0, 0, 0, 0.04);
+  color: #111827;
+}
+
+/* Enllaç actiu */
+.md-sidebar--primary .md-nav__link--active,
+.md-sidebar--primary .md-nav__item .md-nav__link--active {
+  background: #e8f0fe;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+/* Subnivells més ordenats */
+.md-sidebar--primary .md-nav__list {
+  padding-left: 0;
+}
+
+.md-sidebar--primary .md-nav .md-nav {
+  padding-left: 0.55rem;
+}
+
+/* Petita separació entre ítems */
+.md-sidebar--primary .md-nav__item {
+  margin-bottom: 0.08rem;
+}
+
+/* ==============================
+   TOC DRETA
+============================== */
+
 .md-nav--secondary .md-nav__title {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -83,85 +135,90 @@
   margin-bottom: 0.6rem;
 }
 
-/* Enllaços de la TOC */
 .md-nav--secondary .md-nav__link {
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   line-height: 1.35;
   color: #4b5563;
   border-left: 2px solid transparent;
   padding: 0.2rem 0 0.2rem 0.75rem;
-  margin: 0.1rem 0;
+  margin: 0.08rem 0;
   border-radius: 0;
+  white-space: normal;
 }
 
-/* Hover suau */
 .md-nav--secondary .md-nav__link:hover {
   color: #111827;
   background: transparent;
 }
 
-/* Element actiu: barra lateral tipus GitBook */
 .md-nav--secondary .md-nav__link--active {
   color: #2563eb;
   font-weight: 600;
   border-left-color: #2563eb;
 }
 
-/* Subnivells una mica més compactes */
 .md-nav--secondary .md-nav {
   padding-left: 0.35rem;
 }
 
-/* Treure massa aire vertical */
+.md-nav--secondary .md-nav__list > .md-nav__item {
+  margin-bottom: 0.12rem;
+}
+
+/* Espai vertical més ajustat */
 .md-sidebar__scrollwrap {
   padding-top: 0.2rem;
 }
 
-/* TOC més enganxada a dalt */
 .md-sidebar--secondary .md-sidebar__inner {
   padding-top: 0.6rem;
 }
 
-/* Capçaleres llargues més llegibles */
-.md-nav--secondary .md-nav__link {
-  white-space: normal;
+/* ==============================
+   CONTINGUT
+============================== */
+
+.md-typeset h1 {
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 0.8rem;
 }
 
-/* Separació més clara entre blocs */
-.md-nav--secondary .md-nav__list > .md-nav__item {
-  margin-bottom: 0.15rem;
+.md-typeset h2,
+.md-typeset h3 {
+  font-weight: 800;
+  color: #111827;
 }
 
-/* Sidebar esquerra */
-.md-sidebar--primary {
-  width: 18rem;
+.md-typeset h2 {
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.2rem;
 }
 
-@media screen and (min-width: 76.25em) {
-  .md-sidebar--primary {
-    width: 18rem;
-  }
+.md-typeset p,
+.md-typeset li {
+  line-height: 1.65;
 }
 
-.md-sidebar--primary .md-sidebar__scrollwrap,
-.md-sidebar--primary .md-sidebar__inner,
-.md-sidebar--primary .md-nav {
-  width: 100%;
+/* Taules */
+.md-typeset table:not([class]) {
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.md-sidebar--primary .md-nav__link {
-  display: block;
-  white-space: normal;
-  padding: 0.3rem 0.6rem;
-}
+/* ==============================
+   CODI
+============================== */
 
-/*********** Colors de blocs de codi més tipus GitBook */
 :root {
   --md-code-bg-color: #f7f9fb;
   --md-code-fg-color: #1f2937;
 }
 
-/* Bloc de codi */
+.md-typeset pre > code {
+  border-radius: 12px;
+}
+
 .highlight pre {
   background: #f7f9fb;
   border: 1px solid #e5e7eb;
@@ -169,8 +226,7 @@
   padding: 1em;
 }
 
-/* Codi inline */
-code {
+.md-typeset code {
   background: #f3f4f6;
   color: #c7254e;
   border-radius: 6px;
@@ -226,9 +282,4 @@ code {
 /* Atributs HTML */
 .highlight .na {
   color: #d97706 !important;
-}
-
-/* Valors d'atributs HTML */
-.highlight .s {
-  color: #059669 !important;
 }
