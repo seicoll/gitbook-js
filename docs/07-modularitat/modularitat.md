@@ -93,15 +93,15 @@
 
 ## Exercicis Pràctics
 
-1. **Crea un mòdul matemàtic**:
+1. **Organitza un projecte amb Vite**:
 
-    - Crea un fitxer `math.js` que exporti funcions per sumar, restar, multiplicar i dividir. Importa aquestes funcions en un altre fitxer i utilitza-les.
-
-2. **Organitza un projecte amb Vite**:
-
-    - Crea un projecte amb Vite i organitza’l amb:
+    - Crea un projecte amb Vite i organitza'l amb:
         - Un mòdul `utils.js` per a funcions utilitàries.
         - Un fitxer `main.js` per executar el codi.
+
+2. **Crea un mòdul matemàtic**:
+
+    - Crea un fitxer `math.js` que exporti funcions per sumar, restar, multiplicar i dividir. Importa aquestes funcions en un altre fitxer i utilitza-les.
 
 3. **Mòdul amb exportació per defecte**:
 
@@ -111,8 +111,8 @@
 
 1. Crea un projecte amb Vite que tingui dos mòduls:
 
-   - Un per gestionar operacions amb cadenes de text (convertir a majúscules, comptar caràcters).
-   - Un altre per gestionar operacions matemàtiques senzilles.
-   - Combina les funcionalitats en un fitxer principal.
+    - Un per gestionar operacions amb cadenes de text (convertir a majúscules, comptar caràcters).
+    - Un altre per gestionar operacions matemàtiques senzilles.
+    - Combina les funcionalitats en un fitxer principal.
 
 2. Experimenta amb exportacions per defecte i estàndard en diferents mòduls.
