@@ -5,9 +5,9 @@
 - La **modularitat** consisteix a dividir el codi en fitxers o blocs més petits i reutilitzables.
   
 - Beneficis:
-  - Facilita el manteniment i la lectura del codi.
-  - Permet reutilitzar components en diferents parts del projecte.
-  - Millora la col·laboració en equips de treball.
+    - Facilita el manteniment i la lectura del codi.
+    - Permet reutilitzar components en diferents parts del projecte.
+    - Millora la col·laboració en equips de treball.
 
 ## 2. Introducció a mòduls en JavaScript
 
@@ -22,27 +22,27 @@
 ### Exportar i importar mòduls
 
 - **Exportar**:
-  - Amb `export` es poden compartir funcions, constants o classes entre fitxers.
+    - Amb `export` es poden compartir funcions, constants o classes entre fitxers.
 
-  ```javascript
-  // fitxer utils.js
-  export function suma(a, b) {
-    return a + b;
-  }
+    ```javascript
+    // fitxer utils.js
+    export function suma(a, b) {
+        return a + b;
+    }
 
-  export const PI = 3.14;
-  ```
+    export const PI = 3.14;
+    ```
 
 - **Importar**:
-  - Amb `import` s'accedeix als elements exportats des d'un altre fitxer.
+    - Amb `import` s'accedeix als elements exportats des d'un altre fitxer.
 
-  ```javascript
-  // fitxer principal.js
-  import { suma, PI } from "./utils.js";
+    ```javascript
+    // fitxer principal.js
+    import { suma, PI } from "./utils.js";
 
-  console.log(suma(5, 3)); // 8
-  console.log(PI); // 3.14
-  ```
+    console.log(suma(5, 3)); // 8
+    console.log(PI); // 3.14
+    ```
 
 - El _`./`_, indica a **`import`** que busqui el fitxer **`car.js`** a la mateixa carpeta que el fitxer actual.&#x20;
 
@@ -52,19 +52,19 @@
 
 - Només un element es pot exportar com a **default** per fitxer.
 
-  ```javascript
-  // fitxer salutacions.js
-  export default function hola() {
-    console.log("Hola, món!");
-  }
-  ```
+    ```javascript
+    // fitxer salutacions.js
+    export default function hola() {
+        console.log("Hola, món!");
+    }
+    ```
 
-  ```javascript
-  // fitxer principal.js
-  import hola from "./salutacions.js";
+    ```javascript
+    // fitxer principal.js
+    import hola from "./salutacions.js";
 
-  hola(); // "Hola, món!"
-  ```
+    hola(); // "Hola, món!"
+    ```
 
 ### Exemple pràctic amb diversos mòduls
 
@@ -95,13 +95,13 @@
 
 1. **Crea un mòdul matemàtic**:
 
-   - Crea un fitxer `math.js` que exporti funcions per sumar, restar, multiplicar i dividir. Importa aquestes funcions en un altre fitxer i utilitza-les.
+    - Crea un fitxer `math.js` que exporti funcions per sumar, restar, multiplicar i dividir. Importa aquestes funcions en un altre fitxer i utilitza-les.
 
 2. **Organitza un projecte amb Vite**:
 
-   - Crea un projecte amb Vite i organitza’l amb:
-     - Un mòdul `utils.js` per a funcions utilitàries.
-     - Un fitxer `main.js` per executar el codi.
+    - Crea un projecte amb Vite i organitza’l amb:
+        - Un mòdul `utils.js` per a funcions utilitàries.
+        - Un fitxer `main.js` per executar el codi.
 
 3. **Mòdul amb exportació per defecte**:
 
