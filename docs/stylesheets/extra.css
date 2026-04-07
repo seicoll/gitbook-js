@@ -19,11 +19,6 @@
   padding: 0;
 }
 
-/*Sidebar esquerra */
-.md-sidebar--primary {
-  width: 17rem;
-}
-
 /* Menú esquerra - Títol principal */
 .md-nav__title {
   font-weight: bold;
@@ -137,10 +132,15 @@
   margin-bottom: 0.15rem;
 }
 
+/*Sidebar esquerra */
+.md-sidebar--primary {
+  width: 16rem;
+}
+
 /* Sidebar una mica més estreta */
 @media screen and (min-width: 76.25em) {
   .md-sidebar--primary {
-    width: 14rem;
+    width: 18rem;
   }
 }
 
