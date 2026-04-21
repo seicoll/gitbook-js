@@ -80,7 +80,8 @@ nav:
       - Eines modernes: 07-modularitat/eines-modernes.md
 
   - Introducció a TypeScript:
-      - Introducció: 08-intro-typescript/introduccio.md
+      - Introducció: 08-intro-typescript/intro-typescript.md
+      - Tipus de dades: 08-intro-typescript/tipus-dades.md
 
   - Programació orientada a objectes:
       - Classe: classes/classe.md
