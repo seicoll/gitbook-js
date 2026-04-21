@@ -11,6 +11,8 @@
     ```typescript
     let nom: string = "David";
     let edat: number = 30;  
+    let esEstudiant: boolean = true;
+    
     function suma(a: number, b: number): number {
     return a + b;
     }
