@@ -79,6 +79,9 @@ nav:
       - Modularitat: 07-modularitat/modularitat.md
       - Eines modernes: 07-modularitat/eines-modernes.md
 
+  - Introducció a TypeScript:
+      - Introducció: 08-intro-typescript/introduccio.md
+
   - Programació orientada a objectes:
       - Classe: classes/classe.md
       - Getters i setters: classes/getters-i-setters.md
