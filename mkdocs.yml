@@ -86,6 +86,7 @@ nav:
   - Programació orientada a objectes:
       - Classe: classes/classe.md
       - Getters i setters: classes/getters-i-setters.md
+      - Projecte Joc de batalla: 08-intro-typescript/joc-batalla.md
 
   - Bibliografia i Cursos:
       - Bibliografia: bibliografia.md
