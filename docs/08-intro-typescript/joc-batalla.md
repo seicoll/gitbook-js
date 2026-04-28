@@ -31,12 +31,11 @@ dany = 5
 
 Quan un **personatge es mort**, la lluita continuarà amb el següent personatge.
 
-La **batalla acabarà** quan un dels jugadors es quedi sense p
+La **batalla acabarà** quan un dels jugadors es quedi sense personatges vius. El jugador que tingui personatges vius al final de la batalla serà el guanyador.
 
 ## Diagrama de classes
 
 ![alt text](joc-diagrama.png)
-
 
 ## Demostració
 
