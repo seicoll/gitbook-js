@@ -16,6 +16,14 @@ Serà obligatori **utilitzar Git** com a sistema de control de versions. El repo
 * **Temps de desenvolupament a classe**: 12 hores.
 * **Lliurament final:** dijous 21 de maig.
 
+### Grups de treball
+
+* **Grup 1:** Eloi i David
+* **Grup 2:** Gerarld, Ayoub i Jordi
+* **Grup 3:** Isaac i Bernat
+* **Grup 4:** Dani, Deiby i Edi
+
+
 ## Especificacions
 
 El joc de batalla consistirà en una lluita entre dos jugadors on cada jugador disposarà de tres pesonatges. 
