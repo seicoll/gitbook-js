@@ -62,7 +62,7 @@
 /* Títol principal del bloc */
 .md-sidebar--primary .md-nav__title {
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #111827;
   padding: 0.9rem 0.6rem 0.6rem 0.6rem;
   background: transparent;
@@ -71,7 +71,6 @@
 /* Elements secció */
 .md-sidebar--primary .md-nav__item--section > .md-nav__link {
   font-weight: 700;
-  font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   color: #374151;
@@ -85,7 +84,7 @@
   font-size: 0.7rem;
   line-height: 1.35;
   color: #374151;
-  padding: 0.2rem 0.2rem;
+  padding: 0.1rem 0.1rem;
   margin: 0.05rem 0.35rem;
   border-radius: 6px;
   white-space: normal;
