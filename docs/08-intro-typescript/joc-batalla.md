@@ -6,6 +6,16 @@ Caldrà crear una interfície atractiva i fàcil d'utilitzar per als usuaris, to
 
 ![alt text](hero-clash.png)
 
+## Organització i temporització
+
+Aquest projecte s’haurà de desenvolupar en **grups de 2 o 3 alumnes**. No s’admetrà la realització individual, excepte indicació expressa del professorat.
+
+Serà obligatori **utilitzar Git** com a sistema de control de versions. El repositori haurà de reflectir l’evolució real del treball i s’haurà d’utilitzar de manera correcta durant tot el desenvolupament.
+
+* **Inici del projecte**: dijous 30 d'abril.
+* **Temps de desenvolupament a classe**: 12 hores.
+* **Lliurament final:** dijous 21 de maig.
+
 ## Especificacions
 
 El joc de batalla consistirà en una lluita entre dos jugadors on cada jugador disposarà de tres pesonatges. 
@@ -37,16 +47,17 @@ La **batalla acabarà** quan un dels jugadors es quedi sense personatges vius. E
 
 ![alt text](joc-diagrama.png)
 
-## Demostració
+## Lliuramant i demostració
 
-Caldrà presentar el projecte al grup classe.
+Caldrà presentar el projecte al grup classe el **dijous 21 de maig**.
 
+Durant la presentació, cada grup haurà de **demostrar el funcionament del joc** i explicar com s’ha organitzat el treball, així com les decisions de disseny i implementació que s’han pres.
 
 ## Avaluació
 
 * **Interfície**: 3 punts
 * **Funcionalitat**: 4 punts
-* **Qualitat del codi**: 1 punts
+* **Qualitat del codi i ús de GIT**: 1 punts
 * **Extres**: 2 punts
 
 
