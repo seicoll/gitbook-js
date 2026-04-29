@@ -47,7 +47,7 @@ La **batalla acabarà** quan un dels jugadors es quedi sense personatges vius. E
 
 ![alt text](joc-diagrama.png)
 
-## Lliuramant i demostració
+## Lliurament i demostració
 
 Caldrà presentar el projecte al grup classe el **dijous 21 de maig**.
 
